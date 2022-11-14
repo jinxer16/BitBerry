@@ -1,0 +1,37 @@
+.nav-link {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #000000;
+}
+
+.nav-link:hover {
+  background-image: linear-gradient(
+    90deg,
+    #fff854 49.47%,
+    rgba(255, 255, 255, 0) 114.63%
+  );
+}
+.btn {
+  width: 153px;
+  height: 63px;
+  left: 1447px;
+  top: 25px;
+  border: 1px solid #000000;
+  border-radius: 50px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+}
+ .btn:hover{
+    background-image: linear-gradient(
+    90deg,
+    #fff854 49.47%,
+    rgba(255, 255, 255, 0) 114.63%
+  );
+ }
