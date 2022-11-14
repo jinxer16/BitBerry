@@ -39,9 +39,9 @@ function Footer() {
             <div className="col-md-4 colWise">
               <h3 className="txtHeading">community</h3>
               <div className="d-flex gap-3">
-                <img className="circle" src={social} />
-                <img className="circle" src={social1} />
-                <img className="circle" src={social2} />
+                <img src={social} />
+                <img src={social1} />
+                <img src={social2} />
               </div>
             </div>
           </div>
