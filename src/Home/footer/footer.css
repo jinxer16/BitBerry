@@ -1,9 +1,10 @@
 .footer {
   background-image: url("../../Assets/Images/Rectangle17.png");
-  /* position: relative; */
+  position: relative;
   /* background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 323%); */
   background-size: cover;
   height: 450px;
+  /* opacity: 0.6; */
 }
 .footerBackImg {
   height: 450px;
@@ -13,16 +14,46 @@
   background-color: rgba(0, 0, 0, 1);
   /* position: absolute; */
 }
-.footer {
+.backImg {
+  z-index: 99;
+  position: absolute;
 }
-/* .footerLeft {
-  display: flex;
+.footerLeft {
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+  z-index: 99;
 }
 .footerRight {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-} */
+  z-index: 99;
+}
+.txtHeading {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.textSpanFooter {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: left;
+}
+.colWise {
+  display: flex;
+  flex-direction: column;
+}
+.rowInFooter {
+  display: flex;
+  justify-content: space-evenly;
+}

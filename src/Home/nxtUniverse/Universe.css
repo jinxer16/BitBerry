@@ -1,16 +1,13 @@
 .bg {
-  background-image: url("../../Assets/Images/Group git9.png");
+  /* background-image: url("../../Assets/Images/Group 9.png"); */
   background-size: cover;
   background-repeat: no-repeat;
-  height: 500px;
 }
 
 .box {
   width: 57px;
   height: 166px;
-  left: 1863px;
-  top: 1375px;
   background: #000000;
   border-radius: 8px 0px 0px 8px;
-  float:right;
+  /* float:right; */
 }
