@@ -5,6 +5,7 @@
   background-size: cover;
   height: 450px;
   /* opacity: 0.6; */
+  overflow: hidden;
 }
 .footerBackImg {
   height: 450px;

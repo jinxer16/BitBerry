@@ -1,0 +1,13 @@
+.bg {
+  /* background-image: url("../../Assets/Images/Group 9.png"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.box {
+  width: 57px;
+  height: 166px;
+  background: #000000;
+  border-radius: 8px 0px 0px 8px;
+  /* float:right; */
+}
