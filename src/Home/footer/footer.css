@@ -1,0 +1,28 @@
+.footer {
+  background-image: url("/Users/imac/BitBerry/src/Assets/Images/Rectangle17.png");
+  /* position: relative; */
+  /* background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 323%); */
+  background-size: cover;
+  height: 450px;
+}
+.footerBackImg {
+  height: 450px;
+  top: 0px;
+  width: 100%;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 1);
+  /* position: absolute; */
+}
+.footer {
+}
+/* .footerLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} */
