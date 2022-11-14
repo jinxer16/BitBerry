@@ -1,5 +1,4 @@
 .txt-bg {
-  position: absolute;
   width: 1272px;
   height: 95px;
 
@@ -8,7 +7,6 @@
   font-weight: 400;
   font-size: 95px;
   line-height: 95px;
-  /* identical to box height */
   text-align: center;
   letter-spacing: 0.005em;
   color: #000000;

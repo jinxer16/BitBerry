@@ -1,5 +1,5 @@
 .footer {
-  background-image: url("/Users/imac/BitBerry/src/Assets/Images/Rectangle17.png");
+  background-image: url("../../Assets/Images/Rectangle17.png");
   /* position: relative; */
   /* background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 323%); */
   background-size: cover;
