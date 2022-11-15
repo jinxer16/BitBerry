@@ -7,6 +7,7 @@ import Stay from "./Home/stayInTouch/stayInTouch";
 import Universe from "./Home/nxtUniverse/Universe";
 import Carousel from "./Home/carousel/Carousel";
 import Works from "./Home/woks/works";
+import Roadmap from "./Home/roadmap/roadmap";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Slider />
       <Carousel />
       <Universe />
+      <Roadmap />
       <Works />
       <Stay />
       <Footer />

@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+.subHeading {
+  font-family: "RedFive", arial;
+  font-size: 48px;
+  text-shadow: 4px 4px 4px #aaa;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 109%;
+  /* identical to box height, or 55px */
+
+  text-align: center;
+  letter-spacing: 0.005em;
+  background: #fff854;
+  border-radius: 35px;
+  color: #000000;
+}
+.squareBgImg {
+  background-image: url("../src/Assets/Images/Group9.png");
+}
+.colWise {
+  display: flex;
+  flex-direction: column;
+}
+.rowWise {
+  display: flex;
+}

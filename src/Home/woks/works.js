@@ -33,11 +33,7 @@ function Works() {
         </div>
       </div>
       <div className="row">
-        <div className="col-12">
-          <img src={horizontalArrow} alt="" />
-          <img src={centerPlug} alt="" />
-          <img src={verticalArrow} alt="" />
-        </div>
+        <div className="col-12"></div>
       </div>
       <div className="row squareBgImg d-flex mt-5">
         <div className="col-md-5 d-flex justify-content-end">

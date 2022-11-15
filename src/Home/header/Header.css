@@ -29,9 +29,5 @@
   text-align: center;
 }
  .btn:hover{
-    background-image: linear-gradient(
-    90deg,
-    #fff854 49.47%,
-    rgba(255, 255, 255, 0) 114.63%
-  );
+    background: rgba(255, 248, 84, 1)
  }

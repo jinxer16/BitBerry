@@ -50,10 +50,7 @@
   color: #ffffff;
   text-align: left;
 }
-.colWise {
-  display: flex;
-  flex-direction: column;
-}
+
 .rowInFooter {
   display: flex;
   justify-content: space-evenly;
