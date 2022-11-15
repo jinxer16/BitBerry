@@ -9,7 +9,7 @@ function Roadmap() {
   return (
     <div className="contianer roadmap mt-5">
       <div className="row">
-        <div className="col-md-12">
+        <div className="col-md-12 ps-5 pe-5">
           <img src={roadmap} className="img-fluid" alt="" />
         </div>
       </div>

@@ -6,14 +6,14 @@ import inputLine from "../../Assets/Images/inputBottomLine.png";
 import "./stayInTouch.css";
 function Stay() {
   return (
-    <div className="contianer stayTouch mt-5">
+    <div className="contianer stayTouch mt-5 mb-2">
       <div className="row">
-        <div className="col-md-12">
+        <div className="col-md-12 ps-5 pe-5">
           <img src={contactUs} className="img-fluid" alt="" />
         </div>
       </div>
       <div className="row mt-2">
-        <div className="col-md-4 subHeading mx-auto">Stay In Touch</div>
+        <div className="col-md-4 subHeading  mx-auto">Stay In Touch</div>
       </div>
       <div className="row squareBgImg">
         <div className="col-4">

@@ -30,3 +30,25 @@ input:focus-visible {
   outline: none;
   border: none;
 }
+.centerPlugContainer {
+  position: relative;
+}
+.imgCenterPlug {
+  position: absolute;
+  width: 500px;
+  top: 18%;
+  left: 37%;
+}
+@media (max-width: 768px) {
+  .imgCenterPlug {
+    position: absolute;
+    width: 350px;
+    top: 0%;
+    left: 28%;
+  }
+}
+@media (max-width: 767px) {
+  .imgCenterPlug {
+    display: none;
+  }
+}
