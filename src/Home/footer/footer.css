@@ -5,6 +5,7 @@
   background-size: cover;
   height: 450px;
   /* opacity: 0.6; */
+  overflow: hidden;
 }
 .footerBackImg {
   height: 450px;
@@ -49,10 +50,7 @@
   color: #ffffff;
   text-align: left;
 }
-.colWise {
-  display: flex;
-  flex-direction: column;
-}
+
 .rowInFooter {
   display: flex;
   justify-content: space-evenly;
