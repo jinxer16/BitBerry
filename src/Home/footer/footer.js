@@ -17,8 +17,8 @@ function Footer() {
           </span>
         </div>
         <div className="col-md-4 col-12   footerLeft">
-          <div className="row rowInFooter">
-            <div className="col-md-4 colWise">
+          <div className="row rowInFooter  ">
+            <div className="col-md-4 colWise ps-sm-5">
               <h3 className="txtHeading">sitemap</h3>
               <span className="textSpanFooter">Home</span>
               <span className="textSpanFooter">About us</span>
@@ -27,7 +27,7 @@ function Footer() {
               <span className="textSpanFooter">Team</span>
               <span className="textSpanFooter">Roadmap</span>
             </div>
-            <div className="col-md-4 colWise">
+            <div className="col-md-4 colWise ">
               <h3 className="txtHeading">ecosystem</h3>
               <span className="textSpanFooter">Tokenomic</span>
               <span className="textSpanFooter">About us</span>

@@ -1,8 +1,8 @@
 import React from "react";
 import roadmap from "../../Assets/Images/roadmap.png";
-import imgRight from "../../Assets/Images/roadmap/1.png";
-import imgCenter from "../../Assets/Images/roadmap/2.png";
-import imgLeft from "../../Assets/Images/roadmap/3.png";
+import imgRight from "../../Assets/Images/roadmap1.png";
+import imgCenter from "../../Assets/Images/roadmap2.png";
+import imgLeft from "../../Assets/Images/roadmap3.png";
 
 import "./roadmap.css";
 function Roadmap() {
@@ -23,11 +23,15 @@ function Roadmap() {
           </p>
         </div>
       </div>
-      <div className="row squareBgImg ">
-        <div className="col-md-4 rowWise">
-          <img src={imgRight} className="img-fluid" alt="" />
-          <img src={imgCenter} className="img-fluid" alt="" />
-          <img src={imgLeft} className="img-fluid" alt="" />
+      <div className="row squareBgImg d-flex justify-content-center">
+        <div className="col-md-2 ">
+          <img src={imgLeft} className="img-fluid" height={"450px"} alt="" />
+        </div>
+        <div className="col-md-2 ">
+          <img src={imgCenter} className="img-fluid" height={"450px"} alt="" />
+        </div>
+        <div className="col-md-2 ">
+          <img src={imgRight} className="img-fluid" height={"450px"} alt="" />
         </div>
       </div>
     </div>
