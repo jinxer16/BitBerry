@@ -7,7 +7,8 @@ import './tokens.css'
 import line2 from "../../Assets/Images/Group14.png";
 import figure2 from "../../Assets/Images/_2774768315120.png";
 import figure3 from "../../Assets/Images/_x0020_1.png";
-import figure4 from "../../Assets/Images/_x0020_12.png"
+import figure4 from "../../Assets/Images/_x0020_12.png";
+import figure5 from "../../Assets/Images/_x0020_13.png"
 
 function Tokens() {
   return (
@@ -62,21 +63,24 @@ function Tokens() {
         <img src={line2} className="line1" />
         </div>
         <div className="col-md-10 mt-5">
-        <h3 className="text-center token-name ">TOTAL SUPPLY</h3>
-          <h3 className="text-center bitberry-token ">1,000,000,000</h3>
+        <h3 className="text-center token-name ">DECIMAL</h3>
+          <h3 className="text-center bitberry-token ">18</h3>
           <img src={figure4} className="img-fluid figure1" width={"80px"}/>
         </div>
         </div>
         </div>
         <div className="col-md-2 lin-bg line">
         <div className="row">
-        <div className="col-md-2">
+        <div className="col-md-1">
         <img src={line2} className="line1" />
         </div>
-        <div className="col-md-10 mt-5">
-        <h3 className="text-center token-name ">TOTAL SUPPLY</h3>
-          <h3 className="text-center bitberry-token ">1,000,000,000</h3>
-          <img src={figure2} className="img-fluid figure1" width={"80px"}/>
+        <div className="col-md-9 mt-5">
+        <h3 className="text-center token-name ">CHAIN</h3>
+          <h3 className="text-center bitberry-token ">BSC</h3>
+          <img src={figure4} className="img-fluid figure1" width={"80px"}/>
+        </div>
+        <div className="col-md-1">
+        <img src={line} className="line1" />
         </div>
         </div>
         </div>
