@@ -1,8 +1,8 @@
 import React from "react";
 import roadmap from "../../Assets/Images/document.png";
-import imgRight from "../../Assets/Images/roadmap1.png";
-import imgCenter from "../../Assets/Images/roadmap2.png";
-import imgLeft from "../../Assets/Images/roadmap3.png";
+import imgLeft from "../../Assets/Images/Group331.png";
+import imgCenter from "../../Assets/Images/Group341.png";
+import imgRight from "../../Assets/Images/Group351.png";
 import Circle from "../../Assets/Images/VectorCircle-01.png";
 import "./projectDocument.css";
 function ProjectDocument() {
@@ -13,9 +13,9 @@ function ProjectDocument() {
           <img src={roadmap} className="img-fluid" alt="" />
         </div>
       </div>
-      <div className="row mt-2">
+      <div className="row mt-3">
         <div className="col-md-4 subHeading mx-auto">
-          <img src={Circle} width={"40px"} className="imgRoadmap" />
+          <img src={Circle} width={"40px"} className="imgProject" />
           project document
         </div>
       </div>
@@ -26,17 +26,17 @@ function ProjectDocument() {
           </p>
         </div>
       </div>
-      <div className="row squareBgImg d-flex justify-content-center">
-        <div className="col-md-2 imgGroup">
-          <img src={imgLeft} className="img-fluid imgStyle" alt="" />
-          <img src={imgCenter} className="img-fluid imgStyle" alt="" />
-          <img src={imgRight} className="img-fluid imgStyle" alt="" />
+      <div className="row squareBgImg d-flex justify-content-center mt-4">
+        <div className="col-md-12">
+          <img src={imgLeft} className="img-fluid  imgDoc" alt="" />
+          <img src={imgCenter} className="img-fluid imgDoc" alt="" />
+          <img src={imgRight} className="img-fluid imgDoc" alt="" />
         </div>
-        {/* <div className="col-md-2 ">
-          <img src={imgCenter} className="img-fluid imgStyle" alt="" />
+        {/* <div className="col-md-4">
+          <img src={imgCenter} className="img-fluid " alt="" />
         </div>
-        <div className="col-md-2 ">
-          <img src={imgRight} className="img-fluid imgStyle" alt="" />
+        <div className="col-md-4">
+          <img src={imgRight} className="img-fluid " alt="" />
         </div> */}
       </div>
     </div>

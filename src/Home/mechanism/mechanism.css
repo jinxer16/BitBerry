@@ -1,0 +1,10 @@
+.mechanism {
+  overflow: hidden;
+}
+.imgMech {
+  position: absolute;
+  bottom: 22px;
+  right: 6%;
+}
+.imgMechSystem {
+}

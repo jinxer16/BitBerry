@@ -27,17 +27,11 @@ function Roadmap() {
         </div>
       </div>
       <div className="row squareBgImg d-flex justify-content-center">
-        <div className="col-md-2 imgGroup">
+        <div className="col-md-12 imgGroup ">
           <img src={imgLeft} className="img-fluid imgStyle" alt="" />
           <img src={imgCenter} className="img-fluid imgStyle" alt="" />
           <img src={imgRight} className="img-fluid imgStyle" alt="" />
         </div>
-        {/* <div className="col-md-2 ">
-          <img src={imgCenter} className="img-fluid imgStyle" alt="" />
-        </div>
-        <div className="col-md-2 ">
-          <img src={imgRight} className="img-fluid imgStyle" alt="" />
-        </div> */}
       </div>
     </div>
   );

@@ -10,6 +10,7 @@ import Works from "./Home/woks/works";
 import Roadmap from "./Home/roadmap/roadmap";
 import Tokens from "./Home/tokens/Tokens";
 import ProjectDocument from "./Home/projectDocument/projectDocument";
+import Mechanism from "./Home/mechanism/mechanism";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Carousel />
       <Universe />
       <Tokens />
+      <Mechanism />
       <ProjectDocument />
       <Roadmap />
       <Works />
