@@ -33,7 +33,7 @@ function HowWeWork() {
           <div className="row imgContainer2 ">
             <div className="col-md-2 ">
               <div className="mt-4">
-                <span className="txtHeading">01</span>
+                <span className="txtHeading2">01</span>
                 <img src={Bottomline} className="img-fluid" />
                 <p className="eco-para">
                   Research and orient potential webtoonl IP
@@ -42,7 +42,7 @@ function HowWeWork() {
             </div>
             <div className="col-md-2">
               <div className="mt-4">
-                <span className="txtHeading">02</span>
+                <span className="txtHeading2">02</span>
                 <img src={Bottomline} className="img-fluid" />
 
                 <p className="eco-para">
@@ -52,7 +52,7 @@ function HowWeWork() {
             </div>
             <div className="col-md-2">
               <div className="mt-4">
-                <span className="txtHeading">03</span>
+                <span className="txtHeading2">03</span>
                 <img src={Bottomline} className="img-fluid" />
 
                 <p className="eco-para">
@@ -62,7 +62,7 @@ function HowWeWork() {
             </div>
             <div className="col-md-2">
               <div className="mt-4">
-                <span className="txtHeading">04</span>
+                <span className="txtHeading2">04</span>
                 <img src={Bottomline} className="img-fluid" />
                 <p className="eco-para">
                   Share revenue with investors and creators
@@ -71,14 +71,14 @@ function HowWeWork() {
             </div>
             <div className="col-md-2">
               <div className="mt-4">
-                <span className="txtHeading">05</span>
+                <span className="txtHeading2">05</span>
                 <img src={Bottomline} className="img-fluid" />
                 <p className="eco-para">Distribute content globally</p>
               </div>
             </div>
             <div className="col-md-2">
               <div className="mt-4">
-                <span className="txtHeading">06</span>
+                <span className="txtHeading2">06</span>
                 <img src={Bottomline} className="img-fluid" />
                 <p className="eco-para">
                   Develop the next set of webtoon content{" "}
