@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 *,
 *:before,
 *:after {
@@ -8,7 +8,12 @@
 .toggle-switch-container {
   align-content: center;
   padding: 30px;
-  background-color: red;
+  background-image: url("../../Assets/Images/IMG_21501.png");
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .toggle-switch {
@@ -64,7 +69,7 @@
 }
 
 .switch-vertical {
-  background-color: #00F;
+  background-color: #00f;
   width: 0px;
   height: 60px;
   margin-left: 27px;

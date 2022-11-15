@@ -41,7 +41,7 @@ function Stay() {
               />
               <img src={inputLine} className="mb-5" alt="" />
               <button type="submit" className="btnSubmit">
-                Submit
+                Subcribe
               </button>
             </div>
           </div>

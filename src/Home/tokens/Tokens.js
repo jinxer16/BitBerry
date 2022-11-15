@@ -9,8 +9,7 @@ import figure2 from "../../Assets/Images/_2774768315120.png";
 import figure3 from "../../Assets/Images/_x0020_1.png";
 import figure4 from "../../Assets/Images/_x0020_12.png";
 import figure5 from "../../Assets/Images/_x0020_13.png";
-import line3 from "../../Assets/Images/Group27.png"
-
+import line3 from "../../Assets/Images/Group27.png";
 
 function Tokens() {
   return (
@@ -112,9 +111,24 @@ function Tokens() {
           </div>
           <div className="col-md-10 mt-5">
             <div className="row ">
-              <div className="col-md-3 text-cont">Contract address <img src={line3} className="img-fluid" height={"10px"} width={"16px"}/></div>
-              <div className="col-md-6 txt-add"> 0x410dc9A12D848eB7166376e25914279EA02C87a0 
-</div>
+              <div className="col-md-3 text-cont">
+                Contract address &nbsp; &nbsp;{" "}
+                <img
+                  src={line3}
+                  className="img-fluid"
+                  height={"10px"}
+                  width={"16px"}
+                />
+              </div>
+              <div className="col-md-5 txt-add">
+                {" "}
+                0x410dc9A12D848eB7166376e25914279EA02C87a0
+              </div>
+              <div className="col-md-3">
+                <button type="copy" className="btn">
+                  Copy
+                </button>
+              </div>
             </div>
           </div>
         </div>
