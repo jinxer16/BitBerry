@@ -8,6 +8,7 @@ import Universe from "./Home/nxtUniverse/Universe";
 import Carousel from "./Home/carousel/Carousel";
 import Works from "./Home/woks/works";
 import Roadmap from "./Home/roadmap/roadmap";
+import Tokens from "./Home/tokens/Tokens";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Slider />
       <Carousel />
       <Universe />
+      <Tokens/>
       <Roadmap />
       <Works />
       <Stay />
