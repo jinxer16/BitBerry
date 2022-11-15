@@ -22,7 +22,7 @@ function Mechanism() {
 
       <div className="row squareBgImg d-flex justify-content-center mt-4">
         <div className="col-md-12">
-          <img src={mechMain} className="img-fluid  imgMechSystem" alt="" />
+          <img src={mechMain} className="img-fluid" alt="" />
         </div>
       </div>
     </div>

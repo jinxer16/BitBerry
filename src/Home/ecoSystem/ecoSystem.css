@@ -1,0 +1,39 @@
+.ecoSystem {
+  overflow: hidden;
+}
+
+.ecoRoadmap {
+  position: absolute;
+  bottom: 22px;
+  left: 90%;
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: center;
+}
+
+
+.eco-heading {
+  margin-bottom: 0px;
+  text-align: left;
+  width: 132px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 136.52%;
+  text-transform: uppercase;
+  color: #000000;
+}
+.eco-para {
+  
+  height: 66px;
+  text-align: left;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 136.52%;
+  color: #000000;
+}

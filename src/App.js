@@ -11,6 +11,8 @@ import Roadmap from "./Home/roadmap/roadmap";
 import Tokens from "./Home/tokens/Tokens";
 import ProjectDocument from "./Home/projectDocument/projectDocument";
 import Mechanism from "./Home/mechanism/mechanism";
+import HowWeWork from "./Home/howWeWork/howWeWork";
+import EcoSystem from "./Home/ecoSystem/ecoSystem";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
       <Carousel />
       <Universe />
       <Tokens />
+      <EcoSystem />
+      <HowWeWork />
       <Mechanism />
       <ProjectDocument />
       <Roadmap />

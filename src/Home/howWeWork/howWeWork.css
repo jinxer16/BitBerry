@@ -1,0 +1,13 @@
+.howWeWork {
+  overflow: hidden;
+}
+.imgHowWeWork {
+  position: absolute;
+  bottom: 22px;
+  right: 6%;
+}
+.bgImage {
+  background-image: url("../../Assets/Images/workBackground-01.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
