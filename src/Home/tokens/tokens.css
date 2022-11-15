@@ -3,10 +3,10 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-.img{
-    position: absolute;
-    bottom: 22px;
-    left:102px;
+.img {
+  position: absolute;
+  bottom: 22px;
+  left: 102px;
 }
 .line1 {
   height: 250px;
@@ -40,4 +40,25 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 136.52%;
+}
+.text-cont {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 136.52%;
+  /* or 27px */
+
+  text-align: center;
+  text-transform: uppercase;
+}
+.txt-add {
+  font-family: "Larabiefont", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.215em;
+  text-transform: uppercase;
 }
