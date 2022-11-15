@@ -13,3 +13,16 @@
 
   color: #000000;
 }
+.imgStyle {
+  height: 450px;
+}
+.imgGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.imgRoadmap {
+  position: absolute;
+  bottom: 22px;
+  left: 58%;
+}

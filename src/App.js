@@ -9,6 +9,10 @@ import Carousel from "./Home/carousel/Carousel";
 import Works from "./Home/woks/works";
 import Roadmap from "./Home/roadmap/roadmap";
 import Tokens from "./Home/tokens/Tokens";
+import ProjectDocument from "./Home/projectDocument/projectDocument";
+import Mechanism from "./Home/mechanism/mechanism";
+import HowWeWork from "./Home/howWeWork/howWeWork";
+import EcoSystem from "./Home/ecoSystem/ecoSystem";
 
 function App() {
   return (
@@ -17,7 +21,11 @@ function App() {
       <Slider />
       <Carousel />
       <Universe />
-      <Tokens/>
+      <Tokens />
+      <EcoSystem />
+      <HowWeWork />
+      <Mechanism />
+      <ProjectDocument />
       <Roadmap />
       <Works />
       <Stay />

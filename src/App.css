@@ -52,6 +52,11 @@
   border-radius: 35px;
   color: #000000;
 }
+@media (max-width: 768px) {
+  .subHeading {
+    font-size: 28px;
+  }
+}
 .squareBgImg {
   background-image: url("../src/Assets/Images/Group9.png");
 }

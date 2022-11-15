@@ -1,10 +1,6 @@
 .works {
   overflow: hidden;
 }
-
-/* .squareBgImg {
-  background-image: url("../../Assets/Images/Group9.png");
-} */
 .btnSubmit {
   font-weight: 700;
   font-size: 20px;
@@ -29,4 +25,34 @@ input:active,
 input:focus-visible {
   outline: none;
   border: none;
+}
+.centerPlugContainer {
+  position: relative;
+}
+.imgCenterPlug {
+  position: absolute;
+  width: 500px;
+  top: 34%;
+  left: 37%;
+}
+@media (max-width: 768px) {
+  .imgCenterPlug {
+    position: absolute;
+    width: 350px;
+    top: 0%;
+    left: 28%;
+  }
+}
+@media (max-width: 767px) {
+  .imgCenterPlug {
+    display: none;
+  }
+}
+.imgWorks {
+  position: absolute;
+  left: 20%;
+  bottom: 22px;
+}
+.imgWork {
+  height: 100%;
 }

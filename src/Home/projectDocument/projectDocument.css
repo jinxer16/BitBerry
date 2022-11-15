@@ -1,0 +1,11 @@
+.projectDocument {
+  overflow: hidden;
+}
+.imgDoc {
+  width: 300px;
+}
+.imgProject {
+  position: absolute;
+  bottom: 22px;
+  left: 14%;
+}

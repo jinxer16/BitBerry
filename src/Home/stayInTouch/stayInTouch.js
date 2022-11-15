@@ -3,17 +3,21 @@ import stayRight from "../../Assets/Images/IMG_2064.png";
 import stayLeft from "../../Assets/Images/IMG_2065.png";
 import contactUs from "../../Assets/Images/contactus.png";
 import inputLine from "../../Assets/Images/inputBottomLine.png";
+import Circle from "../../Assets/Images/VectorCircle-01.png";
 import "./stayInTouch.css";
 function Stay() {
   return (
-    <div className="contianer stayTouch mt-5">
+    <div className="contianer stayTouch mt-5 mb-2">
       <div className="row">
-        <div className="col-md-12">
+        <div className="col-md-12 ps-5 pe-5">
           <img src={contactUs} className="img-fluid" alt="" />
         </div>
       </div>
-      <div className="row mt-2">
-        <div className="col-md-4 subHeading mx-auto">Stay In Touch</div>
+      <div className="row mt-3">
+        <div className="col-md-4 subHeading  mx-auto">
+          <img src={Circle} width={"40px"} className="imgStayIn" />
+          Stay In Touch
+        </div>
       </div>
       <div className="row squareBgImg">
         <div className="col-4">

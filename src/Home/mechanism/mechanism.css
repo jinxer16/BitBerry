@@ -1,9 +1,8 @@
-.stayTouch {
+.mechanism {
   overflow: hidden;
 }
-
-.imgStayIn {
+.imgMech {
   position: absolute;
-  left: 20%;
   bottom: 22px;
+  right: 6%;
 }
