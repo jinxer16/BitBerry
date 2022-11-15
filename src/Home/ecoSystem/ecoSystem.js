@@ -40,9 +40,10 @@ function EcoSystem() {
               <div className="mt-4">
                 <p className="eco-heading">LAUNCH PAD</p>
                 <img src={Bottomline} className="img-fluid" />
+
                 <p className="eco-para">
-                  A launchpad that helps webtoon artists fund and grow their
-                  community for their projects.
+                  NFT trading cards will be airdropped to all holders. These
+                  cards will be usable in our play-to-earn game.
                 </p>
               </div>
             </div>
@@ -51,9 +52,10 @@ function EcoSystem() {
               <div className="mt-4">
                 <p className="eco-heading">LAUNCH PAD</p>
                 <img src={Bottomline} className="img-fluid" />
+
                 <p className="eco-para">
-                  A launchpad that helps webtoon artists fund and grow their
-                  community for their projects.
+                  Bitberry wallet is more than just a wallet. It’s your secure,
+                  easy, and seamless gateway to the Crypto & NFT world.
                 </p>
               </div>
             </div>
@@ -63,8 +65,7 @@ function EcoSystem() {
                 <p className="eco-heading">LAUNCH PAD</p>
                 <img src={Bottomline} className="img-fluid" />
                 <p className="eco-para">
-                  A launchpad that helps webtoon artists fund and grow their
-                  community for their projects.
+                  The platform to deliver powerful NFT experiences that scale.
                 </p>
               </div>
             </div>

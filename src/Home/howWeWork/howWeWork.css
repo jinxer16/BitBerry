@@ -4,10 +4,25 @@
 .imgHowWeWork {
   position: absolute;
   bottom: 22px;
-  right: 6%;
+  right: 43%;
 }
 .bgImage {
-  background-image: url("../../Assets/Images/workBackground-01.png");
-  background-size: cover;
+  background-image: url("../../Assets/Images/workBackgroundUpdate-01.png");
+  background-size: contain;
   background-repeat: no-repeat;
+}
+.txtHeading {
+  color: black;
+  font-family: "RedFive";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 136.52%;
+  /* identical to box height, or 55px */
+
+  text-align: center;
+  text-transform: uppercase;
+}
+.imgHowWork1 {
+  height: 400px;
 }
