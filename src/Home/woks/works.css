@@ -36,7 +36,7 @@ input:focus-visible {
 .imgCenterPlug {
   position: absolute;
   width: 500px;
-  top: 18%;
+  top: 34%;
   left: 37%;
 }
 @media (max-width: 768px) {
@@ -51,4 +51,12 @@ input:focus-visible {
   .imgCenterPlug {
     display: none;
   }
+}
+.imgWorks {
+  position: absolute;
+  left: 20%;
+  bottom: 22px;
+}
+.imgWork {
+  height: 100%;
 }
