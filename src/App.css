@@ -67,3 +67,6 @@
 .rowWise {
   display: flex;
 }
+.howWeWork {
+  overflow: hidden;
+}
