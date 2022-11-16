@@ -1,5 +1,12 @@
+@import url(https://allfont.net/allfont.css?fonts=redfive);
 .App {
   text-align: center;
+}
+@font-face {
+  font-family: 'RedFive';
+  font-style: normal;
+  font-weight: normal;
+  src: local('RedFive'), url('../redfive.regular.woff') format('woff');
 }
 
 .App-logo {
@@ -66,4 +73,7 @@
 }
 .rowWise {
   display: flex;
+}
+.howWeWork {
+  overflow: hidden;
 }

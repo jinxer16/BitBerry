@@ -2,7 +2,13 @@ import React from "react";
 import work from "../../Assets/Images/work.png";
 import work1 from "../../Assets/Images/WorkPic-01.png";
 import work2 from "../../Assets/Images/workPic2-01.png";
+import image1 from "../../Assets/Images/pic1-01.png";
+import image2 from "../../Assets/Images/pic2-01.png";
+import image3 from "../../Assets/Images/pic3-01.png";
+import image4 from "../../Assets/Images/pic4-01.png";
 import Circle from "../../Assets/Images/VectorCircle-01.png";
+import Bottomline from "../../Assets/Images/inputBottomLine.png";
+
 import "./howWeWork.css";
 
 function HowWeWork() {
@@ -19,14 +25,69 @@ function HowWeWork() {
           how we work
         </div>
       </div>
-      <div className="row  d-flex justify-content-center mt-4">
-        <div className="col-md-4 bgImage">
-          <img src={work1} className="img-fluid" alt="" />
+      <div className="row bgImage  d-flex justify-content-center mt-4">
+        <div className="col-md-3 ">
+          <img src={work1} className="img-fluid imgHowWork1" alt="" />
         </div>
-        <div className="col-md-4">
-          <img src={work1} className="img-fluid" alt="" />
+        <div className="col-md-6 mt-5">
+          <div className="row imgContainer2 ">
+            <div className="col-md-2 ">
+              <div className="mt-4">
+                <span className="txtHeading2">01</span>
+                <img src={Bottomline} className="img-fluid" />
+                <p className="eco-para">
+                  Research and orient potential webtoonl IP
+                </p>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="mt-4">
+                <span className="txtHeading2">02</span>
+                <img src={Bottomline} className="img-fluid" />
+
+                <p className="eco-para">
+                  Purchase IP rights by crowdfunding on Bitberry Launchpad
+                </p>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="mt-4">
+                <span className="txtHeading2">03</span>
+                <img src={Bottomline} className="img-fluid" />
+
+                <p className="eco-para">
+                  License characters and distribute webtoon IP
+                </p>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="mt-4">
+                <span className="txtHeading2">04</span>
+                <img src={Bottomline} className="img-fluid" />
+                <p className="eco-para">
+                  Share revenue with investors and creators
+                </p>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="mt-4">
+                <span className="txtHeading2">05</span>
+                <img src={Bottomline} className="img-fluid" />
+                <p className="eco-para">Distribute content globally</p>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="mt-4">
+                <span className="txtHeading2">06</span>
+                <img src={Bottomline} className="img-fluid" />
+                <p className="eco-para">
+                  Develop the next set of webtoon content{" "}
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="col-md-4">
+        <div className="col-md-3">
           <img src={work2} className="img-fluid" alt="" />
         </div>
       </div>
