@@ -35,13 +35,32 @@
   height: 400px;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: 1;
 }
 .img-1 {
   margin-top: 80px;
 }
+.p1-mobile{
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  display: flex;
+  align-content: center;
+}
 .p1 {
   margin-top: 140px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  display: flex;
+  align-content: center;
+}
+.p2-mobile{
   font-family: Inter;
   font-size: 16px;
   font-weight: 400;
@@ -108,4 +127,15 @@
   position: absolute;
   bottom: 33px;
   left: 382px;
+}
+@media (min-width:768px){
+  .mobile-screen{
+    display: none;
+  }
+}
+
+@media (max-width:767px){
+  .large-screen{
+    display: none;
+  }
 }

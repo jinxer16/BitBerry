@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.04f563a3.css",
-    "main.js": "/static/js/main.9b56eb21.js",
+    "main.css": "/static/css/main.45815ba6.css",
+    "main.js": "/static/js/main.84e9f7eb.js",
     "static/js/787.ba258d20.chunk.js": "/static/js/787.ba258d20.chunk.js",
     "static/media/IMG_21501.png": "/static/media/IMG_21501.06d07fda1017cf54ba16.png",
     "static/media/roadmap2.png": "/static/media/roadmap2.a466698c2b008af3fbbd.png",
@@ -12,15 +12,20 @@
     "static/media/logo.svg": "/static/media/logo.2bbaed4260ee85f289c9cbfb381a738d.svg",
     "static/media/roadmap3.png": "/static/media/roadmap3.fe794264c2a398d179fe.png",
     "static/media/bitberryStudios-01.png": "/static/media/bitberryStudios-01.d8b335bf9038228ddfb4.png",
+    "static/media/bitBerryMobile-01.png": "/static/media/bitBerryMobile-01.3e324353349aa3fe16bd.png",
     "static/media/WhatisBitbeery-01.png": "/static/media/WhatisBitbeery-01.fb4e430f2d4d10929341.png",
+    "static/media/whatIsbitBerryMobile-01.png": "/static/media/whatIsbitBerryMobile-01.2f2f7e63dda0dcdf6722.png",
     "static/media/pic4-01.png": "/static/media/pic4-01.0a584f217064b69cc0f7.png",
     "static/media/pic1-01.png": "/static/media/pic1-01.4bbd9cac6fac4812d448.png",
     "static/media/pic2-01.png": "/static/media/pic2-01.473ebd9c918ea8fda6fd.png",
     "static/media/pic3-01.png": "/static/media/pic3-01.4be214839d71a2b706a3.png",
     "static/media/bitberryWatchSoon-01.png": "/static/media/bitberryWatchSoon-01.1c0e6cf6dbc8296bc517.png",
+    "static/media/bitBerryStoryMobilbe-01.png": "/static/media/bitBerryStoryMobilbe-01.6f3c1600d1c43dc03d59.png",
+    "static/media/Group139.png": "/static/media/Group139.290e32e94e19f569005e.png",
     "static/media/Group351.png": "/static/media/Group351.1f1b29430c92f728361b.png",
     "static/media/workPic2-01.png": "/static/media/workPic2-01.c1f230dae205b09bc808.png",
     "static/media/mechMain.png": "/static/media/mechMain.0fce059244e219cfc4f1.png",
+    "static/media/launchpadSoonMobile-01.png": "/static/media/launchpadSoonMobile-01.6cf0bcbec0ae298b0db9.png",
     "static/media/LaunchpadSoon-01.png": "/static/media/LaunchpadSoon-01.051ec45ba27e46feb8c4.png",
     "static/media/Group331.png": "/static/media/Group331.0e907a0c8dfd1322b334.png",
     "static/media/Group8.png": "/static/media/Group8.6954ac6dc86bbd9bf1e7.png",
@@ -40,15 +45,16 @@
     "static/media/ecosystem.png": "/static/media/ecosystem.d8c99112e6c1a74ae36b.png",
     "static/media/mech.png": "/static/media/mech.84baa8c92b5966d89e6d.png",
     "static/media/document.png": "/static/media/document.cc5690393320466a252f.png",
+    "static/media/redfive.regular.woff": "/static/media/redfive.regular.53774d37684ff7931211.woff",
     "static/media/works.png": "/static/media/works.909eb0d58be896bef526.png",
     "static/media/_2774646056384.png": "/static/media/_2774646056384.a19b4ad268d7144c847a.png",
     "index.html": "/index.html",
-    "main.04f563a3.css.map": "/static/css/main.04f563a3.css.map",
-    "main.9b56eb21.js.map": "/static/js/main.9b56eb21.js.map",
+    "main.45815ba6.css.map": "/static/css/main.45815ba6.css.map",
+    "main.84e9f7eb.js.map": "/static/js/main.84e9f7eb.js.map",
     "787.ba258d20.chunk.js.map": "/static/js/787.ba258d20.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.04f563a3.css",
-    "static/js/main.9b56eb21.js"
+    "static/css/main.45815ba6.css",
+    "static/js/main.84e9f7eb.js"
   ]
 }
