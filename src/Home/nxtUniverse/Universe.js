@@ -20,18 +20,24 @@ function Universe() {
         <div className='col-md-12 txt-uni'>
         <h3 className=''>WE ARE</h3>
         <h3 className=''>BUILDING THE BEST</h3>
-        <h3 className='TEXT-BG'>WEBTOON UNIVERSE</h3>
+        <div className="row mt-3">
+          <div className="col-md-4 subHeading mx-auto">
+            {" "}
+            {/* <img src={Circle} width={"40px"} className="img" /> */}
+            WEBTOON UNIVERSE
+          </div>
+        </div>
         </div>
         </div>
         <div></div>
         <div className='col-md-12 pic-bg'>
         <div className='row'>
-        <div className='col-md-6 d-flex justify-content-end'>
+        <div className='col-md-5 d-flex justify-content-end'>
         <div className=''>
         <img src={Picture1} className="img-fluid img-1" width={"350px"}/>
         </div>
         </div>
-        <div className='col-md-5'>
+        <div className='col-md-4'>
           <p className='p1'>We provide a level playing field for all webtoon creators to draw, contribute
 and earn money.
 </p>
