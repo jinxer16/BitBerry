@@ -1,6 +1,9 @@
 import React from "react";
 import "./Header.css";
 import Logo from "../../Assets/Images/logo.png";
+import social from "../../Assets/Images/telegramIcon.png";
+import social1 from "../../Assets/Images/twitterIcon.png";
+import social2 from "../../Assets/Images/discordIcon.png";
 
 function Header() {
   return (
@@ -90,9 +93,44 @@ function Header() {
                   Our Work
                 </a>
               </li>
+              {/* <li className="nav-item mt-4">
+                <button className="text-center btn-largescreen">
+                  LAUCNHPAD SOON
+                </button>
+              </li> */}
+              <li className="nav-item mt-4 large">
+                <div className="box-1 ">
+                  <div className="d-flex flex-row justify-content-center">
+                    <div className="p-2">
+                      <img
+                        classname="img-fluid"
+                        width={"30px"}
+                        height={"30px"}
+                        src={social}
+                      />
+                    </div>
+                    <div className="p-2 ">
+                      <img
+                        classname="img-fluid"
+                        width={"30px"}
+                        height={"30px"}
+                        src={social1}
+                      />
+                    </div>
+                    <div className="p-2 ">
+                      <img
+                        classname="img-fluid"
+                        width={"30px"}
+                        height={"30px"}
+                        src={social2}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
             </ul>
           </div>
-          <div className="">
+          <div className="ml-5">
             <button className="text-center btn">LAUCNHPAD SOON</button>
           </div>
         </div>

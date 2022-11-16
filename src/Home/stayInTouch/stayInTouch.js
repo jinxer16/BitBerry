@@ -7,7 +7,7 @@ import Circle from "../../Assets/Images/VectorCircle-01.png";
 import "./stayInTouch.css";
 function Stay() {
   return (
-    <div className="contianer stayTouch mt-5 mb-2">
+    <div className="contianer stayTouch mt-5 mb-5">
       <div className="row">
         <div className="col-md-12 ps-5 pe-5">
           <img src={contactUs} className="img-fluid" alt="" />
@@ -23,7 +23,7 @@ function Stay() {
         <div className="col-4">
           <img src={stayRight} className="img-fluid" alt="" />
         </div>
-        <div className="col-4 d-flex justify-content-center">
+        <div className="col-4 d-flex justify-content-center mt-4">
           <div className="row d-flex align-items-center ">
             <div className="col-12 colWise">
               <input
@@ -46,7 +46,7 @@ function Stay() {
             </div>
           </div>
         </div>
-        <div className="col-4">
+        <div className="col-4 ">
           <img src={stayLeft} className="img-fluid" alt="" />
         </div>
       </div>

@@ -13,6 +13,7 @@ import ProjectDocument from "./Home/projectDocument/projectDocument";
 import Mechanism from "./Home/mechanism/mechanism";
 import HowWeWork from "./Home/howWeWork/howWeWork";
 import EcoSystem from "./Home/ecoSystem/ecoSystem";
+import Graph from "./Home/graph/Graph";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Carousel />
       <Universe />
       <Tokens />
+      <Graph/>
       <EcoSystem />
       <HowWeWork />
       <Mechanism />

@@ -42,7 +42,6 @@ function Universe() {
           <div className="col-md-12 txt-uni">
             <div className="row mt-3">
               <div className="col-md-6 mx-auto text-title">
-                {" "}
                 <img src={Circle} width={"40px"} className="img-circle" />
                 WE ARE
               </div>

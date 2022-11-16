@@ -75,6 +75,7 @@
   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+  font-size: clamp(40px, 50px, 30px);
 }
 @media (max-width: 768px) {
   .text-title {
@@ -88,7 +89,7 @@
   font-weight: 400;
   line-height: 109%;
   position: relative;
-  font-size: clamp(50px, 50px, 30px);
+  font-size: clamp(40px, 50px, 30px);
   /* identical to box height, or 55px */
 
   text-align: center;
@@ -106,5 +107,5 @@
 .img-circle1 {
   position: absolute;
   bottom: 33px;
-  left: 299px;
+  left: 382px;
 }
