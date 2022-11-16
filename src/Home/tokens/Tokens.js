@@ -16,7 +16,7 @@ import lineHor2 from "../../Assets/Images/Group27Hor.png"
 function Tokens() {
   return (
     <div className="tokenContainer">
-      <div className="col-md-12 tokens-bg">
+      <div className="col-md-12 ">
         <div className="container">
           <img src={TOKENOMIC} className="img-fluid" />
         </div>
@@ -28,7 +28,7 @@ function Tokens() {
           </div>
         </div>
         {/* Mobile Screen */}
-        <div className="container-fluid mobile-screen">
+        <div className="container-fluid mobile-screen tokens-bg" >
           <div className="col-md-12">
             <div className="row mt-3">
               <div className="col-6">
@@ -117,7 +117,7 @@ function Tokens() {
         </div>
 
         {/* ************************************** EndMobile Screen *******************************************************/}
-        <div className=" row d-flex justify-content-center  screen-dis">
+        <div className=" row d-flex justify-content-center tokens-bg screen-dis">
           <div className="col-md-2 lin-bg line">
             <div className="row">
               <div className="col-md-2">
