@@ -10,11 +10,13 @@ import figure3 from "../../Assets/Images/_x0020_1.png";
 import figure4 from "../../Assets/Images/_x0020_12.png";
 import figure5 from "../../Assets/Images/_x0020_13.png";
 import line3 from "../../Assets/Images/Group27.png";
+import lineHor from "../../Assets/Images/Group14hor.png";
+import lineHor2 from "../../Assets/Images/Group27Hor.png"
 
 function Tokens() {
   return (
     <div className="tokenContainer">
-      <div className="col-md-12">
+      <div className="col-md-12 tokens-bg">
         <div className="container">
           <img src={TOKENOMIC} className="img-fluid" />
         </div>
@@ -25,7 +27,97 @@ function Tokens() {
             TOKENOMIC
           </div>
         </div>
-        <div className=" row d-flex justify-content-center tokens-bg">
+        {/* Mobile Screen */}
+        <div className="container-fluid mobile-screen">
+          <div className="col-md-12">
+            <div className="row mt-3">
+              <div className="col-6">
+                <h3 className="text-center token-name-hor ">TOKEN NAME</h3>
+                <h3 className="text-center bitberry-token-hor ">
+                  Bitberry token
+                </h3>
+                <img
+                  src={figure1}
+                  className="img-fluid figure1"
+                  width={"68px"}
+                />
+              </div>
+              <div className="col-6">
+                <h3 className="text-center token-name-hor ">TOTAL SUPPLY</h3>
+                <h3 className="text-center bitberry-token-hor ">
+                  1,000,000,000
+                </h3>
+                <img
+                  src={figure2}
+                  className="img-fluid figure1"
+                  width={"68px"}
+                />
+              </div>
+            </div>
+            <div className="col-md-12 mt-3">
+              <img src={lineHor} className="img-fluid img-hor" />
+            </div>
+            <div className="row mt-3">
+              <div className="col-6">
+                <h3 className="text-center token-name-hor ">SYMBOL</h3>
+                <h3 className="text-center bitberry-token-hor ">BBR</h3>
+                <img
+                  src={figure3}
+                  className="img-fluid figure1"
+                  width={"68px"}
+                />
+              </div>
+              <div className="col-6">
+                <h3 className="text-center token-name-hor ">DECIMAL</h3>
+                <h3 className="text-center bitberry-token-hor ">18</h3>
+                <img
+                  src={figure4}
+                  className="img-fluid figure1"
+                  width={"68px"}
+                />
+              </div>
+            </div>
+            <div className="col-md-12 mt-3">
+              <img src={lineHor} className="img-fluid img-hor" />
+            </div>
+            <div className="row mt-3 d-flex justify-content-center">
+              <div className="col-6">
+                <h3 className="text-center token-name-hor ">CHAIN</h3>
+                <h3 className="text-center bitberry-token-hor ">BSC</h3>
+                <img
+                  src={figure5}
+                  className="img-fluid figure1"
+                  width={"68px"}
+                />
+              </div>
+            </div>
+            <div className="row mt-3 d-flex justify-content-center">
+              <div className="col-6">
+                <h3 className="text-center token-name-hor">
+                  Contract address
+                </h3>
+              </div>
+            </div>
+            <div className="row d-flex justify-content-center">
+              <div className="col-4 mt-2 ">
+                <img src={lineHor2} className="img-fluid img-hor" />
+              </div>
+            </div>
+            <div className="col-12">
+            0x8C7997E1D05833268ce36087517F333F9a158F21
+            </div>
+            <div className="row mt-3 d-flex justify-content-center">
+            <div className="col-4">
+                <button type="copy" className="btn-btn">
+                  Copy
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* ************************************** EndMobile Screen *******************************************************/}
+        <div className=" row d-flex justify-content-center  screen-dis">
           <div className="col-md-2 lin-bg line">
             <div className="row">
               <div className="col-md-2">
@@ -95,7 +187,7 @@ function Tokens() {
               <div className="col-md-1">
                 <img src={line2} className="line1" />
               </div>
-              <div className="col-md-9 mt-5">
+              <div className="col-md-8 mt-5">
                 <h3 className="text-center token-name ">CHAIN</h3>
                 <h3 className="text-center bitberry-token ">BSC</h3>
                 <img

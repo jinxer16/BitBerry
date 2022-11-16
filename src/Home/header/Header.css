@@ -48,14 +48,29 @@
  .btn-largescreen:hover{
   background: rgba(255, 248, 84, 1)
 }
+.box-1{
+  width: 147px;
+height: 45px;
+left: 352px;
+top: 751px;
+
+background: #000000;
+border-radius: 8px;
+}
 
  /**************************************Media Queries*******************************************************/
 @media(min-width:480px){
 .btn-largescreen{
   display: none;
 }
+.box-1{
+  display: none;
+}
 }
  @media(max-width:768px) {
+  .btn-largescreen{
+    display: none;
+  }
   .btn{
     display: none;
   }

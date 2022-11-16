@@ -41,20 +41,20 @@ function Universe() {
           </div>
           <div className="col-md-12 txt-uni">
             <div className="row mt-3">
-          <div className="col-md-6 mx-auto text-title">
+          <div className="col-md-7 mx-auto text-title">
           {" "}
             <img src={Circle} width={"40px"} className="img-circle" />
             WE ARE
           </div>
           </div>
           <div className="row">
-          <div className="col-md-6 mx-auto text-title">
+          <div className="col-md-7 mx-auto text-title">
             {/* <img src={Circle} width={"40px"} className="img" /> */}
             BUILDING THE NExT
           </div>
           </div>
             <div className="row mt-1">
-          <div className="col-md-6 subHeading-title mx-auto">
+          <div className="col-md-7 subHeading-title mx-auto">
             {" "}
             <img src={Circle} width={"40px"} className="img-circle1" />
             WEBTOON UNIVERSE
