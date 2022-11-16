@@ -84,18 +84,6 @@ function Universe() {
 
           {/* **********************End Mobile Screen********* */}
           <div className="col-md-12 pic-bg large-screen">
-            <div className="row">
-              <div className="col-md-6 d-flex justify-content-end">
-                <div className="">
-                  <img
-                    src={Picture1}
-                    className="img-fluid img-1"
-                    width={"350px"}
-                  />
-                </div>
-              </div>
-            </div>
-            <div></div>
             <div className="col-md-12 pic-bg">
               <div className="row">
                 <div className="col-md-6 d-flex justify-content-end">
