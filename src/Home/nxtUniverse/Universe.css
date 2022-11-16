@@ -71,16 +71,20 @@
   text-align: center;
   letter-spacing: 0.005em;
   position: relative;
+  color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 .subHeading-title {
   font-family: "RedFive", arial;
-  font-size: 50px;
-  text-shadow: 4px 4px 4px #aaa;
+  /* font-size: 50px; */
   font-style: normal;
   font-weight: 400;
   line-height: 109%;
   position: relative;
+  font-size: clamp(50px, 50px, 30px);
   /* identical to box height, or 55px */
 
   text-align: center;

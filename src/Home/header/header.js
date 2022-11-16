@@ -10,6 +10,9 @@ function Header() {
           <a className="navbar-brand" href="#">
             <img src={Logo} className="img-fluid img-responsive" />
           </a>
+          <div className="">
+            <button className="text-center btn-largescreen">LAUCNHPAD SOON</button>
+          </div>
           <button
             className="navbar-toggler"
             type="button"
@@ -21,9 +24,7 @@ function Header() {
           >
             <span className="navbar-toggler-icon" />
           </button>
-          <div className="">
-            <button className="text-center btn btn-largescreen">LAUCNHPAD SOON</button>
-          </div>
+          
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
