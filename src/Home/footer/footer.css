@@ -7,6 +7,12 @@
   /* opacity: 0.6; */
   overflow: hidden;
 }
+.footerSecMobile {
+  background-image: url("../../Assets/Images/Rectangle17.png");
+  position: relative;
+  background-size: cover;
+  /* height: 450px; */
+}
 .footerBackImg {
   height: 450px;
   top: 0px;
@@ -19,11 +25,21 @@
   z-index: 99;
   position: absolute;
 }
+.backImgMobile {
+  z-index: 99;
+  position: absolute;
+  height: 100%;
+}
 .footerLeft {
   /* display: flex;
   justify-content: center;
   align-items: center; */
   z-index: 99;
+}
+.footerMobile {
+  z-index: 99;
+  /* display: flex;
+  justify-content: center; */
 }
 .footerRight {
   display: flex;
@@ -50,8 +66,30 @@
   color: #ffffff;
   text-align: left;
 }
-
+.textSpanMobileFooter {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #ffffff;
+  text-align: left;
+}
 .rowInFooter {
   display: flex;
   justify-content: space-evenly;
 }
+@media (max-width: 480px) {
+  .footerSec {
+    display: none !important;
+  }
+}
+@media (min-width: 480px) {
+  .footerSecMobile {
+    display: none !important;
+    align-items: flex-start;
+  }
+}
+
+/* .imgFooterMobile {
+  width: 200px;
+} */

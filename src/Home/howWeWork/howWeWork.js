@@ -26,12 +26,12 @@ function HowWeWork() {
         </div>
       </div>
       <div className="row bgImage  d-flex justify-content-center mt-4">
-        <div className="col-md-3 ">
+        <div className="col-md-12 col-lg-3 ">
           <img src={work1} className="img-fluid imgHowWork1" alt="" />
         </div>
-        <div className="col-md-6 mt-5">
+        <div className="col-md-12 col-lg-6 mt-5">
           <div className="row imgContainer2 ">
-            <div className="col-md-2 ">
+            <div className="col-md-6 col-lg-2 ">
               <div className="mt-4">
                 <span className="txtHeading2">01</span>
                 <img src={Bottomline} className="img-fluid" />
@@ -40,7 +40,7 @@ function HowWeWork() {
                 </p>
               </div>
             </div>
-            <div className="col-md-2">
+            <div className="col-md-6 col-lg-2">
               <div className="mt-4">
                 <span className="txtHeading2">02</span>
                 <img src={Bottomline} className="img-fluid" />
@@ -50,7 +50,7 @@ function HowWeWork() {
                 </p>
               </div>
             </div>
-            <div className="col-md-2">
+            <div className="col-md-6 col-lg-2">
               <div className="mt-4">
                 <span className="txtHeading2">03</span>
                 <img src={Bottomline} className="img-fluid" />
@@ -60,7 +60,7 @@ function HowWeWork() {
                 </p>
               </div>
             </div>
-            <div className="col-md-2">
+            <div className="col-md-6 col-lg-2">
               <div className="mt-4">
                 <span className="txtHeading2">04</span>
                 <img src={Bottomline} className="img-fluid" />
@@ -69,14 +69,14 @@ function HowWeWork() {
                 </p>
               </div>
             </div>
-            <div className="col-md-2">
+            <div className="col-md-6 col-lg-2">
               <div className="mt-4">
                 <span className="txtHeading2">05</span>
                 <img src={Bottomline} className="img-fluid" />
                 <p className="eco-para">Distribute content globally</p>
               </div>
             </div>
-            <div className="col-md-2">
+            <div className="col-md-6 col-lg-2">
               <div className="mt-4">
                 <span className="txtHeading2">06</span>
                 <img src={Bottomline} className="img-fluid" />
@@ -87,7 +87,7 @@ function HowWeWork() {
             </div>
           </div>
         </div>
-        <div className="col-md-3">
+        <div className="col-md-12 col-lg-3">
           <img src={work2} className="img-fluid" alt="" />
         </div>
       </div>
