@@ -62,7 +62,36 @@ function Universe() {
           </div>
         </div>
         <div></div>
-        <div className="col-md-12 pic-bg">
+        {/* **********************Mobile Screen********* */}
+        <div className="container mobile-screen">
+
+        <div className="row d-flex justify-content-center ">
+        <div className="col-md-6 mt-5">
+        <p className="p1-mobile">
+                We provide a level playing field for all webtoon creators to
+                draw, contribute and earn money.
+              </p>
+              <p className="p2-mobile">
+                Bitberry focuses on supporting many ambitious creators by
+                bringing the realm of blockchain technology and NFT to the
+                webtoon and entertainment industry. Bitberry aims to be the best
+                web 3.0 project in Korea, becoming a leader in the webtoons,
+                animation industries by 2025.
+              </p>
+        </div>
+        <div className="col-md-6 mt-3">
+        <img
+                  src={Picture1}
+                  className="img-fluid"
+                  width={"350px"}
+                />
+        </div>
+
+        </div>
+        </div>
+        
+        {/* **********************End Mobile Screen********* */}
+        <div className="col-md-12 pic-bg large-screen">
           <div className="row">
             <div className="col-md-6 d-flex justify-content-end">
               <div className="">
