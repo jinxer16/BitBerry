@@ -1,3 +1,7 @@
+.universeContainer {
+  overflow: hidden;
+}
+
 .bg {
   background-image: url("../../Assets/Images/Group9.png");
   background-size: cover;
@@ -34,7 +38,7 @@
   margin-top: 80px;
 }
 .p1 {
-    margin-top: 140px;
+  margin-top: 140px;
   font-family: Inter;
   font-size: 16px;
   font-weight: 400;
@@ -44,8 +48,8 @@
   display: flex;
   align-content: center;
 }
-.p2{
-    font-family: Inter;
+.p2 {
+  font-family: Inter;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;

@@ -7,7 +7,7 @@ import Picture1 from "../../Assets/Images/Group8.png";
 
 function Universe() {
   return (
-    <>
+    <div className="universeContainer">
       <div className="row bg  d-flex">
         <div className="col-md-12">
           <div className="box">
@@ -72,7 +72,7 @@ function Universe() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

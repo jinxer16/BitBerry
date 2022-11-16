@@ -13,7 +13,7 @@ import line3 from "../../Assets/Images/Group27.png";
 
 function Tokens() {
   return (
-    <>
+    <div className="tokenContainer">
       <div className="col-md-12">
         <div className="container">
           <img src={TOKENOMIC} className="img-fluid" />
@@ -133,7 +133,7 @@ function Tokens() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

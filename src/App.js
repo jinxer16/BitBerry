@@ -21,7 +21,7 @@ function App() {
       <Slider />
       <Carousel />
       <Universe />
-      {/* <Tokens /> */}
+      <Tokens />
       <EcoSystem />
       <HowWeWork />
       <Mechanism />

@@ -3,7 +3,7 @@ import "./Carousel.css";
 
 function Carousel() {
   return (
-    <>
+    <div className="carouselContainer">
       <div className="row d-flex justify-content-center">
         <div className="col-md-12">
           <div></div>
@@ -25,7 +25,7 @@ function Carousel() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -4,7 +4,7 @@ import "./Slider.css";
 function Slider() {
   return (
     <>
-    <div className="">
+    <div className="sliderContainer">
     <div className="row ">
         <div className="col-md-12">
         <div className="scroll-container"> 

@@ -1,8 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto");
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
+
+.carouselContainer {
+  overflow: hidden;
 }
 
 .toggle-switch-container {
