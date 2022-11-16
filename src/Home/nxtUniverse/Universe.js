@@ -4,6 +4,7 @@ import social from "../../Assets/Images/telegramIcon.png";
 import social1 from "../../Assets/Images/twitterIcon.png";
 import social2 from "../../Assets/Images/discordIcon.png";
 import Picture1 from "../../Assets/Images/Group8.png";
+import Circle from "../../Assets/Images/VectorCircle-01.png";
 
 function Universe() {
   return (
@@ -11,8 +12,8 @@ function Universe() {
       <div className="row bg  d-flex">
         <div className="col-md-12">
           <div className="box">
-            <div className="d-flex flex-column bd-highlight p-2 ">
-              <div className="p-2 bd-highlight">
+            <div className="d-flex flex-column bd-high p-2 ">
+              <div className="p-2">
                 <img
                   classname="img-fluid"
                   width={"30px"}
@@ -20,7 +21,7 @@ function Universe() {
                   src={social}
                 />
               </div>
-              <div className="p-2 bd-highlight">
+              <div className="p-2 ">
                 <img
                   classname="img-fluid"
                   width={"30px"}
@@ -28,7 +29,7 @@ function Universe() {
                   src={social1}
                 />
               </div>
-              <div className="p-2 bd-highlight">
+              <div className="p-2 ">
                 <img
                   classname="img-fluid"
                   width={"30px"}
@@ -39,9 +40,25 @@ function Universe() {
             </div>
           </div>
           <div className="col-md-12 txt-uni">
-            <h3 className="">WE ARE</h3>
-            <h3 className="">BUILDING THE BEST</h3>
-            <h3 className="TEXT-BG">WEBTOON UNIVERSE</h3>
+            <div className="row mt-3">
+          <div className="col-md-6 mx-auto text-title">
+          {" "}
+            <img src={Circle} width={"40px"} className="img-circle" />
+            WE ARE
+          </div>
+          </div>
+          <div className="row">
+          <div className="col-md-6 mx-auto text-title">
+            {/* <img src={Circle} width={"40px"} className="img" /> */}
+            BUILDING THE NExT
+          </div>
+          </div>
+            <div className="row mt-1">
+          <div className="col-md-6 subHeading-title mx-auto">
+            {" "}
+            <img src={Circle} width={"40px"} className="img-circle1" />
+            WEBTOON UNIVERSE
+          </div>
           </div>
         </div>
         <div></div>
@@ -72,6 +89,7 @@ function Universe() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

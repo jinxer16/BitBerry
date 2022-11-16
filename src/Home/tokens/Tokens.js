@@ -25,7 +25,7 @@ function Tokens() {
             TOKENOMIC
           </div>
         </div>
-        <div className=" row  d-flex justify-content-center tokens-bg">
+        <div className=" row d-flex justify-content-center tokens-bg">
           <div className="col-md-2 lin-bg line">
             <div className="row">
               <div className="col-md-2">
