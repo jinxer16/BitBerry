@@ -20,75 +20,75 @@ function HowWeWork() {
         </div>
       </div>
       <div className="row mt-3">
-        <div className="col-md-4 col-sm-12 subHeading mx-auto">
+        <div className="col-md-6 col-10 subHeading mx-auto">
           <img src={Circle} width={"40px"} className="imgHowWeWork" />
           how we work
         </div>
       </div>
-      <div className="row bgImage  d-flex justify-content-center mt-4">
-        <div className="col-md-12 col-lg-3 ">
-          <img src={work1} className="img-fluid imgHowWork1" alt="" />
+      <div className="row bgImageHowWe  d-flex justify-content-center mt-4">
+        <div className="col-md-12 col-lg-3 d-flex justify-content-center align-items-center  ">
+          <img
+            src={work1}
+            className="img-fluid imgHowWork1 howWeWorkMobileHidden"
+            alt=""
+          />
         </div>
-        <div className="col-md-12 col-lg-6 mt-5">
+        <div className="col-md-12 col-lg-6 mt-5 d-flex justify-content-center align-items-center">
           <div className="row imgContainer2 ">
-            <div className="col-md-6 col-lg-2 ">
+            <div className=" col-6 col-md-6 col-lg-2 ">
               <div className="mt-4">
                 <span className="txtHeading2">01</span>
                 <img src={Bottomline} className="img-fluid" />
-                <p className="eco-para">
-                  Research and orient potential webtoonl IP
-                </p>
+                <p className="">Research and orient potential webtoonl IP</p>
               </div>
             </div>
-            <div className="col-md-6 col-lg-2">
+            <div className="col-6 col-md-6 col-lg-2">
               <div className="mt-4">
                 <span className="txtHeading2">02</span>
                 <img src={Bottomline} className="img-fluid" />
 
-                <p className="eco-para">
+                <p className="">
                   Purchase IP rights by crowdfunding on Bitberry Launchpad
                 </p>
               </div>
             </div>
-            <div className="col-md-6 col-lg-2">
+            <div className="col-6 col-md-6 col-lg-2">
               <div className="mt-4">
                 <span className="txtHeading2">03</span>
                 <img src={Bottomline} className="img-fluid" />
 
-                <p className="eco-para">
-                  License characters and distribute webtoon IP
-                </p>
+                <p className="">License characters and distribute webtoon IP</p>
               </div>
             </div>
-            <div className="col-md-6 col-lg-2">
+            <div className="col-6 col-md-6 col-lg-2">
               <div className="mt-4">
                 <span className="txtHeading2">04</span>
                 <img src={Bottomline} className="img-fluid" />
-                <p className="eco-para">
-                  Share revenue with investors and creators
-                </p>
+                <p className="">Share revenue with investors and creators</p>
               </div>
             </div>
-            <div className="col-md-6 col-lg-2">
+            <div className="col-6 col-md-6 col-lg-2">
               <div className="mt-4">
                 <span className="txtHeading2">05</span>
                 <img src={Bottomline} className="img-fluid" />
-                <p className="eco-para">Distribute content globally</p>
+                <p className="">Distribute content globally</p>
               </div>
             </div>
-            <div className="col-md-6 col-lg-2">
-              <div className="mt-4">
+            <div className="col-6 col-md-6 col-lg-2 ">
+              <div className="mt-4 ">
                 <span className="txtHeading2">06</span>
                 <img src={Bottomline} className="img-fluid" />
-                <p className="eco-para">
-                  Develop the next set of webtoon content{" "}
-                </p>
+                <p className=" p-3">Develop the next set of webtoon content</p>
               </div>
             </div>
           </div>
         </div>
         <div className="col-md-12 col-lg-3">
-          <img src={work2} className="img-fluid" alt="" />
+          <img
+            src={work2}
+            className="img-fluid imgHowWeWorkRight howWeWorkMobileHidden"
+            alt=""
+          />
         </div>
       </div>
     </div>

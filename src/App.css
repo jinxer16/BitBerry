@@ -3,10 +3,10 @@
   text-align: center;
 }
 @font-face {
-  font-family: 'RedFive';
+  font-family: "RedFive";
   font-style: normal;
   font-weight: normal;
-  src: local('RedFive'), url('../redfive.regular.woff') format('woff');
+  src: local("RedFive"), url("../redfive.regular.woff") format("woff");
 }
 
 .App-logo {
@@ -58,12 +58,16 @@
   background: #fff854;
   border-radius: 35px;
   color: #000000;
+  padding: 10px 20px;
 }
 @media (max-width: 768px) {
   .subHeading {
-    font-size: 28px;
+    font-family: "RedFive", arial;
+    font-size: 26px;
+    padding: 10px 20px;
   }
 }
+
 .squareBgImg {
   background-image: url("../src/Assets/Images/Group9.png");
 }

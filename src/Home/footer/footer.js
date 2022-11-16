@@ -11,13 +11,13 @@ function Footer() {
       <div className="contianer footer footerSec d-flex align-items-center">
         <img src={footerimgback} className="backImg" alt="" />
         <div className="row w-100  ">
-          <div className="col-md-6 footerRight ">
+          <div className="col-md-6  footerRight ">
             <img src={bit} alt="" />
             <span className="textSpanFooter">
               &copy; 2022 bitberry. All rights reserved
             </span>
           </div>
-          <div className="col-md-4  footerLeft">
+          <div className="col-md-6  footerLeft"> 
             <div className="row rowInFooter  ">
               <div className="col-lg-4 col-md-6 colWise ps-sm-5 mt-2">
                 <h3 className="txtHeading">sitemap</h3>
@@ -28,7 +28,7 @@ function Footer() {
                 <span className="textSpanFooter">Team</span>
                 <span className="textSpanFooter">Roadmap</span>
               </div>
-              <div className="col-lg-4 col-md-4 colWise mt-2 ">
+              <div className="col-lg-4 col-md-6 colWise mt-2 ">
                 <h3 className="txtHeading">ecosystem</h3>
                 <span className="textSpanFooter">Tokenomic</span>
                 <span className="textSpanFooter">About us</span>
@@ -65,16 +65,16 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="container  footerSecMobile d-flex g-0">
-        <img src={footerimgback} className="backImgMobile" alt="" />
-        <div className="footerMobile ">
-          <div className="row  d-flex justify-content-center">
+      <div className="container-fluid  footerSecMobile d-flex  g-0">
+        <img src={footerimgback} className="img-fluid backImgMobile" alt="" />
+        <div className="footerMobile">
+          <div className="row  d-flex justify-content-center g-0">
             <div className="col-8">
-              <img src={bit} alt="" className="imgFooterMobile" />
+              <img src={bit} alt="" className="img-fluid imgFooterMobile" />
             </div>
           </div>
-          <div className="row ">
-            <h3 className="txtHeading ms-2">sitemap</h3>
+          <h3 className="txtHeading ms-2">sitemap</h3>
+          <div className="row g-0">
             <div className="col-4 footerMobile txtHeading">
               <span className="textSpanMobileFooter ms-2">Home</span>
             </div>
@@ -96,8 +96,8 @@ function Footer() {
               <span className="textSpanMobileFooter">Roadmap</span>
             </div>
           </div>
-          <div className="row ">
-            <h3 className="txtHeading ms-2">ecosystem</h3>
+          <h3 className="txtHeading ms-2">ecosystem</h3>
+          <div className="row g-0">
             <div className="col-4 footerMobile txtHeading">
               <span className="textSpanMobileFooter ms-2">Tokenomic</span>
             </div>
@@ -109,8 +109,8 @@ function Footer() {
               <span className="textSpanMobileFooter">Launchpad</span>
             </div>
           </div>
-          <div className="row ">
-            <h3 className="txtHeading ms-2">community</h3>
+          <h3 className="txtHeading ms-2">community</h3>
+          <div className="row g-0">
             <div className="col-4 footerMobile txtHeading d-flex gap-3 ms-2">
               <img
                 className="img-fluid"
@@ -135,7 +135,7 @@ function Footer() {
               />
             </div>
           </div>
-          <div className="row mt-5 d-flex justify-content-center">
+          <div className="row g-0 mt-5 d-flex justify-content-center">
             <div className="col-12 justify-content-center d-flex">
               <h3 className="textSpanMobileFooter ">
                 &copy; 2022 bitberry. All rights reserved

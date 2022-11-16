@@ -6,9 +6,9 @@
   bottom: 22px;
   right: 43%;
 }
-.bgImage {
+.bgImageHowWe {
   background-image: url("../../Assets/Images/workBackgroundUpdate-01.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .txtHeading2 {
@@ -25,4 +25,12 @@
 }
 .imgHowWork1 {
   height: 400px;
+}
+.imgHowWeWorkRight {
+  height: 537px;
+}
+@media (max-width: 480px) {
+  .howWeWorkMobileHidden {
+    display: none;
+  }
 }

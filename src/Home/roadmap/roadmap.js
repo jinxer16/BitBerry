@@ -14,9 +14,9 @@ function Roadmap() {
         </div>
       </div>
       <div className="row mt-2">
-        <div className="col-md-4 subHeading mx-auto">
-          <img src={Circle} width={"40px"} className="imgRoadmap" />
+        <div className="col-md-6 col-10 subHeading mx-auto">
           OUR ROAD MAP
+          <img src={Circle} width={"40px"} className="imgRoadmap" />
         </div>
       </div>
       <div className="row mt-2">

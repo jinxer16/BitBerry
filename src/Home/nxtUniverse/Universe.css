@@ -65,7 +65,7 @@
   font-family: "RedFive";
   font-style: normal;
   font-weight: 400;
-  font-size: 50px;
+  font-size: 48px;
   line-height: 109%;
   /* or 55px */
   text-align: center;
@@ -76,7 +76,11 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
-
+@media (max-width: 768px) {
+  .text-title {
+    font-size: 26px;
+  }
+}
 .subHeading-title {
   font-family: "RedFive", arial;
   /* font-size: 50px; */
@@ -94,12 +98,12 @@
   color: #000000;
 }
 
-.img-circle{
+.img-circle {
   position: absolute;
   bottom: 25px;
   left: 395px;
 }
-.img-circle1{
+.img-circle1 {
   position: absolute;
   bottom: 33px;
   left: 299px;

@@ -19,8 +19,7 @@ function Tokens() {
           <img src={TOKENOMIC} className="img-fluid" />
         </div>
         <div className="row mt-3">
-          <div className="col-md-4 subHeading mx-auto">
-            {" "}
+          <div className="col-md-6 col-10 subHeading mx-auto">
             <img src={Circle} width={"40px"} className="img" />
             TOKENOMIC
           </div>
