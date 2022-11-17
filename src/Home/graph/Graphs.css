@@ -6,6 +6,10 @@
 .graph-over {
   overflow: hidden;
 }
-.graph-margin{
-    margin-top: 80px;
+.graph-margin {
+  margin-top: 80px;
+}
+.graph-img {
+  width: 883px;
+  height: 648.02px;
 }
