@@ -35,14 +35,14 @@ input:focus-visible {
   top: 34%;
   left: 37%;
 }
-@media (max-width: 2560px) {
+/* @media (max-width: 2560px) {
   .imgCenterPlug {
     position: absolute;
     width: 700px;
     top: 28%;
     left: 37%;
   }
-}
+} */
 @media (max-width: 1440px) {
   .imgCenterPlug {
     position: absolute;
