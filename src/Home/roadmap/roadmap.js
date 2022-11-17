@@ -7,7 +7,7 @@ import Circle from "../../Assets/Images/VectorCircle-01.png";
 import "./roadmap.css";
 function Roadmap() {
   return (
-    <div className="contianer roadmap mt-5">
+    <div className="contianer roadmap mt-5 mb-5">
       <div className="row">
         <div className="col-md-12 ps-5 pe-5">
           <img src={roadmap} className="img-fluid" alt="" />
@@ -26,7 +26,7 @@ function Roadmap() {
           </p>
         </div>
       </div>
-      <div className="row squareBgImg d-flex justify-content-center">
+      <div className="row squareBgImg d-flex justify-content-center mt-5 mb-5">
         <div className="col-md-12 imgGroup ">
           <img src={imgLeft} className="img-fluid imgStyle" alt="" />
           <img src={imgCenter} className="img-fluid imgStyle" alt="" />
