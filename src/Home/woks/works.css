@@ -107,3 +107,29 @@ input:focus-visible {
   background: #fff854;
   border-radius: 50px;
 }
+
+@media (max-width: 769px) {
+  .subHeading-work {
+    font-family: "RedFive";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 109%;
+    /* or 28px */
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #000000;
+    position: relative;
+    color: #000000;
+    width: 245px;
+    height: 33px;
+    background: #fff854;
+    border-radius: 30px;
+  }
+  .imgWorks {
+    position: absolute;
+    left: -8.5px;
+    bottom: 14px;
+
+  }
+}

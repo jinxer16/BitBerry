@@ -10,7 +10,7 @@ function Universe() {
   return (
     <div className="universeContainer">
       <div className="row bg  d-flex">
-        <div className="col-md-12">
+        <div className="col-md-12 pos">
           <div className="box">
             <div className="d-flex flex-column bd-high p-2 ">
               <div className="p-2">

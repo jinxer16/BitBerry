@@ -50,5 +50,31 @@ line-height: 109%;
 text-align: center;
 letter-spacing: 0.005em;
 color: #000000;
+}
 
+
+
+@media(max-width:769px){
+
+  .subHeading-howwe{
+    width: 271px;
+    height: 33px;
+    background: #FFF854;
+    border-radius: 30px;
+  position: relative;
+  font-family: 'RedFive';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 109%;
+  /* identical to box height, or 55px */
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #000000;
+  }
+  .imgHowWeWork {
+    position: absolute;
+    bottom: 12px;
+    right: 98px;
+  }
 }

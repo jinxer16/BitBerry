@@ -24,3 +24,28 @@
   letter-spacing: 0.005em;
   color: #000000;
 }
+
+@media(max-width:769px){
+  .subHeading-stayTouch{
+    position:relative;
+    width: 300px;
+    height: 33px;  
+    background: #FFF854;
+    border-radius: 30px;
+font-family: 'RedFive';
+font-style: normal;
+font-weight: 400;
+font-size: 26px;
+/* or 28px */
+
+text-align: center;
+letter-spacing: 0.005em;
+
+color: #000000;
+  }
+  .imgStayIn {
+    position: absolute;
+    left: 92px;
+    bottom: 13px;
+}
+  }

@@ -102,7 +102,6 @@
   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
-  font-size: clamp(40px, 50px, 30px);
 }
 @media (max-width: 768px) {
   .text-title {
@@ -145,8 +144,8 @@
 
 .img-circle {
   position: absolute;
-  bottom: 14px;
-  left: 447px;
+  bottom: 25px;
+  left: 368px;
 }
 .img-circle1 {
   position: absolute;
@@ -175,4 +174,57 @@
   line-height: 136.52%;
   /* or 22px */
   color: #000000;
+}
+.pos {
+  position: relative;
+}
+.box {
+  position: absolute;
+  position: sticky;
+}
+
+@media (max-width: 769px) {
+  .subHeading-title {
+    width: 271px;
+    height: 57px;
+    background: #fff854;
+    border-radius: 30px;
+    font-family: 'RedFive';
+font-style: normal;
+font-weight: 400;
+font-size: 26px;
+line-height: 109%;
+/* or 28px */
+position: relative;
+text-align: center;
+letter-spacing: 0.005em;
+
+color: #000000;
+  }
+  .img-circle {
+    position: absolute;
+    bottom: 4px;
+    left: 246px;
+  }
+
+  .img-circle1 {
+    position: absolute;
+    bottom: 6px;
+    left: 18px
+  }
+  .ext-title{
+    font-family: 'RedFive';
+font-style: normal;
+font-weight: 400;
+font-size: 26px;
+line-height: 109%;
+/* or 28px */
+
+text-align: center;
+letter-spacing: 0.005em;
+
+color: #FFFFFF;
+
+border: 1px solid #000000;
+  }
 }
