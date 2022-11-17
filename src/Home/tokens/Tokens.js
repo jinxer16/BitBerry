@@ -15,7 +15,7 @@ import lineHor2 from "../../Assets/Images/Group27Hor.png";
 
 function Tokens() {
   return (
-    <div className="tokenContainer">
+    <div className="tokenContainer mt-5">
       <div className="col-md-12 ">
         <div className="container">
           <img src={TOKENOMIC} className="img-fluid" />
@@ -92,9 +92,7 @@ function Tokens() {
             </div>
             <div className="row mt-3 d-flex justify-content-center">
               <div className="col-sm-6">
-                <h3 className="text-center token-name-hor">
-                  Contract address
-                </h3>
+                <h3 className="text-center token-name-hor">Contract address</h3>
               </div>
             </div>
             <div className="row d-flex justify-content-center">
@@ -106,7 +104,7 @@ function Tokens() {
               0x8C7997E1D05833268ce36087517F333F9a158F21
             </div>
             <div className="row mt-3 d-flex justify-content-center">
-            <div className="col-sm-4">
+              <div className="col-sm-4">
                 <button type="copy" className="btn-btn">
                   Copy
                 </button>
