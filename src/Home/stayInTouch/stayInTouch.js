@@ -20,10 +20,10 @@ function Stay() {
         </div>
       </div>
       <div className="row squareBgImg">
-        <div className="col-4">
-          <img src={stayRight} className="img-fluid" alt="" />
+        <div className="col-5">
+          <img src={stayRight} className="img-fluid stayRight" alt="" />
         </div>
-        <div className="col-4 d-flex justify-content-center mt-4">
+        <div className="col-2 d-flex justify-content-center mt-4">
           <div className="row d-flex align-items-center ">
             <div className="col-12 colWise">
               <input
@@ -46,7 +46,7 @@ function Stay() {
             </div>
           </div>
         </div>
-        <div className="col-4 ">
+        <div className="col-5 ">
           <img src={stayLeft} className="img-fluid" alt="" />
         </div>
       </div>

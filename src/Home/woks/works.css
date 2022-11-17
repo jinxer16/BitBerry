@@ -1,31 +1,7 @@
 .works {
   overflow: hidden;
 }
-.btnSubmit {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: center;
-  color: #000;
-  background-color: #fff854;
-  border: 1px solid #000;
-  border-radius: 35px;
-  padding: 10px 10px;
-  width: 200px;
-  align-self: center;
-}
-.btnSubmit:hover {
-  background-color: #000;
-  border: 1px solid #fff854;
-  color: #fff854;
-}
-.inputField,
-input:focus,
-input:active,
-input:focus-visible {
-  outline: none;
-  border: none;
-}
+
 .centerPlugContainer {
   position: relative;
 }

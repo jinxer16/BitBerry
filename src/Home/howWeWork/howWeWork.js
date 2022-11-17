@@ -7,7 +7,8 @@ import image2 from "../../Assets/Images/pic2-01.png";
 import image3 from "../../Assets/Images/pic3-01.png";
 import image4 from "../../Assets/Images/pic4-01.png";
 import Circle from "../../Assets/Images/VectorCircle-01.png";
-import Bottomline from "../../Assets/Images/inputBottomLine.png";
+import Bottomline from "../../Assets/Images/Vector28.png";
+import largeScreen from "../../Assets/Images/Group33.png";
 
 import "./howWeWork.css";
 
@@ -33,6 +34,9 @@ function HowWeWork() {
             alt=""
           />
         </div>
+        {/* <div className="col-md-6 mt-5 d-flex justify-content-center align-items-center">
+          <img src={largeScreen} alt="" className="img-fluid" />
+        </div> */}
         <div className="col-md-12 col-lg-6 mt-5 d-flex justify-content-center align-items-center">
           <div className="row imgContainer2 ">
             <div className=" col-6 col-md-6 col-lg-2 ">
@@ -75,10 +79,10 @@ function HowWeWork() {
               </div>
             </div>
             <div className="col-6 col-md-6 col-lg-2 ">
-              <div className="mt-4 ">
+              <div className="mt-4">
                 <span className="txtHeading2">06</span>
                 <img src={Bottomline} className="img-fluid" />
-                <p className=" p-3">Develop the next set of webtoon content</p>
+                <p className="">Develop the next set of webtoon content</p>
               </div>
             </div>
           </div>
