@@ -52,7 +52,7 @@ function Universe() {
                 BUILDING THE NExT
               </div>
             </div>
-            <div className="row mt-1">
+            <div className="row">
               <div className="col-md-7 subHeading-title mx-auto">
                 <img src={Circle} width={"40px"} className="img-circle1" />
                 WEBTOON UNIVERSE
@@ -86,21 +86,20 @@ function Universe() {
           <div className="col-md-12 pic-bg large-screen">
             <div className="col-md-12 pic-bg">
               <div className="row">
-                <div className="col-md-6 d-flex justify-content-end">
+                <div className="col-md-6 d-flex justify-content-center">
                   <div className="">
                     <img
                       src={Picture1}
                       className="img-fluid img-1"
-                      width={"350px"}
                     />
                   </div>
                 </div>
-                <div className="col-md-5">
+                <div className="col-md-5  text-para justify-content-start ">
                   <p className="p1">
                     We provide a level playing field for all webtoon creators to
                     draw, contribute and earn money.
                   </p>
-                  <p className="p2">
+                  <p className="">
                     Bitberry focuses on supporting many ambitious creators by
                     bringing the realm of blockchain technology and NFT to the
                     webtoon and entertainment industry. Bitberry aims to be the

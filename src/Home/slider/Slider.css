@@ -73,7 +73,7 @@
   stroke: #000000;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .txt-bg {
     font-family: "RedFive";
     font-style: normal;
@@ -94,7 +94,6 @@
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
   }
-  
 }
 /********************************************************/
 .Marquee {
@@ -118,7 +117,7 @@
   -webkit-align-items: center;
   align-items: center;
   overflow: hidden;
-  
+  padding-left: 80px;
 }
 .Marquee-content {
   display: -webkit-box;
@@ -132,7 +131,6 @@
   -o-animation: marquee 30s linear infinite running;
   -ms-animation: marquee 30s linear infinite running;
   animation: marquee 30s linear infinite running;
-  
 }
 /* .Marquee-content:hover {
   -webkit-animation-play-state: paused;
@@ -142,10 +140,9 @@
   animation-play-state: paused;
 } */
 .Marquee-tag {
-  width: 700px;
   /* margin: 0 0.5em;
   padding: 0.5em; */
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   display: -webkit-inline-box;
   display: -moz-inline-box;
   display: -webkit-inline-flex;
@@ -170,16 +167,17 @@
   -ms-transition: all 0.2s ease;
   transition: all 0.2s ease;
   font-family: "RedFive";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    overflow: hidden;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 95px;
+  text-align: center;
+  overflow: hidden;
 }
 .Marquee-tag-2 {
-  width: 700px;
+  /* width: 700px; */
   /* margin: 0 0.5em;
   padding: 0.5em; */
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   display: -webkit-inline-box;
   display: -moz-inline-box;
   display: -webkit-inline-flex;
@@ -198,15 +196,16 @@
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  -webkit-transition: all 0.10s ease;
-  -moz-transition: all 0.10s ease;
-  -o-transition: all 0.10s ease;
-  -ms-transition: all 0.10s ease;
-  transition: all 0.10s ease;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  transition: all 0.1s ease;
   font-family: "RedFive";
   font-style: normal;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 95px;
+  text-align: center;
   color: black;
   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;

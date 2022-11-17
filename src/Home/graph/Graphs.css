@@ -1,4 +1,15 @@
-.graph-bg
-{
-    margin-top: 40px ;
+.graph-bg {
+  background-image: url("../../Assets/Images/Group9.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.graph-over {
+  overflow: hidden;
+}
+.graph-margin {
+  margin-top: 80px;
+}
+.graph-img {
+  width: 883px;
+  height: 648.02px;
 }
