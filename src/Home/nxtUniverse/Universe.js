@@ -112,7 +112,7 @@ function Universe() {
                     We provide a level playing field for all webtoon creators to
                     draw, contribute and earn money.
                   </p>
-                  <p className="p2">
+                  <p className="">
                     Bitberry focuses on supporting many ambitious creators by
                     bringing the realm of blockchain technology and NFT to the
                     webtoon and entertainment industry. Bitberry aims to be the
