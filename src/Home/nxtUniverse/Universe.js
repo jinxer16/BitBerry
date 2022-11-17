@@ -10,10 +10,10 @@ function Universe() {
   return (
     <div className="universeContainer">
       <div className="row bg  d-flex">
-        <div className="col-md-12 psRel ">
-          <div className="box  psChild">
-            <div className="d-flex  flex-column bd-high p-2 ">
-              <div className="p-2 ">
+        <div className="col-md-12 pos">
+          <div className="box">
+            <div className="d-flex flex-column bd-high p-2 ">
+              <div className="p-2">
                 <img
                   classname="img-fluid"
                   width={"30px"}

@@ -49,3 +49,27 @@
 
   color: #000000;
 }
+
+@media (max-width: 769px) {
+  .subHeading-roadmap {
+    width: 288px;
+    height: 33px;
+    background: #fff854;
+    border-radius: 30px;
+    font-family: "RedFive";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 109%;
+    /* identical to box height, or 55px */
+    position: relative;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #000000;
+  }
+  .imgRoadmap {
+    position: absolute;
+    bottom: 13px;
+    left: 177px;
+  }
+}

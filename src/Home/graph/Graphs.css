@@ -13,3 +13,10 @@
   width: 883px;
   height: 648.02px;
 }
+
+@media(max-width:769px){
+  .graph-img{
+    width: 376px;
+height: 276.07px;
+  }
+}
