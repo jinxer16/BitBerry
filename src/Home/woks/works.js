@@ -26,7 +26,7 @@ function Works() {
           </div>
         </div>
         <div className="row mt-3 ">
-          <div className="col-md-6 col-10 subHeading mx-auto">
+          <div className="col-md-6 col-10 subHeading-work mx-auto">
             <img src={Circle} width={"40px"} className="imgWorks" />
             our works
           </div>

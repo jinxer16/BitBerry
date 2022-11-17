@@ -74,7 +74,7 @@ input:focus-visible {
 }
 .imgWorks {
   position: absolute;
-  left: 20%;
+  left: 17.5%;
   bottom: 22px;
 }
 .imgWork {
@@ -89,4 +89,21 @@ input:focus-visible {
   .mobileWorks {
     display: none;
   }
+}
+
+.subHeading-work {
+  font-family: "RedFive";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 109%;
+  /* identical to box height, or 55px */
+  text-align: center;
+  letter-spacing: 0.005em;
+  position: relative;
+  color: #000000;
+  width: 708px;
+  height: 57px;
+  background: #fff854;
+  border-radius: 50px;
 }
