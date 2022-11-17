@@ -6,6 +6,24 @@
 }
 .imgProject {
   position: absolute;
-  bottom: 22px;
-  left: 14%;
+  bottom: 30px;
+  left: 3%;
+}
+
+.subHeading-project {
+  width: 850px;
+  height: 57px;
+  background: #fff854;
+  border-radius: 50px;
+  font-family: 'RedFive';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 109%;
+/* identical to box height, or 55px */
+position: relative;
+text-align: center;
+letter-spacing: 0.005em;
+
+color: #000000;
 }

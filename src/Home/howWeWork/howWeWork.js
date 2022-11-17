@@ -21,7 +21,7 @@ function HowWeWork() {
         </div>
       </div>
       <div className="row mt-3">
-        <div className="col-md-5 col-10 subHeading mx-auto">
+        <div className="col-md-5 col-10 subHeading-howwe mx-auto">
           <img src={Circle} width={"40px"} className="imgHowWeWork" />
           how we work
         </div>
@@ -38,7 +38,7 @@ function HowWeWork() {
           <img src={largeScreen} alt="" className="img-fluid" />
         </div> */}
         <div className="col-md-12 col-lg-6 mt-5 d-flex justify-content-center align-items-center">
-          <div className="row imgContainer2 ">
+          <div className="row imgContainer2 g-0">
             <div className=" col-6 col-md-6 col-lg-2 ">
               <div className="mt-4">
                 <span className="txtHeading2">01</span>

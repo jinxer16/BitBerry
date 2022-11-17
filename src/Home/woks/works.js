@@ -8,7 +8,7 @@ import workMobile1 from "../../Assets/MobileImage/bitBerryStoryMobilbe-01.png";
 import workMobile2 from "../../Assets/MobileImage/launchpadSoonMobile-01.png";
 import workMobile3 from "../../Assets/MobileImage/bitBerryMobile-01.png";
 import workMobile4 from "../../Assets/MobileImage/whatIsbitBerryMobile-01.png";
-import centerPlug from "../../Assets/Images/rectline-01.png";
+import centerPlug from "../../Assets/Images/lineCross-01.svg";
 import Circle from "../../Assets/Images/VectorCircle-01.png";
 
 ////arrow musebat
@@ -26,7 +26,7 @@ function Works() {
           </div>
         </div>
         <div className="row mt-3 ">
-          <div className="col-md-6 col-10 subHeading mx-auto">
+          <div className="col-md-6 col-10 subHeading-work mx-auto">
             <img src={Circle} width={"40px"} className="imgWorks" />
             our works
           </div>

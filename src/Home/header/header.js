@@ -11,7 +11,12 @@ function Header() {
       <nav className=" col-md-10 navbar navbar-expand-lg navbarscreen">
         <div className="container-fluid">
           <a className="navbar-brand ml-3" href="#">
-            <img src={Logo} width={"80px"}  height={"80px"}  className="img-fluid img-responsive" />
+            <img
+              src={Logo}
+              width={"80px"}
+              height={"80px"}
+              className="img-fluid img-responsive"
+            />
           </a>
           <div className="">
             <button className="text-center btn-largescreen">

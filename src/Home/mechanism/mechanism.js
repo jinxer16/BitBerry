@@ -14,8 +14,9 @@ function Mechanism() {
         </div>
       </div>
       <div className="row mt-3">
-        <div className="col-md-8 col-10 subHeading mx-auto">
+        <div className="col-md-8 col-10 subHeading-mech mx-auto">
           <img src={Circle} width={"40px"} className="imgMech" />
+          <img src={Circle} width={"40px"} className="imgMechenism" />
           Ecosystem Architecture
         </div>
       </div>

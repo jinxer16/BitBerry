@@ -14,10 +14,11 @@
   height: 166px;
   background: #000000;
   border-radius: 8px 0px 0px 8px;
-  float: right;
-  position: -webkit-sticky; /* Safari */
+  /* float: right; */
+  /* top: 0; */
   position: sticky;
   top: 0;
+  right: 0;
 }
 .txt-uni {
   margin-top: 169px;
@@ -129,7 +130,7 @@
   text-align: center;
   letter-spacing: 0.005em;
   position: relative;
-  /* identical to box height, or 55px */
+  /* identical to  height, or 55px */
 
   text-align: center;
   letter-spacing: 0.005em;
@@ -176,3 +177,13 @@
   /* or 22px */
   color: #000000;
 }
+/* .psRel {
+  position: relative;
+} */
+.psChild {
+  /* position: sticky !important;
+  position: -webkit-sticky !important; */
+  top: 0;
+  float: right;
+}
+

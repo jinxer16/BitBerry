@@ -14,7 +14,7 @@ function Stay() {
         </div>
       </div>
       <div className="row mt-3">
-        <div className="col-md-6 col-10 subHeading  mx-auto">
+        <div className="col-md-6 col-10 subHeading-stayTouch  mx-auto">
           <img src={Circle} width={"40px"} className="imgStayIn" />
           Stay In Touch
         </div>
