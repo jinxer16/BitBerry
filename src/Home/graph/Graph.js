@@ -4,15 +4,17 @@ import './Graphs.css'
 
 function Graph() {
   return (
-    <>
-        <div className='container'>
-        <div className='col-md-12 graph-bg'>
+    <div className='graph-over'>
+        <div className='container-fluid graph-bg'>
+        <div className='row d-flex justify-content-center'>
+        <div className='col-md-8 graph-margin'>
         <img src={Graphs} className="img-fluid"/>
 
         </div>
+        </div>
 
         </div>
-    </>
+    </div>
   )
 }
 

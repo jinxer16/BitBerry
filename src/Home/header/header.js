@@ -8,10 +8,10 @@ import social2 from "../../Assets/Images/discordIcon.png";
 function Header() {
   return (
     <div className="col-md-12 d-flex justify-content-center align-items-between">
-      <nav className="navbar navbar-expand-lg navbarscreen">
+      <nav className=" col-md-10 navbar navbar-expand-lg navbarscreen">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            <img src={Logo} className="img-fluid img-responsive" />
+          <a className="navbar-brand ml-3" href="#">
+            <img src={Logo} width={"80px"}  height={"80px"}  className="img-fluid img-responsive" />
           </a>
           <div className="">
             <button className="text-center btn-largescreen">
@@ -31,7 +31,7 @@ function Header() {
           </button>
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className=" col-11 navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <a className="nav-link" aria-current="page" href="#">
                   Home
@@ -55,7 +55,7 @@ function Header() {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  BBR Pool &nbsp;
+                  BBR Pool
                 </a>
                 <ul className="dropdown-menu">
                   <li>
@@ -130,7 +130,7 @@ function Header() {
               </li>
             </ul>
           </div>
-          <div className="ml-5">
+          <div className="col-2">
             <button className="text-center btn">LAUCNHPAD SOON</button>
           </div>
         </div>

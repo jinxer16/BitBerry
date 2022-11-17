@@ -117,6 +117,9 @@ function Tokens() {
 
         {/* ************************************** EndMobile Screen *******************************************************/}
         <div className=" row d-flex justify-content-center tokens-bg screen-dis">
+
+        <div className="col-md-10">
+        <div className=" row d-flex justify-content-center screen-dis">
           <div className="col-md-2 lin-bg line">
             <div className="row">
               <div className="col-md-2">
@@ -186,7 +189,7 @@ function Tokens() {
               <div className="col-md-1">
                 <img src={line2} className="line1" />
               </div>
-              <div className="col-md-8 mt-5">
+              <div className="col-md-9 mt-5">
                 <h3 className="text-center token-name ">CHAIN</h3>
                 <h3 className="text-center bitberry-token ">BSC</h3>
                 <img
@@ -200,8 +203,9 @@ function Tokens() {
               </div>
             </div>
           </div>
-          <div className="col-md-10 mt-5">
-            <div className="row ">
+          <div className="row d-flex justify-content-center ">
+          <div className="col-md-12 mt-5">
+            <div className="row d-flex justify-content-center ">
               <div className="col-md-3 text-cont">
                 Contract address &nbsp; &nbsp;{" "}
                 <img
@@ -222,7 +226,13 @@ function Tokens() {
               </div>
             </div>
           </div>
+          </div>
+          
         </div>
+        </div>
+
+        </div>
+        
       </div>
     </div>
   );

@@ -31,21 +31,33 @@
   margin-top: 40px;
 }
 .token-name {
-  font-family: "Inter";
+  left: 1333px;
+  top: 2810px;
+
+  font-family: "Inter regular";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 136.52%;
+  /* or 27px */
+
+  text-align: center;
+
+  color: #000000;
 }
 .bitberry-token {
-  font-family: "Inter";
+  font-family: "Inter regular";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 136.52%;
+  /* identical to box height, or 22px */
+  text-align: center;
+
+  color: #000000;
 }
 .text-cont {
-  font-family: "Inter";
+  font-family: "Inter regular";
   font-style: normal;
   font-weight: 700;
   line-height: 136.52%;
@@ -55,25 +67,28 @@
   /* text-transform: uppercase; */
 }
 .txt-add {
-  font-family: "Larabiefont", sans-serif;
+  font-family: "Larabiefont";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
   text-align: center;
+  letter-spacing: 0.215em;
+  text-transform: uppercase;
+  color: #000000;
   /* text-transform: uppercase; */
   display: flex;
   align-items: center;
 }
 .token-name-hor {
-  font-family: "Inter";
+  font-family: "Inter regular";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 136.52%;
 }
 .bitberry-token-hor {
-  font-family: "Inter";
+  font-family: "Inter regular";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -90,7 +105,7 @@
   border: 1px solid #000000;
   border-radius: 50px;
 
-  font-family: "Inter";
+  font-family: "Inter regular";
   font-style: normal;
   font-weight: 700;
   font-size: 15px;

@@ -20,26 +20,33 @@
   top: 0;
 }
 .txt-uni {
-  margin-top: 50px;
+  margin-top: 169px;
   text-align: center;
-  font-family: "redfive";
+  font-family: "RedFive";
+  font-style: normal;
   font-weight: 400;
   font-size: 50px;
+  line-height: 109%;
+  /* or 55px */
+
+  text-align: center;
+  letter-spacing: 0.005em;
 }
 .TEXT-BG {
   background-color: rgba(255, 248, 84, 1);
 }
 .pic-bg {
   background-image: url("../../Assets/Images/IMG_20631.png");
-  background-size: contain;
-  height: 400px;
+  height: 710px;
   background-position: center;
   background-repeat: no-repeat;
 }
 .img-1 {
-  margin-top: 80px;
+  margin-top: 170px;
+  width: 582px;
+  height: 440px;
 }
-.p1-mobile{
+.p1-mobile {
   font-family: Inter;
   font-size: 16px;
   font-weight: 400;
@@ -49,7 +56,7 @@
   display: flex;
   align-content: center;
 }
-.p1 {
+/* .p1 {
   margin-top: 90px;
   font-family: Inter;
   font-size: 16px;
@@ -59,9 +66,9 @@
   text-align: left;
   display: flex;
   align-content: center;
-}
-.p2-mobile{
-  font-family: Inter;
+} */
+.p2-mobile {
+  font-family: Inter regular;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
@@ -70,7 +77,7 @@
   display: flex;
   align-content: center;
 }
-.p2 {
+/* .p2 {
   font-family: Inter;
   font-size: 16px;
   font-weight: 400;
@@ -79,14 +86,15 @@
   text-align: left;
   display: flex;
   align-content: center;
-}
+} */
 .text-title {
   font-family: "RedFive";
   font-style: normal;
   font-weight: 400;
-  font-size: 48px;
+  font-size: 50px;
   line-height: 109%;
   /* or 55px */
+
   text-align: center;
   letter-spacing: 0.005em;
   position: relative;
@@ -102,13 +110,25 @@
   }
 }
 .subHeading-title {
-  font-family: "RedFive", arial;
-  /* font-size: 50px; */
+  font-family: "RedFive";
   font-style: normal;
   font-weight: 400;
+  font-size: 50px;
   line-height: 109%;
+  /* or 55px */
+
+  text-align: center;
+  letter-spacing: 0.005em;
+  font-family: "RedFive";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 109%;
+  /* or 55px */
+
+  text-align: center;
+  letter-spacing: 0.005em;
   position: relative;
-  font-size: clamp(40px, 50px, 30px);
   /* identical to box height, or 55px */
 
   text-align: center;
@@ -116,26 +136,43 @@
   background: #fff854;
   border-radius: 35px;
   color: #000000;
+
+  width: 701px;
+  height: 57px;
+  background: #fff854;
+  border-radius: 50px;
 }
 
 .img-circle {
   position: absolute;
-  bottom: 25px;
-  left: 395px;
+  bottom: 14px;
+  left: 447px;
 }
 .img-circle1 {
   position: absolute;
-  bottom: 33px;
-  left: 382px;
+  bottom: 23px;
+  left: 331px;
 }
-@media (min-width:768px){
-  .mobile-screen{
+@media (min-width: 768px) {
+  .mobile-screen {
     display: none;
   }
 }
 
-@media (max-width:767px){
-  .large-screen{
+@media (max-width: 767px) {
+  .large-screen {
     display: none;
   }
+}
+.text-para {
+  margin-top: 100px;
+  text-align: left;
+  align-self: center;
+  font-family: "Inter regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 136.52%;
+  /* or 22px */
+  color: #000000;
 }
