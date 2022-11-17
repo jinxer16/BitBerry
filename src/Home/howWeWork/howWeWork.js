@@ -20,7 +20,7 @@ function HowWeWork() {
         </div>
       </div>
       <div className="row mt-3">
-        <div className="col-md-5 col-10 subHeading mx-auto">
+        <div className="col-md-5 col-10 subHeading-howwe mx-auto">
           <img src={Circle} width={"40px"} className="imgHowWeWork" />
           how we work
         </div>

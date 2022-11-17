@@ -5,7 +5,7 @@
 .ecoRoadmap {
   position: absolute;
   bottom: 22px;
-  left: 90%;
+  right: 1%;
 }
 
 .imgContainer {
@@ -36,20 +36,19 @@
 }
 
 .subHeading-ecosystem {
-  width: 1160px;
+  width: 877px;
   height: 57px;
   background: #fff854;
   border-radius: 50px;
-position: relative;
-  font-family: 'RedFive';
-font-style: normal;
-font-weight: 400;
-font-size: 50px;
-line-height: 50px;
-/* identical to box height */
+  position: relative;
+  font-family: "RedFive";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 50px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.085em;
 
-text-align: center;
-letter-spacing: 0.085em;
-
-color: #000000;
+  color: #000000;
 }
