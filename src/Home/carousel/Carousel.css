@@ -175,7 +175,7 @@
 .demo a {
   position: absolute;
   bottom: -200px;
-  left: 50%;
+  left: 47%;
   z-index: 2;
   display: inline-block;
   -webkit-transform: translate(0, -50%);
@@ -185,6 +185,11 @@
   letter-spacing: 0.1em;
   text-decoration: none;
   transition: opacity 0.3s;
+}
+@media (max-width: 768px) {
+  .demo a {
+    left: 42% !important;
+  }
 }
 .demo a:hover {
   opacity: 0.5;
@@ -271,7 +276,7 @@ section h1 {
 .demo a {
   position: absolute;
   bottom: 20px;
-  left: 50%;
+  left: 47%;
   z-index: 2;
   display: inline-block;
   -webkit-transform: translate(0, -50%);

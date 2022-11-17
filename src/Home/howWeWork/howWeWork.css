@@ -7,7 +7,7 @@
   right: 39%;
 }
 .bgImageHowWe {
-  background-image: url("../../Assets/Images/workBackgroundUpdate-01.png");
+  background-image: url("../../Assets/Images/WorkBackgroundupdatedtoday-01.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -27,9 +27,10 @@
   height: 400px;
 }
 .imgHowWeWorkRight {
-  height: 537px;
+  /* height: 537px; */
+  height: auto;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .howWeWorkMobileHidden {
     display: none;
   }
@@ -49,44 +50,44 @@
 
 .subHeading-howwe {
   width: 574px;
-height: 57px;
-background: #FFF854;
-border-radius: 50px;
-position: relative;
-font-family: 'RedFive';
-font-style: normal;
-font-weight: 400;
-font-size: 50px;
-line-height: 109%;
-/* identical to box height, or 55px */
-text-align: center;
-letter-spacing: 0.005em;
-color: #000000;
-}
-
-
-
-@media(max-width:769px){
-
-  .subHeading-howwe{
-    width: 271px;
-    height: 33px;
-    background: #FFF854;
-    border-radius: 30px;
+  height: 57px;
+  background: #fff854;
+  border-radius: 50px;
   position: relative;
-  font-family: 'RedFive';
+  font-family: "RedFive";
   font-style: normal;
   font-weight: 400;
-  font-size: 26px;
+  font-size: 50px;
   line-height: 109%;
   /* identical to box height, or 55px */
   text-align: center;
   letter-spacing: 0.005em;
   color: #000000;
+}
+
+@media (max-width: 769px) {
+  .subHeading-howwe {
+    width: 271px;
+    height: 33px;
+    background: #fff854;
+    border-radius: 30px;
+    position: relative;
+    font-family: "RedFive";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 109%;
+    /* identical to box height, or 55px */
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #000000;
   }
   .imgHowWeWork {
     position: absolute;
     bottom: 12px;
     right: 98px;
   }
+}
+.txtLeftALign {
+  text-align: left;
 }

@@ -159,7 +159,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   .large-screen {
     display: none;
   }
@@ -180,8 +180,9 @@
   position: relative;
 }
 .box {
-  position: absolute;
-  position: sticky;
+  /* position: absolute; */
+  /* position: sticky; */
+  float: right;
 }
 
 @media (max-width: 769px) {
@@ -190,17 +191,17 @@
     height: 57px;
     background: #fff854;
     border-radius: 30px;
-    font-family: 'RedFive';
-font-style: normal;
-font-weight: 400;
-font-size: 26px;
-line-height: 109%;
-/* or 28px */
-position: relative;
-text-align: center;
-letter-spacing: 0.005em;
+    font-family: "RedFive";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 109%;
+    /* or 28px */
+    position: relative;
+    text-align: center;
+    letter-spacing: 0.005em;
 
-color: #000000;
+    color: #000000;
   }
   .img-circle {
     position: absolute;
@@ -211,21 +212,21 @@ color: #000000;
   .img-circle1 {
     position: absolute;
     bottom: 6px;
-    left: 18px
+    left: 18px;
   }
-  .ext-title{
-    font-family: 'RedFive';
-font-style: normal;
-font-weight: 400;
-font-size: 26px;
-line-height: 109%;
-/* or 28px */
+  .ext-title {
+    font-family: "RedFive";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 109%;
+    /* or 28px */
 
-text-align: center;
-letter-spacing: 0.005em;
+    text-align: center;
+    letter-spacing: 0.005em;
 
-color: #FFFFFF;
+    color: #ffffff;
 
-border: 1px solid #000000;
+    border: 1px solid #000000;
   }
 }

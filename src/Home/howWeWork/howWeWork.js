@@ -40,49 +40,57 @@ function HowWeWork() {
         <div className="col-md-12 col-lg-6 mt-5 d-flex justify-content-center align-items-center">
           <div className="row imgContainer2 g-0">
             <div className=" col-6 col-md-6 col-lg-2 ">
-              <div className="mt-4">
+              <div className="mt-4 d-flex flex-column justify-content-center align-items-center">
                 <span className="txtHeading2">01</span>
                 <img src={Bottomline} className="img-fluid" />
-                <p className="">Research and orient potential webtoonl IP</p>
+                <p className="txtLeftALign">
+                  Research and orient potential webtoonl IP
+                </p>
               </div>
             </div>
             <div className="col-6 col-md-6 col-lg-2">
-              <div className="mt-4">
+              <div className="mt-4 d-flex flex-column justify-content-start align-items-center">
                 <span className="txtHeading2">02</span>
                 <img src={Bottomline} className="img-fluid" />
 
-                <p className="">
+                <p className="txtLeftALign">
                   Purchase IP rights by crowdfunding on Bitberry Launchpad
                 </p>
               </div>
             </div>
             <div className="col-6 col-md-6 col-lg-2">
-              <div className="mt-4">
+              <div className="mt-4 d-flex flex-column justify-content-start align-items-center">
                 <span className="txtHeading2">03</span>
                 <img src={Bottomline} className="img-fluid" />
 
-                <p className="">License characters and distribute webtoon IP</p>
+                <p className="txtLeftALign">
+                  License characters and distribute webtoon IP
+                </p>
               </div>
             </div>
             <div className="col-6 col-md-6 col-lg-2">
-              <div className="mt-4">
+              <div className="mt-4 d-flex flex-column justify-content-start align-items-center">
                 <span className="txtHeading2">04</span>
                 <img src={Bottomline} className="img-fluid" />
-                <p className="">Share revenue with investors and creators</p>
+                <p className="txtLeftALign">
+                  Share revenue with investors and creators
+                </p>
               </div>
             </div>
             <div className="col-6 col-md-6 col-lg-2">
-              <div className="mt-4">
+              <div className="mt-4 d-flex flex-column justify-content-start align-items-center">
                 <span className="txtHeading2">05</span>
                 <img src={Bottomline} className="img-fluid" />
-                <p className="">Distribute content globally</p>
+                <p className="txtLeftALign">Distribute content globally</p>
               </div>
             </div>
             <div className="col-6 col-md-6 col-lg-2 ">
-              <div className="mt-4">
+              <div className="mt-4 d-flex flex-column justify-content-start align-items-center">
                 <span className="txtHeading2">06</span>
                 <img src={Bottomline} className="img-fluid" />
-                <p className="">Develop the next set of webtoon content</p>
+                <p className="txtLeftALign">
+                  Develop the next set of webtoon content
+                </p>
               </div>
             </div>
           </div>
