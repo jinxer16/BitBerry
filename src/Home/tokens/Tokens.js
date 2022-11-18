@@ -205,10 +205,10 @@ function Tokens() {
                 </div>
               </div>
               <div className="row d-flex justify-content-center ">
-                <div className="col-md-12 mt-5">
+                <div className="col-md-10 mt-5">
                   <div className="row d-flex justify-content-center ">
                     <div className="col-md-3 text-cont">
-                      Contract address &nbsp; &nbsp;{" "}
+                    &nbsp; &nbsp; Contract address &nbsp;
                       <img
                         src={line3}
                         className="img-fluid"
@@ -216,11 +216,10 @@ function Tokens() {
                         width={"16px"}
                       />
                     </div>
-                    <div className="col-md-5 txt-add">
-                      {" "}
+                    <div className="col-md-6 txt-add">
                       0x410dc9A12D848eB7166376e25914279EA02C87a0
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-md-2">
                       <button type="copy" className="btn">
                         Copy
                       </button>

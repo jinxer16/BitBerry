@@ -2,7 +2,9 @@
   overflow: hidden;
 }
 .imgDoc {
-  width: 300px;
+  width: 300px !important;
+  margin: 45px;
+  height: 471px !important;
 }
 .imgProject {
   position: absolute;

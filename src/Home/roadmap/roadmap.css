@@ -16,6 +16,7 @@
 .imgStyle {
   height: 450px;
 }
+
 .imgGroup {
   display: flex;
   flex-direction: row;

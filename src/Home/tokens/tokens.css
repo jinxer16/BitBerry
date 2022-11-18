@@ -23,7 +23,7 @@
   left: 220px;
   bottom: 20px;
 }
-.mLeft{
+.mLeft {
   margin-left: 10px;
 }
 .line {
@@ -63,6 +63,9 @@
   font-style: normal;
   font-weight: 700;
   line-height: 136.52%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   /* or 27px */
 
   text-align: center;
@@ -75,7 +78,7 @@
   font-size: 16px;
   line-height: 16px;
   text-align: center;
-  letter-spacing: 0.215em;
+  letter-spacing: 0.150em;
   text-transform: uppercase;
   color: #000000;
   /* text-transform: uppercase; */
@@ -117,24 +120,27 @@
 .btn-btn:hover {
   background: rgba(255, 248, 84, 1);
 }
+.btn-copy {
+  left: 100px;
+}
 
 .subHeading-token {
   width: 701px;
-height: 57px;
+  height: 57px;
   background: #fff854;
   border-radius: 50px;
-  font-family: 'RedFive';
+  font-family: "RedFive";
   position: relative;
-font-style: normal;
-font-weight: 400;
-font-size: 50px;
-line-height: 109%;
-/* or 28px */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 109%;
+  /* or 28px */
 
-text-align: center;
-letter-spacing: 0.005em;
+  text-align: center;
+  letter-spacing: 0.005em;
 
-color: #000000;
+  color: #000000;
 }
 
 /****************************************************************************************/
@@ -160,24 +166,36 @@ color: #000000;
     height: 33px;
     background: #fff854;
     border-radius: 30px;
-    font-family: 'RedFive';
+    font-family: "RedFive";
     position: relative;
-font-style: normal;
-font-weight: 400;
-font-size: 26px;
-line-height: 109%;
-/* or 28px */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 109%;
+    /* or 28px */
 
-text-align: center;
-letter-spacing: 0.005em;
+    text-align: center;
+    letter-spacing: 0.005em;
 
-color: #000000;
+    color: #000000;
   }
   .img {
     position: absolute;
     bottom: 8px;
     left: 12px;
-
   }
-  
 }
+
+
+
+/* .row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-.5 * var(--bs-gutter-x));
+  margin-left: calc(-.5 * var(--bs-gutter-x));
+  display: flex;
+  align-items: end;
+} */

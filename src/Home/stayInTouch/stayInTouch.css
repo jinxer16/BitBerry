@@ -54,7 +54,7 @@ input:focus-visible {
   background-color: #fff854;
   padding: 10px 10px;
   align-self: center;
-  font-family: "Inter ";
+  font-family: "Inter  regular";
   font-style: normal;
 }
 .btnSubmit:hover {
