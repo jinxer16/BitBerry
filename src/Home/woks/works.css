@@ -53,11 +53,6 @@
   left: 17.5%;
   bottom: 22px;
 }
-.imgWorks1 {
-  position: absolute;
-  left: 17.5px;
-  bottom: 22px;
-}
 .imgWork {
   height: 100%;
 }
@@ -121,7 +116,7 @@ font-weight: 400;
 font-size: 30px;
 line-height: 109%;
 /* or 33px */
-position: relative;
+
 letter-spacing: 0.005em;
 color: #FFF854;
 text-align: left;

@@ -30,7 +30,7 @@ function Tokens() {
         <div className="container-fluid mobile-screen tokens-bg">
           <div className="col-md-12">
             <div className="row mt-3">
-              <div className="col-sm-6">
+              <div className="col-6 mt-3">
                 <h3 className="text-center token-name-hor ">TOKEN NAME</h3>
                 <h3 className="text-center bitberry-token-hor ">
                   Bitberry token
@@ -41,7 +41,7 @@ function Tokens() {
                   width={"68px"}
                 />
               </div>
-              <div className="col-sm-6">
+              <div className="col-6 mt-3">
                 <h3 className="text-center token-name-hor ">TOTAL SUPPLY</h3>
                 <h3 className="text-center bitberry-token-hor ">
                   1,000,000,000
@@ -57,7 +57,7 @@ function Tokens() {
               <img src={lineHor} className="img-fluid img-hor" />
             </div>
             <div className="row mt-3">
-              <div className="col-sm-6">
+              <div className="col-6">
                 <h3 className="text-center token-name-hor ">SYMBOL</h3>
                 <h3 className="text-center bitberry-token-hor ">BBR</h3>
                 <img
@@ -66,7 +66,7 @@ function Tokens() {
                   width={"68px"}
                 />
               </div>
-              <div className="col-sm-6">
+              <div className="col-6">
                 <h3 className="text-center token-name-hor ">DECIMAL</h3>
                 <h3 className="text-center bitberry-token-hor ">18</h3>
                 <img
@@ -80,7 +80,7 @@ function Tokens() {
               <img src={lineHor} className="img-fluid img-hor" />
             </div>
             <div className="row mt-3 d-flex justify-content-center">
-              <div className="col-sm-6">
+              <div className="col-6">
                 <h3 className="text-center token-name-hor ">CHAIN</h3>
                 <h3 className="text-center bitberry-token-hor ">BSC</h3>
                 <img
@@ -91,20 +91,21 @@ function Tokens() {
               </div>
             </div>
             <div className="row mt-3 d-flex justify-content-center">
-              <div className="col-sm-6">
+              <div className="col-6">
                 <h3 className="text-center token-name-hor">Contract address</h3>
               </div>
             </div>
             <div className="row d-flex justify-content-center">
-              <div className="col-sm-4 mt-2 ">
+              <div className="col-3 mt-2 ">
                 <img src={lineHor2} className="img-fluid img-hor" />
               </div>
             </div>
-            <div className="col-12">
+            <div className="col-12 mt-3git
+            ">
               0x8C7997E1D05833268ce36087517F333F9a158F21
             </div>
             <div className="row mt-3 d-flex justify-content-center">
-              <div className="col-sm-4">
+              <div className="col-4">
                 <button type="copy" className="btn-btn">
                   Copy
                 </button>
