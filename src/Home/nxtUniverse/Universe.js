@@ -55,7 +55,7 @@ function Universe() {
             <div className="row">
               <div className="col-md-7 subHeading-title mx-auto">
                 <img src={Circle} width={"40px"} className="img-circle1" />
-                WEBTOON UNIVERSE
+                <div className="zoom-in-out-box"> WEBTOON UNIVERSE</div>
               </div>
             </div>
           </div>

@@ -17,7 +17,7 @@ function Mechanism() {
         <div className="col-md-8 col-10 subHeading-mech mx-auto">
           <img src={Circle} width={"40px"} className="imgMech" />
           <img src={Circle} width={"40px"} className="imgMechenism" />
-          Ecosystem Architecture
+          <div className="zoom-in-out-box"> Ecosystem Architecture</div>
         </div>
       </div>
 

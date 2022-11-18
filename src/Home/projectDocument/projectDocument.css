@@ -17,35 +17,35 @@
   height: 57px;
   background: #fff854;
   border-radius: 50px;
-  font-family: 'RedFive';
-font-style: normal;
-font-weight: 400;
-font-size: 50px;
-line-height: 109%;
-/* identical to box height, or 55px */
-position: relative;
-text-align: center;
-letter-spacing: 0.005em;
-
-color: #000000;
-}
-
-@media(max-width:769px){
-  .subHeading-project {
-    width: 271px;
-height: 61px;
-background: #FFF854;
-border-radius: 30px;
-    font-family: 'RedFive';
+  font-family: "RedFive";
   font-style: normal;
   font-weight: 400;
-  font-size: 26px;
+  font-size: 50px;
   line-height: 109%;
   /* identical to box height, or 55px */
   position: relative;
   text-align: center;
   letter-spacing: 0.005em;
+
   color: #000000;
+}
+
+@media (max-width: 769px) {
+  .subHeading-project {
+    width: 271px;
+    height: 61px;
+    background: #fff854;
+    border-radius: 30px;
+    font-family: "RedFive";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 109%;
+    /* identical to box height, or 55px */
+    position: relative;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #000000;
   }
 
   .imgProject {
@@ -53,5 +53,20 @@ border-radius: 30px;
     bottom: 30px;
     left: 2%;
   }
+}
+.hover-button .hover-button--on,
+.hover-button:hover .hover-button--off {
+  display: none;
+}
 
+.hover-button:hover .hover-button--on {
+  display: inline;
+}
+.flipcart {
+  justify-content: center;
+}
+@media (max-width: 769px) {
+  .flipcart {
+    flex-direction: column;
+  }
 }

@@ -59,32 +59,98 @@
   color: #000000;
 }
 
-@media(max-width:769px){
-
+@media (max-width: 769px) {
   .subHeading-ecosystem {
     width: 271px;
-height: 61px;
+    height: 61px;
     background: #fff854;
     border-radius: 30px;
     position: relative;
-font-family: 'RedFive';
-font-style: normal;
-font-weight: 400;
-font-size: 26px;
-line-height: 109%;
-/* or 28px */
+    font-family: "RedFive";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 109%;
+    /* or 28px */
 
-text-align: center;
-letter-spacing: 0.005em;
+    text-align: center;
+    letter-spacing: 0.005em;
 
-color: #000000;
-
+    color: #000000;
   }
   .ecoRoadmap {
     position: absolute;
     bottom: 11px;
     right: 31px;
   }
-  
-  
+}
+
+.hover15 figure {
+  position: relative;
+}
+.hover15 figure::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.hover15 figure:hover::before {
+  -webkit-animation: circle 0.75s;
+  animation: circle 0.75s;
+}
+@-webkit-keyframes circle {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+  }
+}
+@keyframes circle {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+  }
+}
+.hover13 figure:hover img {
+  opacity: 1;
+  -webkit-animation: flash 3.5s;
+  animation: flash 3.5s;
+}
+@-webkit-keyframes flash {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes flash {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
 }

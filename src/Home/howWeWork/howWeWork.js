@@ -23,7 +23,7 @@ function HowWeWork() {
       <div className="row mt-3">
         <div className="col-md-5 col-10 subHeading-howwe mx-auto">
           <img src={Circle} width={"40px"} className="imgHowWeWork" alt="" />
-          how we work
+          <div className="zoom-in-out-box"> how we work</div>
         </div>
       </div>
       <div className="row bgImageHowWe  d-flex justify-content-center mt-4">

@@ -45,20 +45,20 @@
 }
 .subHeading {
   width: 714px;
-height: 55px;
+  height: 55px;
 
-font-family: 'RedFive';
-font-style: normal;
-font-weight: 400;
-font-size: 50px;
-line-height: 109%;
-/* identical to box height, or 55px */
+  font-family: "RedFive";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 109%;
+  /* identical to box height, or 55px */
 
-text-align: center;
-letter-spacing: 0.005em;
+  text-align: center;
+  letter-spacing: 0.005em;
 
-color: #000000;
-  
+  color: #000000;
+
   position: relative;
   /* identical to box height, or 55px */
   width: 877px;
@@ -86,4 +86,29 @@ color: #000000;
 }
 .howWeWork {
   overflow: hidden;
+}
+@media (max-width: 769px) {
+  .zoom-in-out-box {
+    font-size: 19px !important;
+  }
+}
+.zoom-in-out-box {
+  /* margin: 24px; */
+  /* width: 50px;
+  height: 50px; */
+  /* background: #f50057; */
+  font-size: 32px;
+  animation: zoom-in-zoom-out 3s ease infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
 }
