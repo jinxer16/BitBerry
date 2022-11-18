@@ -1,6 +1,6 @@
 import React from "react";
 import works from "../../Assets/Images/works.png";
-import work1 from "../../Assets/Images/bitberryWatchSoon-01.png";
+import work1 from "../../Assets/Images/Work1(2).PNG";
 import work2 from "../../Assets/Images/LaunchpadSoon-01.png";
 import work3 from "../../Assets/Images/bitberryStudios-01.png";
 import work4 from "../../Assets/Images/WhatisBitbeery-01.png";
@@ -19,7 +19,41 @@ import "./works.css";
 function Works() {
   return (
     <>
-      <div className="contianer works desktopWorks w-100 mt-5">
+    <div className="contianer works desktopWorks w-100 mt-5">
+        <div className="row">
+          <div className="col-md-12 ps-5 pe-5">
+            <img src={works} className="img-fluid" alt="" />
+          </div>
+        </div>
+        <div className="row mt-3 ">
+          <div className="col-md-6 col-10 subHeading-work mx-auto">
+            <img src={Circle} width={"40px"} className="imgWorks" />
+            our works
+          </div>
+        </div>
+        <div className="row squareBgImg centerPlugContainer  d-flex justify-content-center mt-5">
+          <img src={centerPlug} className="imgCenterPlug" />
+
+          <div className="col-md-4">
+          <h3 className="work1-text">Bitberry Story</h3>
+          <h3 className="work1-text text">watch now</h3>
+            <img src={work1} alt="" className="img-fluid imgWork" />
+          </div>
+          <div className="col-md-4 d-flex justify-content-start">
+            <img src={work2} alt="" className="img-fluid imgWork" />
+          </div>
+        </div>
+        <div className="row squareBgImg d-flex justify-content-center mt-5">
+          <div className="col-md-4 d-flex justify-content-end">
+            <img src={work3} alt="" className="img-fluid imgWork" />
+          </div>
+          <div className="col-md-4 d-flex justify-content-start">
+            <img src={work4} alt="" className="img-fluid imgWork" />
+          </div>
+        </div>
+      </div>
+      {/* *****************Desktop******************************* */}
+      {/* <div className="contianer works desktopWorks w-100 mt-5">
         <div className="row">
           <div className="col-md-12 ps-5 pe-5">
             <img src={works} className="img-fluid" alt="" />
@@ -49,7 +83,7 @@ function Works() {
             <img src={work4} alt="" className="img-fluid imgWork" />
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="container works mobileWorks w-100 mt-5">
         <div className="row">
           <div className="col-md-12 ps-5 pe-5">
