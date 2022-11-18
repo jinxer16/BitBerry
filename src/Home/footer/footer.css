@@ -52,7 +52,7 @@
   z-index: 99;
 }
 .txtHeading {
-  font-family: "Inter";
+  font-family: "Inter regular";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -63,7 +63,7 @@
   line-height: 136.52%;
 }
 .textSpanFooter {
-  font-family: "Inter";
+  font-family: "Inter regular";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -71,7 +71,7 @@
   text-align: left;
 }
 .textSpanMobileFooter {
-  font-family: "Inter";
+  font-family: "Inter regular";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
