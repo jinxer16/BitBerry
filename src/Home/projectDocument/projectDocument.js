@@ -28,6 +28,7 @@ function ProjectDocument() {
       </div>
       <div className="row squareBgImg d-flex justify-content-center mt-4">
         <div className="col-md-12">
+        
           <img src={imgLeft} className="img-fluid  imgDoc" alt="" />
           <img src={imgCenter} className="img-fluid imgDoc" alt="" />
           <img src={imgRight} className="img-fluid imgDoc" alt="" />
