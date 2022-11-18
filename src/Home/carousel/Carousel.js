@@ -8,7 +8,7 @@ function Carousel() {
         <div className="row d-flex justify-content-center ">
           <div className="col-md-12 toggle-switch-container">
             <section id="section10" class="demo">
-              <a href="#thanks">
+              <a href="">
                 <span></span>Scroll Down
               </a>
             </section>

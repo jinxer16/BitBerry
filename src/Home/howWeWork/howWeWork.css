@@ -9,8 +9,14 @@
 }
 .bgImageHowWe {
   background-image: url("../../Assets/Images/WorkBackgroundupdatedtoday-01.png");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
+}
+@media (min-width: 1440px) {
+  .bgImageHowWe {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 .txtHeading2 {
   color: black;
@@ -30,9 +36,10 @@
   height: 400px;
 }
 .imgHowWeWorkRight {
-  /* height: 537px; */
-  height: auto;
+  height: 427px;
+  /* height: auto; */
 }
+
 @media (max-width: 768px) {
   .howWeWorkMobileHidden {
     display: none;
@@ -93,4 +100,17 @@
 }
 .txtLeftALign {
   text-align: left;
+}
+@media (min-width: 769px) {
+  .mobileScreenDis {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .largeScreenDis {
+    display: none;
+  }
+}
+.lineWidth {
+  width: 50%;
 }

@@ -14,9 +14,15 @@
   height: 648.02px;
 }
 
-@media(max-width:769px){
-  .graph-img{
+@media (max-width: 769px) {
+  .graph-img {
     width: 376px;
-height: 276.07px;
+    height: 276.07px;
+  }
+}
+@media (max-width: 1024px) {
+  .graph-img {
+    width: 500px;
+    height: 350px;
   }
 }

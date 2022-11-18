@@ -22,7 +22,7 @@ function HowWeWork() {
       </div>
       <div className="row mt-3">
         <div className="col-md-5 col-10 subHeading-howwe mx-auto">
-          <img src={Circle} width={"40px"} className="imgHowWeWork" />
+          <img src={Circle} width={"40px"} className="imgHowWeWork" alt="" />
           how we work
         </div>
       </div>
@@ -34,16 +34,14 @@ function HowWeWork() {
             alt=""
           />
         </div>
-        {/* <div className="col-md-6 mt-5 d-flex justify-content-center align-items-center">
-          <img src={largeScreen} alt="" className="img-fluid" />
-        </div> */}
-        <div className="col-md-12 col-lg-6 mt-5 d-flex justify-content-center align-items-center">
-          <div className="row imgContainer2 g-0">
+        <div className="col-md-12 col-lg-6 mt-5 d-flex justify-content-center align-items-center ">
+          <img src={largeScreen} alt="" className="img-fluid largeScreenDis" />
+          <div className="row imgContainer2 mobileScreenDis g-0">
             <div className=" col-6 col-md-6 col-lg-2 ">
               <div className="mt-4 d-flex flex-column justify-content-center align-items-center">
                 <span className="txtHeading2">01</span>
-                <img src={Bottomline} className="img-fluid" />
-                <p className="txtLeftALign">
+                <img src={Bottomline} className="img-fluid lineWidth" alt="" />
+                <p className="txtLeftALign lineWidth">
                   Research and orient potential webtoonl IP
                 </p>
               </div>
@@ -51,9 +49,9 @@ function HowWeWork() {
             <div className="col-6 col-md-6 col-lg-2">
               <div className="mt-4 d-flex flex-column justify-content-start align-items-center">
                 <span className="txtHeading2">02</span>
-                <img src={Bottomline} className="img-fluid" />
+                <img src={Bottomline} className="img-fluid lineWidth" alt="" />
 
-                <p className="txtLeftALign">
+                <p className="txtLeftALign lineWidth">
                   Purchase IP rights by crowdfunding on Bitberry Launchpad
                 </p>
               </div>
@@ -61,9 +59,9 @@ function HowWeWork() {
             <div className="col-6 col-md-6 col-lg-2">
               <div className="mt-4 d-flex flex-column justify-content-start align-items-center">
                 <span className="txtHeading2">03</span>
-                <img src={Bottomline} className="img-fluid" />
+                <img src={Bottomline} className="img-fluid lineWidth" alt="" />
 
-                <p className="txtLeftALign">
+                <p className="txtLeftALign lineWidth">
                   License characters and distribute webtoon IP
                 </p>
               </div>
@@ -71,8 +69,8 @@ function HowWeWork() {
             <div className="col-6 col-md-6 col-lg-2">
               <div className="mt-4 d-flex flex-column justify-content-start align-items-center">
                 <span className="txtHeading2">04</span>
-                <img src={Bottomline} className="img-fluid" />
-                <p className="txtLeftALign">
+                <img src={Bottomline} className="img-fluid lineWidth" alt="" />
+                <p className="txtLeftALign lineWidth">
                   Share revenue with investors and creators
                 </p>
               </div>
@@ -80,15 +78,17 @@ function HowWeWork() {
             <div className="col-6 col-md-6 col-lg-2">
               <div className="mt-4 d-flex flex-column justify-content-start align-items-center">
                 <span className="txtHeading2">05</span>
-                <img src={Bottomline} className="img-fluid" />
-                <p className="txtLeftALign">Distribute content globally</p>
+                <img src={Bottomline} className="img-fluid lineWidth" alt="" />
+                <p className="txtLeftALign lineWidth">
+                  Distribute content globally
+                </p>
               </div>
             </div>
             <div className="col-6 col-md-6 col-lg-2 ">
               <div className="mt-4 d-flex flex-column justify-content-start align-items-center">
                 <span className="txtHeading2">06</span>
-                <img src={Bottomline} className="img-fluid" />
-                <p className="txtLeftALign">
+                <img src={Bottomline} className="img-fluid lineWidth" alt="" />
+                <p className="txtLeftALign lineWidth">
                   Develop the next set of webtoon content
                 </p>
               </div>
@@ -129,46 +129,15 @@ function HowWeWork() {
     //     </div> */}
     //     <div className="col-md-12 col-lg-6 mt-5 d-flex justify-content-center align-items-center mainCol">
     //       <div className="row imgContainer2 colContainer">
-    //         <div className="col-lg-2 ">
-    //           <span className="txtHeading2">01</span>
+    //         <div className="col-6 col-md-6 col-lg-2">
+    //           <div className="mt-4">
+    //             <span className="txtHeading2">01</span>
+    //             <img src={Bottomline} className="img-fluid" />
+
+    //             <p className="">Research and orient potential webtoonl IP</p>
+    //           </div>
     //         </div>
-    //         <div className="col-lg-2 ">
-    //           <span className="txtHeading2">02</span>
-    //         </div>
-    //         <div className="col-lg-2 ">
-    //           <span className="txtHeading2">03</span>
-    //         </div>
-    //         <div className="col-lg-2 ">
-    //           <span className="txtHeading2">04</span>
-    //         </div>
-    //         <div className="col-lg-2 ">
-    //           <span className="txtHeading2">05</span>
-    //         </div>
-    //         <div className="col-lg-2 ">
-    //           <span className="txtHeading2">06</span>
-    //         </div>
-    //       </div>
-    //       <div className="row imgContainer2 colContainer">
-    //         <div className="col-lg-2 ">
-    //           <img src={Bottomline} className="img-fluid" />
-    //         </div>
-    //         <div className="col-lg-2 ">
-    //           <img src={Bottomline} className="img-fluid" />
-    //         </div>
-    //         <div className="col-lg-2 ">
-    //           <img src={Bottomline} className="img-fluid" />
-    //         </div>
-    //         <div className="col-lg-2 ">
-    //           <img src={Bottomline} className="img-fluid" />
-    //         </div>
-    //         <div className="col-lg-2 ">
-    //           <img src={Bottomline} className="img-fluid" />
-    //         </div>
-    //         <div className="col-lg-2 ">
-    //           <img src={Bottomline} className="img-fluid" />
-    //         </div>
-    //         {/* <p className="">Research and orient potential webtoonl IP</p>÷ */}
-    //         {/* <div className="col-6 col-md-6 col-lg-2">
+    //         <div className="col-6 col-md-6 col-lg-2">
     //           <div className="mt-4">
     //             <span className="txtHeading2">02</span>
     //             <img src={Bottomline} className="img-fluid" />
@@ -206,7 +175,7 @@ function HowWeWork() {
     //             <img src={Bottomline} className="img-fluid" />
     //             <p className="">Develop the next set of webtoon content</p>
     //           </div>
-    //         </div> */}
+    //         </div>
     //       </div>
     //     </div>
     //     <div className="col-md-12 col-lg-3">
