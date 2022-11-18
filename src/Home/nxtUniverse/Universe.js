@@ -63,7 +63,7 @@ function Universe() {
           {/* **********************Mobile Screen********* */}
           <div className="container mobile-screen">
             <div className="row d-flex justify-content-center ">
-              <div className="col-md-6 mt-5">
+              <div className="col-7 mt-5">
                 <p className="p1-mobile">
                   We provide a level playing field for all webtoon creators to
                   draw, contribute and earn money.
@@ -76,7 +76,7 @@ function Universe() {
                   webtoons, animation industries by 2025.
                 </p>
               </div>
-              <div className="col-md-6 mt-3">
+              <div className="col-7 mt-3">
                 <img src={Picture1} className="img-fluid" width={"350px"} />
               </div>
             </div>

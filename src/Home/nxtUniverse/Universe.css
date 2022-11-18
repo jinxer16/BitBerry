@@ -153,13 +153,13 @@
   bottom: 23px;
   left: 331px;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .mobile-screen {
     display: none;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .large-screen {
     display: none;
   }
