@@ -38,7 +38,7 @@ function EcoSystem() {
             <div className="col-md-3  p-3">
               <img src={image2} className="img-fluid" />
               <div className="mt-4 centerEco">
-                <p className="eco-heading">LAUNCH PAD</p>
+                <p className="eco-heading"> NFT P2E GAME</p>
                 <img src={Bottomline} className="img-fluid" />
 
                 <p className="eco-para">
@@ -50,7 +50,7 @@ function EcoSystem() {
             <div className="col-md-3 p-3">
               <img src={image3} className="img-fluid" />
               <div className="mt-4 centerEco">
-                <p className="eco-heading">LAUNCH PAD</p>
+                <p className="eco-heading">BITBERRY WALLET</p>
                 <img src={Bottomline} className="img-fluid" />
 
                 <p className="eco-para">
@@ -62,7 +62,7 @@ function EcoSystem() {
             <div className="col-md-3 p-3">
               <img src={image4} className="img-fluid" />
               <div className="mt-4 centerEco">
-                <p className="eco-heading">LAUNCH PAD</p>
+                <p className="eco-heading">Multi-Chain NFTs</p>
                 <img src={Bottomline} className="img-fluid" />
                 <p className="eco-para">
                   The platform to deliver powerful NFT experiences that scale.
