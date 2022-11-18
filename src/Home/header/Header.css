@@ -46,7 +46,7 @@
   border: 1px solid #000000;
   border-radius: 50px;
 
-  font-family: 'Inter regular';
+  font-family: "Inter regular";
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
@@ -131,14 +131,13 @@
 }
 @media (max-width: 1025px) {
   .nav-link {
-   margin-top: 20px;
+    margin-top: 20px;
     font-family: "Inter";
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 22px;
 
-  
     color: #000000;
   }
 }
