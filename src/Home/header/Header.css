@@ -38,7 +38,7 @@
   border: 1px solid #000000;
   border-radius: 0% !important;
 }
-.navbar-nav{
+.navbar-nav {
   display: flex;
   justify-content: space-evenly;
 }
@@ -46,18 +46,16 @@
   border: 1px solid #000000;
   border-radius: 50px;
 
-  font-family: "Inter";
+  font-family: 'Inter regular';
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
   text-align: center;
   width: 153px;
-height: 63px;
-left: 1452px;
-top: 20px;
-background: #FFF854;
-border-radius: 50px;
+  height: 63px;
+  background: #fff854;
+  border-radius: 50px;
 }
 .btn:hover {
   background: rgba(255, 248, 84, 1);

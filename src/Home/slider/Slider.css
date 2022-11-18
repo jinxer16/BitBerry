@@ -97,11 +97,11 @@
 }
 /********************************************************/
 .Marquee {
-  width: 100vw;
+  /* width: 100vw; */
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 1em;
+  /* padding: 1em; */
   color: #000;
   font-weight: 200;
   display: -webkit-box;
@@ -117,9 +117,10 @@
   -webkit-align-items: center;
   align-items: center;
   overflow: hidden;
-  padding-left: 80px;
+  /* padding-left: 80px; */
 }
 .Marquee-content {
+  border: red 2px solid;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
