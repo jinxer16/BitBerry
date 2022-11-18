@@ -8,7 +8,7 @@ import workMobile1 from "../../Assets/MobileImage/bitBerryStoryMobilbe-01.png";
 import workMobile2 from "../../Assets/MobileImage/launchpadSoonMobile-01.png";
 import workMobile3 from "../../Assets/MobileImage/bitBerryMobile-01.png";
 import workMobile4 from "../../Assets/MobileImage/whatIsbitBerryMobile-01.png";
-import centerPlug from "../../Assets/Images/rectline-01.png";
+import centerPlug from "../../Assets/Images/lineCross-01.svg";
 import Circle from "../../Assets/Images/VectorCircle-01.png";
 
 ////arrow musebat

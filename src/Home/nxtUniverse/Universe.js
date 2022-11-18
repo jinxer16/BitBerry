@@ -88,10 +88,7 @@ function Universe() {
               <div className="row">
                 <div className="col-md-6 d-flex justify-content-center">
                   <div className="">
-                    <img
-                      src={Picture1}
-                      className="img-fluid img-1"
-                    />
+                    <img src={Picture1} className="img-fluid img-1" />
                   </div>
                 </div>
                 <div className="col-md-5  text-para justify-content-start ">

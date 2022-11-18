@@ -23,7 +23,7 @@ function App() {
       <Carousel />
       <Universe />
       <Tokens />
-      <Graph/>
+      <Graph />
       <EcoSystem />
       <HowWeWork />
       <Mechanism />

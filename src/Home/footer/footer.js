@@ -17,27 +17,26 @@ function Footer() {
               &copy; 2022 bitberry. All rights reserved
             </span>
           </div>
-          <div className="col-md-6  footerLeft"> 
+          <div className="col-md-6  footerLeft">
             <div className="row rowInFooter  ">
               <div className="col-lg-4 col-md-6 colWise ps-sm-5 mt-2">
                 <h3 className="txtHeading">sitemap</h3>
-                <span className="textSpanFooter">Home</span>
-                <span className="textSpanFooter">About us</span>
-                <span className="textSpanFooter">How we work</span>
-                <span className="textSpanFooter">Documents</span>
-                <span className="textSpanFooter">Team</span>
-                <span className="textSpanFooter">Roadmap</span>
+                <span className="textSpanFooter mt-3">Home</span>
+                <span className="textSpanFooter mt-3">About us</span>
+                <span className="textSpanFooter mt-3">How we work</span>
+                <span className="textSpanFooter mt-3">Documents</span>
+                <span className="textSpanFooter mt-3">Team</span>
+                <span className="textSpanFooter mt-3">Roadmap</span>
               </div>
               <div className="col-lg-4 col-md-6 colWise mt-2 ">
                 <h3 className="txtHeading">ecosystem</h3>
-                <span className="textSpanFooter">Tokenomic</span>
-                <span className="textSpanFooter">About us</span>
-                <span className="textSpanFooter">Launchpad</span>
-                <span className="textSpanFooter">LP Pool</span>
+                <span className="textSpanFooter mt-3">Tokenomic</span>
+                <span className="textSpanFooter mt-3">Launchpad</span>
+                <span className="textSpanFooter mt-3">LP Pool</span>
               </div>
               <div className="col-lg-4 col-md-6 colWise mt-2">
                 <h3 className="txtHeading">community</h3>
-                <div className="d-flex gap-3">
+                <div className="d-flex gap-3 mt-3">
                   <img
                     className="img-fluid"
                     width={"30px"}

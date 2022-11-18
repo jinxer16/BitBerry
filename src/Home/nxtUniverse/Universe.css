@@ -14,10 +14,11 @@
   height: 166px;
   background: #000000;
   border-radius: 8px 0px 0px 8px;
-  float: right;
-  position: -webkit-sticky; /* Safari */
+  /* float: right; */
+  /* top: 0; */
   position: sticky;
   top: 0;
+  right: 0;
 }
 .txt-uni {
   margin-top: 169px;
@@ -128,7 +129,7 @@
   text-align: center;
   letter-spacing: 0.005em;
   position: relative;
-  /* identical to box height, or 55px */
+  /* identical to  height, or 55px */
 
   text-align: center;
   letter-spacing: 0.005em;
@@ -179,8 +180,9 @@
   position: relative;
 }
 .box {
-  position: absolute;
-  position: sticky;
+  /* position: absolute; */
+  /* position: sticky; */
+  float: right;
 }
 
 @media (max-width: 769px) {
@@ -189,17 +191,17 @@
     height: 57px;
     background: #fff854;
     border-radius: 30px;
-    font-family: 'RedFive';
-font-style: normal;
-font-weight: 400;
-font-size: 26px;
-line-height: 109%;
-/* or 28px */
-position: relative;
-text-align: center;
-letter-spacing: 0.005em;
+    font-family: "RedFive";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 109%;
+    /* or 28px */
+    position: relative;
+    text-align: center;
+    letter-spacing: 0.005em;
 
-color: #000000;
+    color: #000000;
   }
   .img-circle {
     position: absolute;
@@ -210,21 +212,21 @@ color: #000000;
   .img-circle1 {
     position: absolute;
     bottom: 6px;
-    left: 18px
+    left: 18px;
   }
-  .ext-title{
-    font-family: 'RedFive';
-font-style: normal;
-font-weight: 400;
-font-size: 26px;
-line-height: 109%;
-/* or 28px */
+  .ext-title {
+    font-family: "RedFive";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 109%;
+    /* or 28px */
 
-text-align: center;
-letter-spacing: 0.005em;
+    text-align: center;
+    letter-spacing: 0.005em;
 
-color: #FFFFFF;
+    color: #ffffff;
 
-border: 1px solid #000000;
+    border: 1px solid #000000;
   }
 }

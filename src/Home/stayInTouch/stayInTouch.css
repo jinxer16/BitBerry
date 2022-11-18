@@ -24,28 +24,66 @@
   letter-spacing: 0.005em;
   color: #000000;
 }
+.inputField,
+input:focus,
+input:active,
+input:focus-visible {
+  outline: none;
+  border: none;
+  font-family: "Inter regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 136.52%;
+  height: 22px;
+}
+.stayRight {
+  width: 100%;
+}
 
-@media(max-width:769px){
-  .subHeading-stayTouch{
-    position:relative;
+.btnSubmit {
+  width: 153px;
+  height: 63px;
+  border: 1px solid #000000;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #000;
+  background-color: #fff854;
+  padding: 10px 10px;
+  align-self: center;
+  font-family: "Inter ";
+  font-style: normal;
+}
+.btnSubmit:hover {
+  background-color: #000;
+  border: 1px solid #fff854;
+  color: #fff854;
+}
+
+@media (max-width: 769px) {
+  .subHeading-stayTouch {
+    position: relative;
     width: 300px;
-    height: 33px;  
-    background: #FFF854;
+    height: 33px;
+    background: #fff854;
     border-radius: 30px;
-font-family: 'RedFive';
-font-style: normal;
-font-weight: 400;
-font-size: 26px;
-/* or 28px */
+    font-family: "RedFive";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    /* or 28px */
 
-text-align: center;
-letter-spacing: 0.005em;
+    text-align: center;
+    letter-spacing: 0.005em;
 
-color: #000000;
+    color: #000000;
   }
   .imgStayIn {
     position: absolute;
     left: 92px;
     bottom: 13px;
-}
   }
+}

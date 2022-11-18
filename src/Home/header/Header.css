@@ -129,3 +129,16 @@
     );
   }
 }
+@media (max-width: 1025px) {
+  .nav-link {
+   margin-top: 20px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+
+  
+    color: #000000;
+  }
+}

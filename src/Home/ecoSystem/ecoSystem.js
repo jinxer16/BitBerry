@@ -24,9 +24,9 @@ function EcoSystem() {
       <div className="row  squareBgImg imgContainer">
         <div className="col-8 mt-5">
           <div className="row imgContainer2 ">
-            <div className="col-md-3 ">
+            <div className="col-md-3 col-12 p-3">
               <img src={image1} className="img-fluid" />
-              <div className="mt-4">
+              <div className="mt-4 centerEco">
                 <p className="eco-heading">LAUNCH PAD</p>
                 <img src={Bottomline} className="img-fluid" />
                 <p className="eco-para">
@@ -35,9 +35,9 @@ function EcoSystem() {
                 </p>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-3  p-3">
               <img src={image2} className="img-fluid" />
-              <div className="mt-4">
+              <div className="mt-4 centerEco">
                 <p className="eco-heading">LAUNCH PAD</p>
                 <img src={Bottomline} className="img-fluid" />
 
@@ -47,9 +47,9 @@ function EcoSystem() {
                 </p>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-3 p-3">
               <img src={image3} className="img-fluid" />
-              <div className="mt-4">
+              <div className="mt-4 centerEco">
                 <p className="eco-heading">LAUNCH PAD</p>
                 <img src={Bottomline} className="img-fluid" />
 
@@ -59,9 +59,9 @@ function EcoSystem() {
                 </p>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-3 p-3">
               <img src={image4} className="img-fluid" />
-              <div className="mt-4">
+              <div className="mt-4 centerEco">
                 <p className="eco-heading">LAUNCH PAD</p>
                 <img src={Bottomline} className="img-fluid" />
                 <p className="eco-para">

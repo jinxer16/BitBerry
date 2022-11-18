@@ -138,12 +138,17 @@ color: #000000;
 }
 
 /****************************************************************************************/
-@media (min-width: 1024px) {
+@media (min-width: 1022px) {
   .mobile-screen {
     display: none !important;
   }
 }
-@media (max-width: 1022px) {
+@media (max-width: 768px) {
+  .mobile-screen {
+    display: flex !important;
+  }
+}
+@media (max-width: 1021px) {
   .screen-dis {
     display: none !important;
   }
