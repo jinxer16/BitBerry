@@ -29,6 +29,10 @@
   bottom: 28px;
   left: 210px;
 }
+.eyeimg{
+  display: none !important;
+}
+
 
 @media (max-width: 769px) {
   .subHeading-mech {
@@ -61,4 +65,8 @@ color: #000000;
     bottom: 9px;
     right: -18px;
   }
+  .eyeimg{
+    display: block !important;
+  }
+  
 }

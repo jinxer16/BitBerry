@@ -2,6 +2,8 @@ import React from "react";
 import mech from "../../Assets/Images/mech.png";
 import mechMain from "../../Assets/Images/mechMain.png";
 import imgLeft from "../../Assets/Images/Group331.png";
+import eye from "../../Assets/MobileImage/Group148.png";
+import arrow from "../../Assets/MobileImage/Group149.png";
 
 import Circle from "../../Assets/Images/VectorCircle-01.png";
 import "./mechanism.css";
@@ -25,6 +27,10 @@ function Mechanism() {
         <div className="col-md-12">
           <img src={mechMain} className="img-fluid" alt="" />
         </div>
+        <div className="col-md-12 eyeimg">
+          <img src={eye} style={{width:"50px"}} className="show" />
+          <img src={arrow} style={{width:"50px"}} className="show ms-5" />
+      </div>
       </div>
     </div>
   );
