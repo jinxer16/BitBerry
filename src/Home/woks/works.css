@@ -106,38 +106,5 @@
     position: absolute;
     left: -8.5px;
     bottom: 14px;
-
   }
-}
-.work1-text{
-font-family: 'RedFive';
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 109%;
-/* or 33px */
-
-letter-spacing: 0.005em;
-color: #FFF854;
-text-align: left;
-color: black;
-  -webkit-text-fill-color: #FFF854; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
-
-}
-.zoom-in-out-box {
-  animation: zoom-in-zoom-out 3s ease infinite;
-}
-
-@keyframes zoom-in-zoom-out {
-  0% {
-    transform: scale(1, 1);
-  }
-  50% {
-    transform: scale(1.5, 1.5);
-  }
-  /* 70% {
-    transform: scale(1, 1);
-  } */
 }

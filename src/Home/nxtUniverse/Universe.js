@@ -11,7 +11,7 @@ function Universe() {
     <div className="universeContainer">
       <div className="row bg  d-flex">
         <div className="col-md-12 pos">
-          <div className="box">
+          <div className="box stickyexample">
             <div className="d-flex flex-column bd-high p-2 ">
               <div className="p-2">
                 <img
@@ -55,14 +55,14 @@ function Universe() {
             <div className="row">
               <div className="col-md-7 subHeading-title mx-auto">
                 <img src={Circle} width={"40px"} className="img-circle1" />
-                WEBTOON UNIVERSE
+                <div className="zoom-in-out-box"> WEBTOON UNIVERSE</div>
               </div>
             </div>
           </div>
           <div></div>
           {/* **********************Mobile Screen********* */}
-          <div className="container mobile-screen">
-            <div className="row d-flex justify-content-center ">
+          <div className="container">
+            <div className="row d-flex justify-content-center mobile-screen ">
               <div className="col-md-6 mt-5">
                 <p className="p1-mobile">
                   We provide a level playing field for all webtoon creators to

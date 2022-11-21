@@ -15,7 +15,7 @@ function Roadmap() {
       </div>
       <div className="row mt-2">
         <div className="col-md-6 col-10 subHeading-roadmap mx-auto">
-          OUR ROAD MAP
+          <div className="zoom-in-out-box"> OUR ROAD MAP</div>
           <img src={Circle} width={"40px"} className="imgRoadmap" />
         </div>
       </div>

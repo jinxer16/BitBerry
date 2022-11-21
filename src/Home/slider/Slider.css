@@ -116,11 +116,76 @@
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* padding-left: 80px; */
 }
 .Marquee-content {
-  border: red 2px solid;
+  display: flex;
+  animation: marquee 10s linear infinite running;
+}
+.Marquee-content:hover {
+  animation-play-state: paused;
+}
+.Marquee-tag,
+.Marquee-tag-2 {
+  width: 1000px;
+  margin: 0 3.5em;
+  /* padding: 0.5em; */
+  background: rgba(255, 255, 255, 0.1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+.Marquee-tag:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+@-moz-keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translate(-50%);
+  }
+}
+@-webkit-keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translate(-50%);
+  }
+}
+@-o-keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translate(-50%);
+  }
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translate(-50%);
+  }
+}
+/* .Marquee-tag {
+  width: 1000px;
+  margin: 0 0.5em;
+  padding: 0.5em;
+  background: rgba(255, 255, 255, 0.1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+} */
+.Marquee-content {
+  /* border: red 2px solid; */
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -140,7 +205,8 @@
   -ms-animation-play-state: paused;
   animation-play-state: paused;
 } */
-.Marquee-tag {
+.Marquee-tag,
+.Marquee-tag-2 {
   /* margin: 0 0.5em;
   padding: 0.5em; */
   background: rgba(255, 255, 255, 0.1);
@@ -170,22 +236,41 @@
   font-family: "RedFive";
   font-style: normal;
   font-weight: 400;
-  font-size: 95px;
+  font-size: 75px;
   text-align: center;
   overflow: hidden;
+  height: 60px;
+}
+.Marquee-tag-2 {
+  color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 @media (max-width: 1025px) {
-  .Marquee-tag {
+  .Marquee-tag,
+  .Marquee-tag-2 {
     font-size: 60px;
   }
 }
 @media (max-width: 769px) {
-  .Marquee-tag {
-    font-size: 40px;
+  .Marquee-tag,
+  .Marquee-tag-2 {
+    font-size: 46px;
   }
 }
-
-.Marquee-tag-2 {
+@media (max-width: 480px) {
+  .Marquee-tag,
+  .Marquee-tag-2 {
+    font-size: 31px;
+  }
+}
+/* @media (max-width: 480px) {
+  .Marquee-tag {
+    font-size: 30px;
+  }
+} */
+.Marquee-tag-22 {
   /* width: 700px; */
   /* margin: 0 0.5em;
   padding: 0.5em; */
@@ -214,10 +299,10 @@
   -ms-transition: all 0.1s ease;
   transition: all 0.1s ease;
   font-family: "RedFive";
-  font-style: normal;
   font-weight: 400;
-  font-size: 95px;
+  font-size: 75px;
   text-align: center;
+  height: 60px;
   color: black;
   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;

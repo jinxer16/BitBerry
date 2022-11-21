@@ -18,14 +18,16 @@ function EcoSystem() {
       <div className="row mt-3">
         <div className="col-md-6 col-10 subHeading-ecosystem mx-auto">
           <img src={Circle} width={"40px"} className="ecoRoadmap" />
-          BITBERRY ECOSYSTEM
+          <div className="zoom-in-out-box"> BITBERRY ECOSYSTEM</div>
         </div>
       </div>
       <div className="row  squareBgImg imgContainer">
         <div className="col-8 mt-5">
           <div className="row imgContainer2 ">
-            <div className="col-md-3 col-12 p-3">
-              <img src={image1} className="img-fluid" />
+            <div className="col-md-3 col-12 p-3 hover13">
+              <figure>
+                <img src={image1} className="img-fluid" />
+              </figure>
               <div className="mt-4 centerEco">
                 <p className="eco-heading">LAUNCH PAD</p>
                 <img src={Bottomline} className="img-fluid" />
@@ -35,8 +37,10 @@ function EcoSystem() {
                 </p>
               </div>
             </div>
-            <div className="col-md-3  p-3">
-              <img src={image2} className="img-fluid" />
+            <div className="col-md-3 col-12  p-3 hover13">
+              <figure>
+                <img src={image2} className="img-fluid" />
+              </figure>
               <div className="mt-4 centerEco">
                 <p className="eco-heading"> NFT P2E GAME</p>
                 <img src={Bottomline} className="img-fluid" />
@@ -47,8 +51,10 @@ function EcoSystem() {
                 </p>
               </div>
             </div>
-            <div className="col-md-3 p-3">
-              <img src={image3} className="img-fluid" />
+            <div className="col-md-3 col-12 p-3 hover13">
+              <figure>
+                <img src={image3} className="img-fluid" />
+              </figure>
               <div className="mt-4 centerEco">
                 <p className="eco-heading">BITBERRY WALLET</p>
                 <img src={Bottomline} className="img-fluid" />
@@ -59,8 +65,10 @@ function EcoSystem() {
                 </p>
               </div>
             </div>
-            <div className="col-md-3 p-3">
-              <img src={image4} className="img-fluid" />
+            <div className="col-md-3 col-12 p-3 hover13">
+              <figure>
+                <img src={image4} className="img-fluid" />
+              </figure>
               <div className="mt-4 centerEco">
                 <p className="eco-heading">Multi-Chain NFTs</p>
                 <img src={Bottomline} className="img-fluid" />

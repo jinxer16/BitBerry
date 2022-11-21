@@ -153,7 +153,12 @@
   bottom: 23px;
   left: 331px;
 }
-@media (min-width: 768px) {
+@media screen  and (max-width: 768px) {
+  .mobile-screen {
+    display: none !important;
+  }
+}
+@media  (min-width: 769px) {
   .mobile-screen {
     display: none;
   }
@@ -229,4 +234,13 @@
 
     border: 1px solid #000000;
   }
+}
+
+
+
+.stickyexample {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+
 }

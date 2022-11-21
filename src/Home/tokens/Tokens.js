@@ -23,7 +23,7 @@ function Tokens() {
         <div className="row mt-3">
           <div className="col-md-6 col-10 subHeading-token mx-auto">
             <img src={Circle} width={"40px"} className="img" />
-            TOKENOMIC
+            <div className="zoom-in-out-box"> TOKENOMIC</div>
           </div>
         </div>
         {/* Mobile Screen */}
@@ -100,8 +100,10 @@ function Tokens() {
                 <img src={lineHor2} className="img-fluid img-hor" />
               </div>
             </div>
-            <div className="col-12 mt-3git
-            ">
+            <div
+              className="col-12 mt-3git
+            "
+            >
               0x8C7997E1D05833268ce36087517F333F9a158F21
             </div>
             <div className="row mt-3 d-flex justify-content-center">
@@ -209,7 +211,7 @@ function Tokens() {
                 <div className="col-md-10 mt-5">
                   <div className="row d-flex justify-content-center ">
                     <div className="col-md-3 text-cont">
-                    &nbsp; &nbsp; Contract address &nbsp;
+                      &nbsp; &nbsp; Contract address &nbsp;
                       <img
                         src={line3}
                         className="img-fluid"

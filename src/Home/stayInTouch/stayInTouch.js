@@ -16,7 +16,7 @@ function Stay() {
       <div className="row mt-3">
         <div className="col-md-6 col-10 subHeading-stayTouch  mx-auto">
           <img src={Circle} width={"40px"} className="imgStayIn" />
-          Stay In Touch
+          <div className="zoom-in-out-box"> Stay In Touch</div>
         </div>
       </div>
       <div className="row squareBgImg">
