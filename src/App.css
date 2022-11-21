@@ -92,11 +92,7 @@
     font-size: 19px !important;
   }
 }
-.zoom-in-out-box {
-  /* margin: 24px; */
-  /* width: 50px;
-  height: 50px; */
-  /* background: #f50057; */
+/* .zoom-in-out-box {
   font-size: 32px;
   animation: zoom-in-zoom-out 3s ease infinite;
 }
@@ -111,4 +107,4 @@
   100% {
     transform: scale(1, 1);
   }
-}
+} */

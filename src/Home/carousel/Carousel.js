@@ -4,7 +4,7 @@ import "./Carousel.css";
 function Carousel() {
   return (
     <>
-      <div className="carouselContainer">
+      <div className="carouselContainer" id="home">
         <div className="row d-flex justify-content-center ">
           <div className="col-md-12 toggle-switch-container">
             <section id="section10" class="demo">

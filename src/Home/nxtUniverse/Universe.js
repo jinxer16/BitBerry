@@ -1,17 +1,35 @@
-import React from "react";
+import React,{useEffect, useState} from "react";
 import "./Universe.css";
 import social from "../../Assets/Images/telegramIcon.png";
 import social1 from "../../Assets/Images/twitterIcon.png";
 import social2 from "../../Assets/Images/discordIcon.png";
 import Picture1 from "../../Assets/Images/Group8.png";
 import Circle from "../../Assets/Images/VectorCircle-01.png";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 function Universe() {
+  let [scrHeight, setScrHeight]=useState(false);
+  const getDimension = (e) => {
+    const { pageYOffset: height } = window;
+if (height > 550 && height < 7660) {
+  setScrHeight(true)
+}else{
+  setScrHeight(false)
+}
+  }
+  useEffect(() => {
+    AOS.init();
+    window.addEventListener('scroll',getDimension);
+    return () => {
+      window.removeEventListener('scroll', getDimension);
+  };
+  }, [])
+
   return (
-    <div className="universeContainer">
+    <div className="universeContainer" id="about">
       <div className="row bg  d-flex">
         <div className="col-md-12 pos">
-          <div className="box stickyexample">
+          <div className={scrHeight  ? "box stickyexample" : "box social-box"} data-aos="fade-left" >
             <div className="d-flex flex-column bd-high p-2 ">
               <div className="p-2">
                 <img
@@ -55,7 +73,7 @@ function Universe() {
             <div className="row">
               <div className="col-md-7 subHeading-title mx-auto">
                 <img src={Circle} width={"40px"} className="img-circle1" />
-                <div className="zoom-in-out-box"> WEBTOON UNIVERSE</div>
+                <div><span className="text_shadows">WEBTOON UNIVERSE</span></div>
               </div>
             </div>
           </div>

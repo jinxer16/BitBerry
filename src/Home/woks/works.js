@@ -19,8 +19,19 @@ import "./works.css";
 function Works() {
   return (
     <>
-      <div className="contianer works desktopWorks w-100 mt-5">
-        <div className="row">
+      <div className="contianer works desktopWorks w-100 mt-5" id="ourWork">
+      <div className="row">
+          <div className="col-md-12 ps-5 pe-5">
+            <img src={works} className="img-fluid" alt="" />
+          </div>
+        </div>
+        <div className="row mt-3 ">
+          <div className="col-md-6 col-10 subHeading-work  mx-auto">
+            <img src={Circle} width={"40px"} className="imgWorks " />
+            <div className="zoom-in-out-box">our works</div>
+          </div>
+        </div>
+        {/* <div className="row">
           <div className="col-md-12 ps-5 pe-5">
             <img src={works} className="img-fluid" alt="" />
           </div>
@@ -48,8 +59,25 @@ function Works() {
           <div className="col-md-4 d-flex justify-content-start">
             <img src={work4} alt="" className="img-fluid imgWork" />
           </div>
-        </div>
+        </div> */}
       </div>
+<div className=" d-flex justify-content-evenly flex-row mt-5">
+  <div className=""> <img src={work1} alt="" className="img-fluid imgWork" /></div>
+  <div className=""> <img src={work2} alt="" className="img-fluid imgWork" /></div>
+</div>
+{/* <div className="d-flex justify-content-center">
+<span className="line_bg">
+</span>
+</div> */}
+<div className=" d-flex justify-content-evenly flex-row mt-5">
+  <div className=""> <img src={work3} alt="" className="img-fluid imgWork" /></div>
+  <div className=""> <img src={work4} alt="" className="img-fluid imgWork" /></div>
+</div>
+
+
+
+
+     {/* ************************************************88Mobile Screen */}
       <div className="container works mobileWorks w-100 mt-5">
         <div className="row">
           <div className="col-md-12 ps-5 pe-5">

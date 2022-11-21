@@ -15,7 +15,7 @@ import lineHor2 from "../../Assets/Images/Group27Hor.png";
 
 function Tokens() {
   return (
-    <div className="tokenContainer mt-5">
+    <div className="tokenContainer mt-5" id="tokenomics">
       <div className="col-md-12 ">
         <div className="container">
           <img src={TOKENOMIC} className="img-fluid" />

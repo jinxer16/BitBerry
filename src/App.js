@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./Home/header/header";
@@ -14,8 +15,12 @@ import Mechanism from "./Home/mechanism/mechanism";
 import HowWeWork from "./Home/howWeWork/howWeWork";
 import EcoSystem from "./Home/ecoSystem/ecoSystem";
 import Graph from "./Home/graph/Graph";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <div className="App">
       <Header />
@@ -26,7 +31,7 @@ function App() {
       <Graph />
       <EcoSystem />
       <HowWeWork />
-      <Mechanism />
+      {/* <Mechanism /> */}
       <ProjectDocument />
       <Roadmap />
       <Works />

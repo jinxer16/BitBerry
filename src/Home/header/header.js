@@ -10,7 +10,7 @@ function Header() {
     <div className="col-md-12 d-flex justify-content-center align-items-between">
       <nav className=" col-md-11 navbar navbar-expand-lg navbarscreen">
         <div className="container-fluid">
-          <a className="navbar-brand ml-3" href="#">
+          <a className="navbar-brand ml-3" href="#home">
             <img
               src={Logo}
               width={"80px"}
@@ -38,24 +38,24 @@ function Header() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className=" col-md-12 navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="#">
+                <a className="nav-link" aria-current="page" href="#home">
                   Home
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#about">
                   About
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#tokenomics">
                   Tokenomics
                 </a>
               </li>
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
-                  href="#"
+                  href="#Brp-pool"
                   text-dark
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -81,20 +81,20 @@ function Header() {
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link">How we work</a>
+                <a className="nav-link" href="#howwework">How we work</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#documents">
                   Documents
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#roadMap">
                   Roadmap
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#ourWork">
                   Our Work
                 </a>
               </li>

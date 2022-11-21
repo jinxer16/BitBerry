@@ -1,10 +1,10 @@
 import React from 'react'
-import Graphs from "../../Assets/Images/Group139.png";
+import Graphs from "../../Assets/Images/Group222.png";
 import './Graphs.css'
 
 function Graph() {
   return (
-    <div className='graph-over'>
+    <div className='graph-over' id='Brp-pool'>
         <div className='container-fluid graph-bg'>
         <div className='row d-flex justify-content-center'>
         <div className='col-md-8 graph-margin'>

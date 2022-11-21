@@ -10,6 +10,7 @@
   position: absolute;
   bottom: 30px;
   left: 3%;
+  animation: circle-animation 0.8s ease infinite;
 }
 
 .subHeading-project {
