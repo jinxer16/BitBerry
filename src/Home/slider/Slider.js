@@ -4,7 +4,7 @@ import "./Slider.css";
 function Slider() {
   return (
     <>
-      <div className="sliderContainer">
+      <div className="sliderContainer  mobilescreen">
         <div className="row">
           <div class="col-md-12 Marquee">
             <div class="Marquee-content">

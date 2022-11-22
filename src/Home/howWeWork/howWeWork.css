@@ -6,10 +6,11 @@
   position: absolute;
   bottom: 22px;
   right: 39%;
+  
 }
 .bgImageHowWe {
-  background-image: url("../../Assets/Images/WorkBackgroundupdatedtoday-01.png");
-  background-size: contain;
+  background-image: url("../../Assets/Images/workBackgroundUpdate-01.png");
+  background-size: cover;
   background-repeat: no-repeat;
 }
 @media (min-width: 1440px) {

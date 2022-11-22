@@ -6,6 +6,7 @@
   position: absolute;
   bottom: 22px;
   right: 1%;
+  animation: circle-animation 0.8s ease infinite;
 }
 
 .imgContainer {
@@ -16,7 +17,7 @@
 .eco-heading {
   margin-bottom: 0px;
   text-align: left;
-  font-family: "Inter regular";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -26,7 +27,7 @@
 }
 .eco-para {
   text-align: left;
-  font-family: "Inter regular";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

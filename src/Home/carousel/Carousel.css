@@ -1,5 +1,6 @@
 .carouselContainer {
   overflow: hidden;
+  z-index: 10000;
 }
 
 .toggle-switch-container {

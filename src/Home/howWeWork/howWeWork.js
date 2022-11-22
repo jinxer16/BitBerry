@@ -1,6 +1,6 @@
 import React from "react";
 import work from "../../Assets/Images/work.png";
-import work1 from "../../Assets/Images/WorkPic-01.png";
+import work1 from "../../Assets/Images/solider-01.png";
 import work2 from "../../Assets/Images/workPic2-01.png";
 import image1 from "../../Assets/Images/pic1-01.png";
 import image2 from "../../Assets/Images/pic2-01.png";
@@ -14,7 +14,7 @@ import "./howWeWork.css";
 
 function HowWeWork() {
   return (
-    <div className="contianer howWeWork w-80 mt-5">
+    <div className="contianer howWeWork w-80 mt-5" id="howwework">
       <div className="row">
         <div className="col-md-12 ps-5 pe-5">
           <img src={work} className="img-fluid" alt="" />
@@ -30,7 +30,7 @@ function HowWeWork() {
         <div className="col-md-12 col-lg-3 d-flex justify-content-center align-items-center  ">
           <img
             src={work1}
-            className="img-fluid imgHowWork1 howWeWorkMobileHidden"
+            className="img-fluid howWeWorkMobileHidden"
             alt=""
           />
         </div>

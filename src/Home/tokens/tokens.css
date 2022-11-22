@@ -7,6 +7,7 @@
   background-repeat: no-repeat;
 }
 .img {
+  animation: circle-animation 0.8s ease infinite;
   position: absolute;
   bottom: 28px;
   left: 135px;
@@ -36,7 +37,7 @@
   left: 1333px;
   top: 2810px;
 
-  font-family: "Inter regular";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -48,7 +49,7 @@
   color: #000000;
 }
 .bitberry-token {
-  font-family: "Inter regular";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -59,7 +60,7 @@
   color: #000000;
 }
 .text-cont {
-  font-family: "Inter regular";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   line-height: 136.52%;
@@ -86,14 +87,14 @@
   align-items: center;
 }
 .token-name-hor {
-  font-family: "Inter regular";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 136.52%;
 }
 .bitberry-token-hor {
-  font-family: "Inter regular";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -110,7 +111,7 @@
   border: 1px solid #000000;
   border-radius: 50px;
 
-  font-family: "Inter regular";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
@@ -143,6 +144,18 @@
   color: #000000;
 }
 
+
+
+@keyframes circle-animation{
+  from{
+    transform: rotate(0deg) scale(0.5,0.5);
+    /* transform: scale(1,1); */
+  }
+  to{
+    /* transform: scale(1.5, 1.5); */
+    transform: rotate(180deg) scale(1.5,1.5);
+  }
+}
 /****************************************************************************************/
 @media (min-width: 1022px) {
   .mobile-screen {
@@ -183,6 +196,7 @@
     position: absolute;
     bottom: 8px;
     left: 12px;
+    animation: circle-animation 0.8s ease infinite;
   }
 }
 

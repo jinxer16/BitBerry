@@ -5,6 +5,7 @@
   position: absolute;
   bottom: -16px;
   right: 6%;
+  animation: circle-animation 0.8s ease infinite;
 }
 .subHeading-mech {
   width: 1160px;
@@ -28,6 +29,10 @@
   position: absolute;
   bottom: 28px;
   left: 210px;
+  animation: circle-animation 0.8s ease infinite;
+}
+.eyeimg {
+  display: none !important;
 }
 
 @media (max-width: 769px) {
@@ -39,17 +44,17 @@
     border-radius: 50px;
     position: relative;
     font-family: "RedFive";
-    font-family: 'RedFive';
-font-style: normal;
-font-weight: 400;
-font-size: 26px;
-line-height: 109%;
-/* or 28px */
+    font-family: "RedFive";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 109%;
+    /* or 28px */
 
-text-align: center;
-letter-spacing: 0.005em;
+    text-align: center;
+    letter-spacing: 0.005em;
 
-color: #000000;
+    color: #000000;
   }
   .imgMechenism {
     position: absolute;
@@ -60,5 +65,8 @@ color: #000000;
     position: absolute;
     bottom: 9px;
     right: -18px;
+  }
+  .eyeimg {
+    display: block !important;
   }
 }
