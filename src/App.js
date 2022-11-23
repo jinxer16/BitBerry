@@ -22,7 +22,7 @@ function App() {
     AOS.init();
   }, [])
   return (
-    <div className="App">
+    <div className="" >
       <Header />
       <Slider />
       <Carousel />

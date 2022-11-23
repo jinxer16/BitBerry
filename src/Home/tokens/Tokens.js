@@ -23,66 +23,87 @@ function Tokens() {
         <div className="row mt-3">
           <div className="col-md-6 col-10 subHeading-token mx-auto">
             <img src={Circle} width={"40px"} className="img" />
-            <div className="zoom-in-out-box"> TOKENOMIC</div>
+            <div className="color-bright">
+              <span className={"header header--pushDown"}>TOKENOMIC</span>
+            </div>
           </div>
         </div>
         {/* Mobile Screen */}
-        <div className="container-fluid mobile-screen tokens-bg">
-          <div className="col-md-12">
-            <div className="row mt-3">
+        <div className=" row  container mobile-screen tokens-bg">
+          <div className="col-12">
+            <div className="row  mt-3 " >
               <div className="col-6 mt-3">
-                <h3 className="text-center token-name-hor ">TOKEN NAME</h3>
-                <h3 className="text-center bitberry-token-hor ">
-                  Bitberry token
-                </h3>
-                <img
-                  src={figure1}
-                  className="img-fluid figure1"
-                  width={"68px"}
-                />
+                <div >
+
+                  <h3 className="text-center token-name-hor ">TOKEN NAME</h3>
+                  <h3 className="text-center bitberry-token-hor ">
+                    Bitberry token
+                  </h3>
+                </div>
+                <div className="text-center">
+                  <img
+                    src={figure1}
+                    className="img-fluid figure1 "
+                    width={"68px"}
+                  />
+
+                </div>
               </div>
               <div className="col-6 mt-3">
                 <h3 className="text-center token-name-hor ">TOTAL SUPPLY</h3>
                 <h3 className="text-center bitberry-token-hor ">
-                  1,000,000,000
+                5,000,000,000
                 </h3>
-                <img
-                  src={figure2}
-                  className="img-fluid figure1"
-                  width={"68px"}
-                />
+                <div className="text-center">
+                  <img
+                    src={figure2}
+                    className="img-fluid figure1"
+                    width={"68px"}
+                  />
+                </div>
               </div>
             </div>
-            <div className="col-md-12 mt-3">
-              <img src={lineHor} className="img-fluid img-hor" />
+            <div className=" ms-4 ms-md-5 mt-3 ">
+              <img src={lineHor} className="img-fluid ms-md-3" />
             </div>
             <div className="row mt-3">
               <div className="col-6">
-                <h3 className="text-center token-name-hor ">SYMBOL</h3>
-                <h3 className="text-center bitberry-token-hor ">BBR</h3>
-                <img
-                  src={figure3}
-                  className="img-fluid figure1"
-                  width={"68px"}
-                />
+                <div>
+
+                  <h3 className="text-center token-name-hor ">SYMBOL</h3>
+                  <h3 className="text-center bitberry-token-hor ">BBR</h3>
+                </div>
+                <div className="text-center">
+
+                  <img
+                    src={figure3}
+                    className="img-fluid figure1"
+                    width={"68px"}
+                  />
+                </div>
               </div>
               <div className="col-6">
+                <div>
                 <h3 className="text-center token-name-hor ">DECIMAL</h3>
                 <h3 className="text-center bitberry-token-hor ">18</h3>
-                <img
-                  src={figure4}
-                  className="img-fluid figure1"
-                  width={"68px"}
-                />
+                </div>
+                <div className="text-center">
+                  <img
+                    src={figure4}
+                    className="img-fluid figure1"
+                    width={"68px"}
+                  />
+                </div>
               </div>
             </div>
-            <div className="col-md-12 mt-3">
-              <img src={lineHor} className="img-fluid img-hor" />
+            <div className=" ms-4 ms-md-5 mt-3 ">
+              <img src={lineHor} className="img-fluid ms-md-3" />
             </div>
-            <div className="row mt-3 d-flex justify-content-center">
-              <div className="col-6">
+            {/* <div className="row mt-3 d-flex justify-content-center">
+              <div className="col-6 ms-4 ms-md-5">
                 <h3 className="text-center token-name-hor ">CHAIN</h3>
                 <h3 className="text-center bitberry-token-hor ">BSC</h3>
+
                 <img
                   src={figure5}
                   className="img-fluid figure1"
@@ -90,24 +111,51 @@ function Tokens() {
                 />
               </div>
             </div>
-            <div className="row mt-3 d-flex justify-content-center">
+            <div className="row mt-3 d-flex justify-content-center border">
+              <div className="col-6 ms-4 ms-md-5">
+                <h3 className="text-center token-name-hor">Contract address</h3>
+              </div>
+            </div> */}
+            {/* <div className="row d-flex justify-content-center">
+              <div className="col-3 mt-2 ">
+                <img src={lineHor2} className="img-fluid img-hor" />
+              </div>
+            </div> */}
+            <div className="row mt-3 d-flex justify-content-center text-center ms-3 ms-md-5">
+              <div className="col-6">
+                <div className=" ">
+
+                  <h3 className="text-center token-name-hor ">CHAIN</h3>
+                  <h3 className="text-center bitberry-token-hor ">BSC</h3>
+                </div>
+
+                <div className="text-center">
+
+                  <img
+                    src={figure5}
+                    className="img-fluid figure1"
+                    width={"68px"}
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="row mt-3 d-flex justify-content-center text-center ms-3 ms-md-5">
               <div className="col-6">
                 <h3 className="text-center token-name-hor">Contract address</h3>
               </div>
             </div>
-            <div className="row d-flex justify-content-center">
+            <div className="row d-flex justify-content-center ms-3 ms-md-5">
               <div className="col-3 mt-2 ">
                 <img src={lineHor2} className="img-fluid img-hor" />
               </div>
             </div>
             <div
-              className="col-12 mt-3git
-            "
+              className="col-sm-10 col-md-12 mt-3 text-center address ms-3 ms-md-5"
             >
               0x8C7997E1D05833268ce36087517F333F9a158F21
             </div>
-            <div className="row mt-3 d-flex justify-content-center">
-              <div className="col-4">
+            <div className=" mt-3 d-flex justify-content-center ms-3 ms-md-5">
+              <div className="">
                 <button type="copy" className="btn-btn">
                   Copy
                 </button>
@@ -146,7 +194,7 @@ function Tokens() {
                   <div className="col-md-10 mt-5">
                     <h3 className="text-center token-name ">TOTAL SUPPLY</h3>
                     <h3 className="text-center bitberry-token ">
-                      1,000,000,000
+                    5,000,000,000
                     </h3>
                     <img
                       src={figure2}
@@ -208,7 +256,7 @@ function Tokens() {
                 </div>
               </div>
               <div className="row d-flex justify-content-center ">
-                <div className="col-md-10 mt-5">
+                <div className="col-md-10 col-xxl-6 mt-5">
                   <div className="row d-flex justify-content-center ">
                     <div className="col-md-3 text-cont">
                       &nbsp; &nbsp; Contract address &nbsp;

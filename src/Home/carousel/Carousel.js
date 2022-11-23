@@ -12,20 +12,6 @@ function Carousel() {
                 <span></span>Scroll Down
               </a>
             </section>
-            {/* <div className="toggle-switch-container">
-              <div className="toggle-switch switch-vertical">
-                <input
-                  id="toggle-a"
-                  type="radio"
-                  name="switch"
-                  defaultChecked="checked"
-                />
-                <input id="toggle-b" type="radio" name="switch" />
-                <span className="toggle-outside">
-                  <span className="toggle-inside" />
-                </span>
-              </div>
-            </div> */}
           </div>
         </div>
       </div>

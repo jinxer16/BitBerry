@@ -8,9 +8,9 @@ import "./footer.css";
 function Footer() {
   return (
     <>
-      <div className="contianer footer footerSec d-flex align-items-center">
-        <img src={footerimgback} className="backImg" alt="" />
-        <div className="row w-100  ">
+      <div className="contianer footer footerSec d-flex align-items-center bor">
+        <img src={footerimgback} className="backImg" height={"500px"} width={"100%"} alt="" />
+        <div className="row w-100 backImg ">
           <div className="col-md-6  footerRight ">
             <img src={bit} alt="" />
             <span className="textSpanFooter">
@@ -73,62 +73,62 @@ function Footer() {
             </div>
           </div>
           <h3 className="txtHeading ms-2">sitemap</h3>
-          <div className="row g-0">
+          <div className="row mt-3 g-0">
             <div className="col-4 footerMobile txtHeading">
               <span className="textSpanMobileFooter ms-2">Home</span>
             </div>
 
             <div className="col-4 footerMobile txtHeading">
-              <span className="textSpanMobileFooter">About us</span>
+              <span className="textSpanMobileFooter">Documents</span>
             </div>
-            <div className="col-4 footerMobile txtHeading">
+            <div className="col-4 footerMobile  txtHeading">
               <span className="textSpanMobileFooter">How we work</span>
             </div>
-            <div className="col-4 footerMobile txtHeading">
-              <span className="textSpanMobileFooter ms-2">Documents</span>
+            <div className="col-4 footerMobile mt-2 txtHeading">
+              <span className="textSpanMobileFooter ms-2">About us</span>
             </div>
 
-            <div className="col-4 footerMobile txtHeading">
+            <div className="col-4 footerMobile mt-2 txtHeading">
               <span className="textSpanMobileFooter">Team</span>
             </div>
-            <div className="col-4 footerMobile txtHeading">
+            <div className="col-4 footerMobile mt-2 txtHeading">
               <span className="textSpanMobileFooter">Roadmap</span>
             </div>
           </div>
-          <h3 className="txtHeading ms-2">ecosystem</h3>
-          <div className="row g-0">
-            <div className="col-4 footerMobile txtHeading">
+          <h3 className="txtHeading1 mt-3 ms-2">ecosystem</h3>
+          <div className="row mt-3 g-0">
+            <div className="col-4 footerMobile mt-2 txtHeading">
               <span className="textSpanMobileFooter ms-2">Tokenomic</span>
             </div>
 
-            <div className="col-4 footerMobile txtHeading">
+            <div className="col-4 footerMobile mt-2 txtHeading">
               <span className="textSpanMobileFooter"> LP Pool</span>
             </div>
-            <div className="col-4 footerMobile txtHeading">
+            <div className="col-4 footerMobile mt-2 txtHeading">
               <span className="textSpanMobileFooter">Launchpad</span>
             </div>
           </div>
-          <h3 className="txtHeading ms-2">community</h3>
-          <div className="row g-0">
+          <h3 className="txtHeading1 mt-3 ms-2">community</h3>
+          <div className="row mt-3 g-0">
             <div className="col-4 footerMobile txtHeading d-flex gap-3 ms-2">
               <img
                 className="img-fluid"
-                width={"30px"}
-                height={"30px"}
+                width={"20px"}
+                height={"20px"}
                 src={social}
                 alt=""
               />
               <img
                 className="img-fluid"
-                width={"30px"}
-                height={"30px"}
+                width={"20px"}
+                height={"20px"}
                 src={social1}
                 alt=""
               />
               <img
                 className="img-fluid"
-                width={"30px"}
-                height={"30px"}
+                width={"20px"}
+                height={"20px"}
                 src={social2}
                 alt=""
               />

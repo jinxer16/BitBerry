@@ -1,12 +1,19 @@
+
+
 .footer {
   background-image: url("../../Assets/Images/Rectangle17.png");
+  /* background-image: url("../../Assets/Images/Rectangle18.png"); */
   position: relative;
   /* background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 323%); */
-  background-size: cover;
+ 
+  background-size: cover ;
+  background-repeat: no-repeat;
+  background-color: black;
   height: 450px;
   /* opacity: 0.6; */
   overflow: hidden;
   width: 100%;
+  /* border: 2px red solid; */
 }
 .footerSecMobile {
   background-image: url("../../Assets/Images/Rectangle17.png");
@@ -16,11 +23,13 @@
   /* height: 450px; */
 }
 .footerBackImg {
-  height: 450px;
+  /* z-index: 1000; */
+  background-image: url("../../Assets/Images/Rectangle18.png");
+  /* background-position: cover; */
+  /* background-position: ; */
+  /* height: 450px;
   top: 0px;
-  width: 100%;
-  background-size: cover;
-  background-color: rgba(0, 0, 0, 1);
+  width: 100vw;  */
   /* position: absolute; */
 }
 .backImg {
@@ -52,15 +61,34 @@
   z-index: 99;
 }
 .txtHeading {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  color: #ffffff;
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+line-height: 136.52%;
+/* or 16px */
+
+
+color: #FFFFFF; 
   text-align: left;
   text-transform: uppercase;
   margin-bottom: 5px;
   line-height: 136.52%;
+}
+.txtHeading1{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 136.52%;
+  /* or 16px */
+  
+  
+  color: #FFFFFF; 
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    line-height: 136.52%;
 }
 .textSpanFooter {
   font-family: "Inter";

@@ -7,9 +7,9 @@ import social2 from "../../Assets/Images/discordIcon.png";
 
 function Header() {
   return (
-    <div className="col-md-12 d-flex justify-content-center align-items-between">
+    <div className="col-md-12 d-flex justify-content-center align-items-between border">
       <nav className=" col-md-11 navbar navbar-expand-lg navbarscreen">
-        <div className="container-fluid">
+        <div className="container">
           <a className="navbar-brand ml-3" href="#home">
             <img
               src={Logo}

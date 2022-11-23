@@ -3,16 +3,29 @@
 }
 .imgDoc {
   width: 300px !important;
-  margin: 45px;
+  margin: 35px;
   height: 471px !important;
 }
 .imgProject {
   position: absolute;
   bottom: 30px;
   left: 3%;
-  animation: circle-animation 0.8s ease infinite;
+  animation: circle-animation 1.5s ease infinite;
 }
+@keyframes circle-animation{
 
+  0%{ 
+    transform: scale(0,0) rotate(0deg);
+  }
+  50%{
+    transform: scale(1.5, 1.5) rotate(180deg);
+    
+  }
+  100%{
+    transform: scale(0,0) rotate(0deg);
+  }
+  
+}
 .subHeading-project {
   width: 850px;
   height: 57px;
@@ -29,6 +42,10 @@
   letter-spacing: 0.005em;
 
   color: #000000;
+}
+
+#carouselExampleControls1 {
+  display: none;
 }
 
 @media (max-width: 769px) {
@@ -53,6 +70,7 @@
     position: absolute;
     bottom: 30px;
     left: 2%;
+    animation: circle-animation 1.5s ease infinite;
   }
 }
 .hover-button .hover-button--on,
@@ -68,6 +86,43 @@
 }
 @media (max-width: 769px) {
   .flipcart {
-    flex-direction: column;
+    display: none !important;
+  }
+}
+@media (max-width: 769px) {
+  #carouselExampleControls1 {
+    display: block !important;
+  }
+
+  /* .carousel-control-next{
+  bottom: -10px;
+  position: relative;
+  left: 300px;
+} */
+  .cabutton {
+    border: none;
+    background-color: #fff854;
+    border-radius: 10px;
+  }
+  .catext {
+    width: 125px;
+    height: 44px;
+    font-family: "RedFive";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 109%;
+    /* or 22px */
+
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #fff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  }
+}
+
+@media (max-width: 320px) {
+  .imgDoc {
+    margin: 15px;
   }
 }

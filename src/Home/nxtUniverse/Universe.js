@@ -1,36 +1,59 @@
-import React,{useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import "./Universe.css";
 import social from "../../Assets/Images/telegramIcon.png";
 import social1 from "../../Assets/Images/twitterIcon.png";
 import social2 from "../../Assets/Images/discordIcon.png";
 import Picture1 from "../../Assets/Images/Group8.png";
 import Circle from "../../Assets/Images/VectorCircle-01.png";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import {IoIosArrowForward} from "react-icons/io"
 function Universe() {
-  let [scrHeight, setScrHeight]=useState(false);
+  let [scrHeight, setScrHeight] = useState(false);
+  let [isHidden, setIsHidden] = useState(true);
+
   const getDimension = (e) => {
     const { pageYOffset: height } = window;
-if (height > 550 && height < 7660) {
-  setScrHeight(true)
-}else{
-  setScrHeight(false)
-}
+    if (height > 550 && height < 7660) {
+      setScrHeight(true)
+    } else {
+      setScrHeight(false)
+    }
   }
   useEffect(() => {
-    AOS.init();
-    window.addEventListener('scroll',getDimension);
+    window.addEventListener('scroll', getDimension);
     return () => {
       window.removeEventListener('scroll', getDimension);
-  };
+    };
   }, [])
-
+  let [animationState, setAnimationState] = useState(true);
+  let [animationState1, setAnimationState1] = useState(false);
+  useEffect(() => {
+     let interval = setInterval(() => {
+      setAnimationState(prevState=>  !prevState)
+      setAnimationState1(prevState=>  !prevState)
+    }, 2000);
+    return ()=> clearInterval(interval)
+  }, [])
+  const hiddenBar = () => {
+    if(isHidden){
+     document.getElementById("stickyexamples").style.right = "0px";
+    }else{
+      document.getElementById("stickyexamples").style.right = "-60px";
+    }
+  }
+  useEffect(()=>{
+    hiddenBar()
+  },[isHidden])
   return (
     <div className="universeContainer" id="about">
       <div className="row bg  d-flex">
         <div className="col-md-12 pos">
-          <div className={scrHeight  ? "box stickyexample" : "box social-box"} data-aos="fade-left" >
+          <div className={scrHeight ? "box stickyexample" : "box social-box"} id="stickyexamples" data-aos="fade-left" >
             <div className="d-flex flex-column bd-high p-2 ">
+              <div className="side_icon text-light p-1"
+              onClick={()=>{setIsHidden(!isHidden)}}
+              >
+                <span className="fs-4"><IoIosArrowForward/></span>
+              </div>
               <div className="p-2">
                 <img
                   classname="img-fluid"
@@ -73,15 +96,19 @@ if (height > 550 && height < 7660) {
             <div className="row">
               <div className="col-md-7 subHeading-title mx-auto">
                 <img src={Circle} width={"40px"} className="img-circle1" />
-                <div><span className="text_shadows">WEBTOON UNIVERSE</span></div>
+                <div className="color-bright">
+                  <span className={animationState ?"header header--pushDownOne" : "header"}>WEBTOON</span>
+                  &nbsp;
+                  <span className={animationState1 ?"header header--pushDownTwo" : "header"}>UNIVERSE</span>
+                </div>
               </div>
             </div>
           </div>
           <div></div>
           {/* **********************Mobile Screen********* */}
           <div className="container">
-            <div className="row d-flex justify-content-center mobile-screen ">
-              <div className="col-md-6 mt-5">
+            <div className="d-flex flex-column text-center mobile-screen ">
+              <div className=" mt-5 text-center">
                 <p className="p1-mobile">
                   We provide a level playing field for all webtoon creators to
                   draw, contribute and earn money.
@@ -94,22 +121,22 @@ if (height > 550 && height < 7660) {
                   webtoons, animation industries by 2025.
                 </p>
               </div>
-              <div className="col-7 mt-3">
-                <img src={Picture1} className="img-fluid" width={"350px"} />
+              <div className="mt-3 ">
+                <img src={Picture1} className="img-fluid" width={"450px"} />
               </div>
             </div>
           </div>
 
           {/* **********************End Mobile Screen********* */}
-          <div className="col-md-12 pic-bg large-screen">
-            <div className="col-md-12 pic-bg">
-              <div className="row">
-                <div className="col-md-6 d-flex justify-content-center">
+          <div className="row justify-content-center pic-bg large-screen">
+            <div className="col-lg-10 col-xl-8 col-xxl-6 pic-bg">
+              <div className="row ">
+                <div className="col-lg-6 col-xl-6 col-xxl-7" data-aos="fade-right" data-aos-duration="2000">
                   <div className="">
                     <img src={Picture1} className="img-fluid img-1" />
                   </div>
                 </div>
-                <div className="col-md-5  text-para justify-content-start ">
+                <div className=" col-lg-6 col-xl-6 col-xxl-5 text-para" data-aos="fade-left" data-aos-duration="2000">
                   <p className="p1">
                     We provide a level playing field for all webtoon creators to
                     draw, contribute and earn money.

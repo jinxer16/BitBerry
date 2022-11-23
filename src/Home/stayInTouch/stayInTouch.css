@@ -6,9 +6,18 @@
   position: absolute;
   left: 229px;
   bottom: 27px;
-  animation: circle-animation 0.8s ease infinite;
+  animation: circle-animation 1.5s ease infinite;
 }
-
+.colWise{
+  margin-top: 100px;
+}
+.img_bg_stay{
+  display: block;
+  background-image: url("../../Assets/Images/stay_bg.png.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 570px;
+}
 .subHeading-stayTouch {
   width: 635px;
   height: 57px;
@@ -25,10 +34,14 @@
   letter-spacing: 0.005em;
   color: #000000;
 }
+.inputField{
+  border: none;
+  outline: none;
+}
 .inputField,
 input:focus,
 input:active,
-input:focus-visible {
+input:focupxs-visible {
   outline: none;
   border: none;
   font-family: "Inter";
@@ -53,9 +66,9 @@ input:focus-visible {
   text-align: center;
   color: #000;
   background-color: #fff854;
-  padding: 10px 10px;
+  padding: 8px 8px;
   align-self: center;
-  font-family: "Inter  regular";
+  font-family: "Inter";
   font-style: normal;
 }
 .btnSubmit:hover {
@@ -63,7 +76,10 @@ input:focus-visible {
   border: 1px solid #fff854;
   color: #fff854;
 }
+.stay_in_mobile{
+  display: none;
 
+}
 @media (max-width: 769px) {
   .subHeading-stayTouch {
     position: relative;
@@ -82,9 +98,34 @@ input:focus-visible {
 
     color: #000000;
   }
+  .stay_in_mobile{
+    display: block;
+    background-image: url("../../Assets/MobileImage/StayMobileBg.png");
+    background-position-x: right;
+    background-size: 220px 380px;
+    background-repeat: no-repeat;
+  }
+  .img_bg_stay{
+    display: none;
+  }
   .imgStayIn {
     position: absolute;
     left: 92px;
     bottom: 13px;
+    animation: circle-animation 1.5s ease infinite;
   }
+}
+@keyframes circle-animation{
+
+  0%{ 
+    transform: scale(0,0) rotate(0deg);
+  }
+  50%{
+    transform: scale(1.5, 1.5) rotate(180deg);
+    
+  }
+  100%{
+    transform: scale(0,0) rotate(0deg);
+  }
+  
 }

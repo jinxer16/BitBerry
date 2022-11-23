@@ -17,6 +17,7 @@
   height: 450px;
 }
 
+
 .imgGroup {
   display: flex;
   flex-direction: row;
@@ -26,7 +27,25 @@
   position: absolute;
   bottom: 28px;
   left: 62%;
-  animation: circle-animation 0.8s ease infinite;
+  animation: circle-animation 1.5s ease infinite;
+}
+@keyframes circle-animation{
+
+  0%{ 
+    transform: scale(0,0) rotate(0deg);
+  }
+  50%{
+    transform: scale(1.5, 1.5) rotate(180deg);
+    
+  }
+  100%{
+    transform: scale(0,0) rotate(0deg);
+  }
+  
+}
+
+.carousel{
+  display: none !important;
 }
 @media (max-width: 480px) {
   .imgGroup {
@@ -48,7 +67,6 @@
   position: relative;
   text-align: center;
   letter-spacing: 0.005em;
-
   color: #000000;
 }
 
@@ -73,5 +91,17 @@
     position: absolute;
     bottom: 13px;
     left: 177px;
+    animation: circle-animation 1.5s ease infinite;
+  }
+  .carousel{
+    display: block !important;
+  }
+  .imgGroup{
+    display: none !important;
+  }
+  .cabutton2{
+    border: none;
+    background-color: #fff854;
+    border-radius: 10px;
   }
 }

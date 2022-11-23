@@ -1,27 +1,3 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-
-
-:root {
-  --color-primary: #464342;
-  --color-secondary: #3f3a3a;
-  --color-tertiary: #1d1a1a;
-  --color-quaternary: #14100f;
-  --color-quinary: #080201;
-  /*
-  --color-primary: #5192ED;
-  --color-secondary: #69A1F0;
-  --color-tertiary: #7EAEF2;
-  --color-quaternary: #90BAF5;
-  --color-quinary: #A2C4F5;
-  */
-}
-
-
 
 .universeContainer {
   overflow: hidden;
@@ -39,6 +15,31 @@
   height: 166px;
   background: #000000;
   border-radius: 8px 0px 0px 8px;
+}
+.social-box{
+  display: none;
+}
+.stickyexample {
+  display: block;
+  position: fixed;
+   top: 150px;
+   z-index: 1000000;
+   /* transition: all 2s ease 1s; */
+   transition: all 1s;
+}
+.side_icon{
+  background-color: red;
+  position: absolute;
+  right: 55px;
+  top: 30px;
+cursor: pointer;
+}
+.side_icon span{
+  text-align: center;
+  align-items: center;
+  position: relative;
+  bottom: 4px;
+
 }
 .txt-uni {
   margin-top: 169px;
@@ -73,7 +74,7 @@
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
-  text-align: left;
+  /* text-align: left; */
   display: flex;
   align-content: center;
 }
@@ -94,7 +95,7 @@
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
-  text-align: left;
+  /* text-align: left; */
   display: flex;
   align-content: center;
 }
@@ -159,7 +160,6 @@
   height: 57px;
   background: #fff854;
   border-radius: 50px;
-  /* box-shadow: 10px 5px 5px black; */
 }
 
 .img-circle {
@@ -171,14 +171,14 @@
 @keyframes circle-animation{
 
   0%{ 
-    transform: scale(1,1) rotate(0deg);
+    transform: scale(0,0) rotate(0deg);
   }
   50%{
-    transform: scale(1.5, 1.5) rotate(90deg);
+    transform: scale(1.5, 1.5) rotate(180deg);
     
   }
   100%{
-    transform: scale(1,1) rotate(0deg);
+    transform: scale(0,0) rotate(0deg);
   }
   
 }
@@ -186,7 +186,7 @@
   position: absolute;
   bottom: 23px;
   left: 331px;
-  animation: circle-animation 0.8s ease infinite;
+  animation: circle-animation 1.5s ease infinite;
 }
 @media screen  and (max-width: 768px) {
   .mobile-screen {
@@ -206,9 +206,9 @@
 }
 .text-para {
   margin-top: 100px;
-  text-align: left;
+  /* text-align: left; */
   align-self: center;
-  font-family: "Inter regular";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -218,11 +218,6 @@
 }
 .pos {
   position: relative;
-}
-.box {
-  /* position: absolute; */
-  /* position: e; */
-  float: right;
 }
 
 @media (max-width: 769px) {
@@ -253,7 +248,7 @@
     position: absolute;
     bottom: 6px;
     left: 18px;
-    animation: circle-animation 0.8s ease infinite;
+    animation: circle-animation 1.5s ease infinite;
   }
   .ext-title {
     font-family: "RedFive";
@@ -346,75 +341,4 @@
 }
 .fixed-tumblr span{
   background-color:#000000;
-}
-.social-box{
-  display: none;
-}
-.stickyexample {
-  display: block;
-  /* position: -webkit-sticky;
-  position: sticky;
-  top: 20px; */
-  position: fixed;
-   top: 150px;
-   right: 0;
-   /* z-index: 1000000; */
-}
-
-
-.text_shadows {
-  font-family: "RedFive";
-  font-style: normal;
-  /* transform: translate(50%,-50%); */
-  /* font-weight: 400; */
-  /* font-size: 50px; */
-  /* line-height: 109%; */
-  /* text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary); */
-  /* text-align: center;
-  /* animation: shadows 2s ease-in infinite; */
-  /* transform: translateZ(0) scale(1.0, 1.0); */
-  /* transform: scale(2); */
-  animation: shadows 2s ease-in infinite, move 2s ease-in infinite;
-  text-shadow: 5px 5px white; 
-}
-.text_shadows::before{
-   /* transform: translateY(calc(-10px));  */
-}
-@keyframes shadows {
-  0% {
-    text-shadow: none;
-  }
-  10% {
-    text-shadow: 3px 3px 0 white;
-  }
-  20% {
-    text-shadow: 3px 3px 0 white;
-  }
-  30% {
-    text-shadow: 3px 3px 0 white;
-  }
-  40% {
-    text-shadow: 3px 3px 0 white;
-  }
-  100% {
-    text-shadow: none;
-  }
-}
-
-@keyframes move {
-  0% {
-    transform: translate(0px, 0px);
-  }
-  40% {
-    transform: translate(-12px, -12px);
-  }
-  50% {
-    transform: translate(-12px, -12px);
-  }
-  60% {
-    transform: translate(-12px, -12px);
-  }
-  100% {
-    transform: translate(0px, 0px);
-  }
 }

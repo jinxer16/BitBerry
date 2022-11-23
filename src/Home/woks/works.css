@@ -4,8 +4,9 @@
 .line_bg{
   background-image: url("../../Assets/Images/lineCross-01.svg");
   background-position: center;
-  background-size: cover;
-  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 .centerPlugContainer {
   position: relative;
@@ -24,10 +25,23 @@
     left: 37%;
   }
 } */
+@keyframes circle-animation{
 
+  0%{ 
+    transform: scale(0,0) rotate(0deg);
+  }
+  50%{
+    transform: scale(1.5, 1.5) rotate(180deg);
+    
+  }
+  100%{
+    transform: scale(0,0) rotate(0deg);
+  }
+  
+}
 
 .imgWork{
-  width: 430px !important;
+  /* width: 430px !important; */
 height: 259px !important;
 }
 @media (max-width: 1440px) {
@@ -54,16 +68,22 @@ height: 259px !important;
     left: 31%;
   }
 }
-@media (max-width: 767px) {
-  .imgCenterPlug {
+.mobileWorks {
+  display: none;
+}
+@media (max-width: 769px) {
+  .line_bg {
     display: none;
+  }
+  .mobileWorks {
+    display: block;
   }
 }
 .imgWorks {
   position: absolute;
   left: 17.5%;
   bottom: 22px;
-  animation: circle-animation 0.8s ease infinite;
+  animation: circle-animation 1.5s ease infinite;
 }
 .imgWork {
   height: 100%;
@@ -74,9 +94,9 @@ height: 259px !important;
   }
 }
 @media (min-width: 570px) {
-  .mobileWorks {
+  /* .mobileWorks {
     display: none;
-  }
+  } */
 }
 
 .subHeading-work {
@@ -118,6 +138,7 @@ height: 259px !important;
     position: absolute;
     left: -8.5px;
     bottom: 14px;
+    animation: circle-animation 1.5s ease infinite;
   }
 }
 
