@@ -5,6 +5,7 @@ import imgCenter from "../../Assets/Images/roadmap2.png";
 import imgLeft from "../../Assets/Images/roadmap3.png";
 import Circle from "../../Assets/Images/VectorCircle-01.png";
 import swipe from "../../Assets/Images/Group89.png";
+import MobileImageRoadmap from "../../Assets/MobileImage/roadMapMobile.png"
 import "./roadmap.css";
 function Roadmap() {
   let [animationState, setAnimationState] = useState(true);
@@ -41,7 +42,7 @@ function Roadmap() {
           </p>
         </div>
       </div>
-      <div className="row squareBgImg d-flex justify-content-center mt-5 mb-5">
+      <div className="row squareBgImg d-flex justify-content-center mt-5">
         <div className="col-md-12 imgGroup ">
           <img src={imgLeft} className="img-fluid imgStyle" alt="" 
           data-aos="flip-left"
@@ -64,22 +65,9 @@ function Roadmap() {
           className="carousel slide"
           data-bs-ride="carousel"
         >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src={imgLeft} class="w-100 img-fluid imgStyle" alt="..." />
-            </div>
-            <div class="carousel-item">
-              <img src={imgCenter} class="w-100 img-fluid imgStyle" alt="..." />
-            </div>
-            <div class="carousel-item">
-              <img src={imgRight} class="w-100 img-fluid imgStyle" alt="..." />
-            </div>
+          <div className="col-sm-12 text-center">
+          <img src={MobileImageRoadmap} className="img-fluid"/>
           </div>
-          <div className="d-flex ms-4">
-            <button className="cabutton2 " type="button" data-bs-target="#carouselExampleControl" data-bs-slide="next">
-              <img src={swipe} style={{width:"30px"}}/>
-            </button>
-            </div>
         </div>
       </div>
     </div>

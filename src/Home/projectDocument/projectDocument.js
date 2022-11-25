@@ -8,16 +8,30 @@ import group2 from "../../Assets/Images/Group38.png";
 import group3 from "../../Assets/Images/Group39.png";
 import Circle from "../../Assets/Images/VectorCircle-01.png";
 import "./projectDocument.css";
+import Slider from "react-slick";
+
 function ProjectDocument() {
   let [animationState, setAnimationState] = useState(true);
   let [animationState1, setAnimationState1] = useState(false);
   useEffect(() => {
     let interval = setInterval(() => {
-      setAnimationState(prevState => !prevState)
-      setAnimationState1(prevState => !prevState)
+      setAnimationState((prevState) => !prevState);
+      setAnimationState1((prevState) => !prevState);
     }, 2000);
-    return () => clearInterval(interval)
-  }, [])
+    return () => clearInterval(interval);
+  }, []);
+
+  const settings = {
+    className: "center",
+    centerMode: false,
+    infinite: true,
+    rightPadding: "100px",
+    slidesToShow: 1.06,
+    speed: 300,
+    autoplay: true,
+    width: "90%",
+  };
+
   return (
     <div className="contianer projectDocument mt-5" id="documents">
       <div className="row">
@@ -29,9 +43,21 @@ function ProjectDocument() {
         <div className="col-md-8 col-10 subHeading-project mx-auto">
           <img src={Circle} width={"40px"} className="imgProject" />
           <div className="color-bright">
-            <span className={animationState ? "header header--pushDownOne" : "header"}>project</span>
+            <span
+              className={
+                animationState ? "header header--pushDownOne" : "header"
+              }
+            >
+              project
+            </span>
             &nbsp;
-            <span className={animationState1 ? "header header--pushDownTwo" : "header"}>document</span>
+            <span
+              className={
+                animationState1 ? "header header--pushDownTwo" : "header"
+              }
+            >
+              document
+            </span>
           </div>
         </div>
       </div>
@@ -44,18 +70,21 @@ function ProjectDocument() {
       </div>
       <div className="row squareBgImg d-flex justify-content-center mt-4">
         <div className="col-md-12 d-flex flipcart ">
-          <div className="hover-button"
+          <div
+            className="hover-button"
             data-aos="flip-left"
             data-aos-easing="linear"
             data-aos-duration="1500"
           >
-
             <img
               src={imgLeft}
               className="img-fluid  imgDoc hover-button--off"
               alt=""
             />
-            <a href="https://drive.google.com/file/d/1QrcvJ4RgyHmOYMsQRaIwPlQgN6r0gHPB/view" target="_blank">
+            <a
+              href="https://drive.google.com/file/d/1QrcvJ4RgyHmOYMsQRaIwPlQgN6r0gHPB/view"
+              target="_blank"
+            >
               <img
                 src={group1}
                 className="img-fluid  imgDoc hover-button--on"
@@ -63,16 +92,21 @@ function ProjectDocument() {
               />
             </a>
           </div>
-          <div className="hover-button"
+          <div
+            className="hover-button"
             data-aos-easing="linear"
             data-aos-duration="1500"
-            data-aos="flip-left">
+            data-aos="flip-left"
+          >
             <img
               src={imgCenter}
               className="img-fluid imgDoc hover-button--off"
               alt=""
             />
-            <a href="https://drive.google.com/file/d/1OIlbyo_Cru4trlVUVyozrfr8sMSkIiv7/view?usp=sharing" target="_blank">
+            <a
+              href="https://drive.google.com/file/d/1OIlbyo_Cru4trlVUVyozrfr8sMSkIiv7/view?usp=sharing"
+              target="_blank"
+            >
               <img
                 src={group2}
                 className="img-fluid  imgDoc hover-button--on"
@@ -80,16 +114,21 @@ function ProjectDocument() {
               />
             </a>
           </div>
-          <div className="hover-button"
+          <div
+            className="hover-button"
             data-aos-easing="linear"
             data-aos-duration="1500"
-            data-aos="flip-left">
+            data-aos="flip-left"
+          >
             <img
               src={imgRight}
               className="img-fluid imgDoc hover-button--off"
               alt=""
             />
-            <a href="https://drive.google.com/file/d/1elWtInE_eJg1OYQdxqxbsn2whqdP6wjp/view?usp=sharing" target="_blank">
+            <a
+              href="https://drive.google.com/file/d/1elWtInE_eJg1OYQdxqxbsn2whqdP6wjp/view?usp=sharing"
+              target="_blank"
+            >
               <img
                 src={group3}
                 className="img-fluid  imgDoc hover-button--on"
@@ -98,7 +137,48 @@ function ProjectDocument() {
             </a>
           </div>
         </div>
-        <div
+
+        {/* *******************************************************Slider********************************************************** */}
+        <div classname="ProjectMobileScreen carousel slide"id="carouselExampleControls1">
+          <Slider {...settings}>
+            <div className="col-12 p-3 text-center ProjectMobileScreen">
+              <figure>
+                <a
+                  href="https://drive.google.com/file/d/1QrcvJ4RgyHmOYMsQRaIwPlQgN6r0gHPB/view"
+                  target="_blank"
+                >
+                  <img src={group1} className="img-fluid" alt="" />
+                </a>
+              </figure>
+            </div>
+            <div>
+              <figure>
+                <a
+                  href="https://drive.google.com/file/d/1OIlbyo_Cru4trlVUVyozrfr8sMSkIiv7/view?usp=sharing"
+                  target="_blank"
+                >
+                  <img src={group2} className="img-fluid" alt="" />
+                </a>
+              </figure>
+            </div>
+            <div>
+              <figure>
+                <a
+                  href="https://drive.google.com/file/d/1OIlbyo_Cru4trlVUVyozrfr8sMSkIiv7/view?usp=sharing"
+                  target="_blank"
+                >
+                  <img
+                    src={group2}
+                    className="img-fluid  imgDoc hover-button--on"
+                    alt=""
+                  />
+                </a>
+              </figure>
+            </div>
+          </Slider>
+        </div>
+        {/* ******************************************************* Next Slider********************************************************** */}
+        {/* <div
           id="carouselExampleControls1"
           className="carousel slide"
           data-bs-ride="carousel"
@@ -161,7 +241,7 @@ function ProjectDocument() {
               <button className="cabutton ms-2" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">{"- - ->"}</button>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -4,10 +4,10 @@ import work1 from "../../Assets/Images/newbitberry-02.jpg";
 import work2 from "../../Assets/Images/newbitberry-03.jpg";
 import work3 from "../../Assets/Images/BITBerrystudios-01.png";
 import work4 from "../../Assets/Images/newbitberry-01.jpg";
-import workMobile1 from "../../Assets/MobileImage/bitberryWatchSoon-01.png";
-import workMobile2 from "../../Assets/MobileImage/LaunchpadSoon-01.png";
-import workMobile3 from "../../Assets/MobileImage/bitberryStudios-01.png";
-import workMobile4 from "../../Assets/MobileImage/WhatisBitbeery-01.png";
+import workMobile1 from "../../Assets/MobileImage/MobileImg-01.png";
+import workMobile2 from "../../Assets/MobileImage/MobileImg-02.png";
+import workMobile3 from "../../Assets/MobileImage/MobileImg-03.png";
+import workMobile4 from "../../Assets/MobileImage/MobileImg-04.png";
 import Circle from "../../Assets/Images/VectorCircle-01.png";
 
 ////arrow musebat

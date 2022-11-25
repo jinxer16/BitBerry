@@ -13,10 +13,9 @@
 }
 .img_bg_stay{
   display: block;
-  background-image: url("../../Assets/Images/stay_bg.png.jpg");
-  background-position: center;
+  background-image: url("../../Assets/Images/stayBgImage-01-01.png");
   background-size: cover;
-  height: 570px;
+  height: 590px;
 }
 .subHeading-stayTouch {
   width: 635px;

@@ -65,6 +65,9 @@
     letter-spacing: 0.005em;
     color: #000000;
   }
+  .ProjectMobileScreen{
+    display: none !important;
+  }
 
   .imgProject {
     position: absolute;
@@ -89,17 +92,31 @@
     display: none !important;
   }
 }
-@media (max-width: 769px) {
+/* @media (max-width:768px){
   #carouselExampleControls1 {
-    display: block !important;
+    display: none !important;
   }
+} */
+@media only screen and (min-width: 768px) {
+  #carouselExampleControls1 {
+    display: none !important;
+  }
+  .ProjectMobileScreen{
+    display: none !important;
+  }
+
+}
+@media (max-width: 790px) {
+  /* #carouselExampleControls1 {
+    display: none !important;
+  } */
 
   /* .carousel-control-next{
   bottom: -10px;
   position: relative;
   left: 300px;
 } */
-  .cabutton {
+  /* .cabutton {
     border: none;
     background-color: #fff854;
     border-radius: 10px;
@@ -112,13 +129,11 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 109%;
-    /* or 22px */
-
     text-align: center;
     letter-spacing: 0.005em;
     color: #fff;
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-  }
+  } */
 }
 
 @media (max-width: 320px) {

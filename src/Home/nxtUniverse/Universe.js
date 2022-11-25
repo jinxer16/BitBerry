@@ -55,28 +55,34 @@ function Universe() {
                 <span className="fs-4"><IoIosArrowForward/></span>
               </div>
               <div className="p-2">
+              <a href="https://t.me/BitBerryOfficial" target={"_blank"}>
                 <img
                   classname="img-fluid"
                   width={"30px"}
                   height={"30px"}
                   src={social}
                 />
+                </a>
               </div>
               <div className="p-2 ">
+              <a href="https://twitter.com/BitberryF" target={"_blank"}>
                 <img
                   classname="img-fluid"
                   width={"30px"}
                   height={"30px"}
                   src={social1}
                 />
+                </a>
               </div>
               <div className="p-2 ">
+              <a href="https://discord.com/invite/uqDWG3peeu" target={"_blank"}>
                 <img
                   classname="img-fluid"
                   width={"30px"}
                   height={"30px"}
                   src={social2}
                 />
+                </a>
               </div>
             </div>
           </div>
@@ -107,8 +113,8 @@ function Universe() {
           <div></div>
           {/* **********************Mobile Screen********* */}
           <div className="container">
-            <div className="d-flex flex-column text-center mobile-screen ">
-              <div className=" mt-5 text-center">
+            <div className="d-flex flex-column mobile-screen ">
+              <div className=" mt-5">
                 <p className="p1-mobile">
                   We provide a level playing field for all webtoon creators to
                   draw, contribute and earn money.

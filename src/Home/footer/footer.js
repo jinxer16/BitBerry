@@ -21,22 +21,23 @@ function Footer() {
             <div className="row rowInFooter  ">
               <div className="col-lg-4 col-md-6 colWise ps-sm-5 mt-2">
                 <h3 className="txtHeading">sitemap</h3>
-                <span className="textSpanFooter mt-3">Home</span>
-                <span className="textSpanFooter mt-3">About us</span>
-                <span className="textSpanFooter mt-3">How we work</span>
-                <span className="textSpanFooter mt-3">Documents</span>
-                <span className="textSpanFooter mt-3">Team</span>
-                <span className="textSpanFooter mt-3">Roadmap</span>
+                <span className="textSpanFooter mt-3"><a href="#home">Home</a></span>
+                <span className="textSpanFooter mt-3"><a href="#about">About us</a></span>
+                <span className="textSpanFooter mt-3"><a href="#howwework">How we work</a></span>
+                <span className="textSpanFooter mt-3"><a href="#documents">Documents</a></span>
+                <span className="textSpanFooter mt-3"><a href="">Team</a></span>
+                <span className="textSpanFooter mt-3"><a href="#roadMap">Roadmap</a></span>
               </div>
               <div className="col-lg-4 col-md-6 colWise mt-2 ">
                 <h3 className="txtHeading">ecosystem</h3>
-                <span className="textSpanFooter mt-3">Tokenomic</span>
-                <span className="textSpanFooter mt-3">Launchpad</span>
-                <span className="textSpanFooter mt-3">LP Pool</span>
+                <span className="textSpanFooter mt-3"><a href="#tokenomics">Tokenomic</a></span>
+                <span className="textSpanFooter mt-3"><a href="">Launchpad</a></span>
+                <span className="textSpanFooter mt-3"><a href="">LP Pool</a></span>
               </div>
               <div className="col-lg-4 col-md-6 colWise mt-2">
                 <h3 className="txtHeading">community</h3>
                 <div className="d-flex gap-3 mt-3">
+                <a href="https://t.me/BitBerryOfficial" target={"_blank"}>
                   <img
                     className="img-fluid"
                     width={"30px"}
@@ -44,6 +45,8 @@ function Footer() {
                     src={social}
                     alt=""
                   />
+                  </a>
+                  <a href="https://twitter.com/BitberryF" target={"_blank"}>
                   <img
                     className="img-fluid"
                     width={"30px"}
@@ -51,6 +54,8 @@ function Footer() {
                     src={social1}
                     alt=""
                   />
+                  </a>
+                  <a href="https://discord.com/invite/uqDWG3peeu" target={"_blank"}>
                   <img
                     className="img-fluid"
                     width={"30px"}
@@ -58,22 +63,93 @@ function Footer() {
                     src={social2}
                     alt=""
                   />
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="container-fluid  footerSecMobile d-flex  g-0">
+      <div className="container  footerSecMobile d-flex  g-0">
         <img src={footerimgback} className="img-fluid backImgMobile" alt="" />
         <div className="footerMobile">
-          <div className="row  d-flex justify-content-center g-0">
-            <div className="col-8">
+          <div className="row mt-4">
+            <div className="col-8 mt-3">
               <img src={bit} alt="" className="img-fluid imgFooterMobile" />
             </div>
           </div>
-          <h3 className="txtHeading ms-2">sitemap</h3>
-          <div className="row mt-3 g-0">
+          <div className="row mt-3">
+            <div className="col-12">
+              <h3 className="textSpanMobileFooter ">
+                &copy; 2022 bitberry. All rights reserved
+              </h3>
+            </div>
+          </div>
+          <h1 className="txtHeading ms-4 mt-2">sitemap</h1>
+          <div className="list d-flex flex-column txtHeading ms-4 mt-3 footer-text">
+          <div className="p-1"> <a href="#home">Home</a></div>
+          <div  className="p-1"> <a href="#about">About us</a></div>
+          <div  className="p-1"> <a href="#howwework" >How we work</a></div>
+          <div  className="p-1"> <a href="#documents" >Documents</a></div>
+          <div  className="p-1"> <a href="#roadMap">Road Map</a></div>
+            {/* <ul className="txtHeading">
+              <li> <a href="">Home</a></li>
+              <li>About us</li>
+              <li>How we work</li>
+              <li>Documents</li>
+              <li>Roadmap</li>
+              <li>Documents</li>
+            </ul> */}
+          </div>
+          <h1 className="txtHeading ms-4 mt-4">ecosystem</h1>
+          <div className="list d-flex flex-column txtHeading ms-4 mt-3 footer-text">
+          <div className="p-1"> <a href="#tokenomics">Tokenomics</a></div>
+          <div  className="p-1"> <a href="" >Launchpad</a></div>
+          <div  className="p-1"> <a href="">Lp Pool</a></div>
+            {/* <ul className="txtHeading">
+              <li> <a href="">Home</a></li>
+              <li>About us</li>
+              <li>How we work</li>
+              <li>Documents</li>
+              <li>Roadmap</li>
+              <li>Documents</li>
+            </ul> */}
+          </div>
+          <h1 className="txtHeading ms-4 mt-4">community</h1>
+          <div className="row mt-3 g-0 mb-5">
+            <div className="col-6 footerMobile footericon
+            txtHeading d-flex gap-3 ms-4">
+            <a href="https://t.me/BitBerryOfficial" target={"_blank"}>
+              <img
+                className="img-fluid"
+                width={"20px"}
+                height={"20px"}
+                src={social}
+                alt=""
+              />
+              </a>
+              <a href="https://twitter.com/BitberryF" target={"_blank"}>
+              <img
+                className="img-fluid"
+                width={"20px"}
+                height={"20px"}
+                src={social1}
+                alt=""
+              />
+              </a>
+              <a href="https://discord.com/invite/uqDWG3peeu" target={"_blank"}>
+              <img
+                className="img-fluid"
+                width={"20px"}
+                height={"20px"}
+                src={social2}
+                alt=""
+              />
+              </a>
+            </div>
+          </div>
+          
+          {/* <div className="row mt-3 g-0">
             <div className="col-4 footerMobile txtHeading">
               <span className="textSpanMobileFooter ms-2">Home</span>
             </div>
@@ -133,14 +209,8 @@ function Footer() {
                 alt=""
               />
             </div>
-          </div>
-          <div className="row g-0 mt-5 d-flex justify-content-center">
-            <div className="col-12 justify-content-center d-flex">
-              <h3 className="textSpanMobileFooter ">
-                &copy; 2022 bitberry. All rights reserved
-              </h3>
-            </div>
-          </div>
+          </div> */}
+          
         </div>
       </div>
     </>

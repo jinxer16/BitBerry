@@ -41,17 +41,17 @@ function Stay() {
               <input
                 type="text"
                 placeholder="Your name"
-                className="mb-2 inputField"
+                className=" inputField"
                 alt=""
               />
-              <img src={inputLine} className="mb-5" alt="" />
+              <img src={inputLine} className="mb-2" alt="" />
               <input
                 type="text"
                 placeholder="Your Email"
-                className="mb-2 inputField"
+                className=" inputField"
                 alt=""
               />
-              <img src={inputLine} className="mb-5" alt="" />
+              <img src={inputLine} className="mb-2" alt="" />
               <button type="submit" className="btnSubmit">
                 Subcribe
               </button>

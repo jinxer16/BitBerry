@@ -1,6 +1,7 @@
 
 
 .footer {
+  margin-top: 0% !important;
   background-image: url("../../Assets/Images/Rectangle17.png");
   /* background-image: url("../../Assets/Images/Rectangle18.png"); */
   position: relative;
@@ -74,6 +75,14 @@ color: #FFFFFF;
   text-transform: uppercase;
   margin-bottom: 5px;
   line-height: 136.52%;
+  text-decoration: none !important;
+}
+a{
+  text-decoration: none !important;
+  color: #FFFFFF;
+}
+a:hover{
+  color: yellow;
 }
 .txtHeading1{
   font-family: 'Inter';
@@ -99,6 +108,7 @@ color: #FFFFFF;
   text-align: left;
 }
 .textSpanMobileFooter {
+  margin-left: 20px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -123,5 +133,21 @@ color: #FFFFFF;
 }
 
 .imgFooterMobile {
-  width: 200px !important;
+  width: 70% !important;
+  margin-left: 20px;
+}
+
+.list ul li{
+  list-style: none;
+  margin: 20px;
+  text-align: left;
+}
+/* .footer-text{
+  margin-left: 20px;
+} */
+
+
+.footericon{
+  margin-left: 20px;
+
 }
