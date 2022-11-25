@@ -129,3 +129,14 @@
 .lineWidth {
   width: 50%;
 }
+.mbl-bgWork{
+  background-image: url("../../Assets/Images/MblHowWorkBg-01.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media(max-width:768px){
+  .bgImageHowWe{
+    background-image:none !important;
+  }
+}

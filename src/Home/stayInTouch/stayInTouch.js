@@ -18,7 +18,7 @@ function Stay() {
   return (
     <div className="contianer stayTouch mt-5 mb-5">
       <div className="row">
-        <div className="col-md-12 ps-5 pe-5">
+        <div className="col-md-12 ps-5 pe-5 text-center">
           <img src={contactUs} className="img-fluid" alt="" />
         </div>
       </div>
@@ -41,18 +41,18 @@ function Stay() {
               <input
                 type="text"
                 placeholder="Your name"
-                className=" inputField"
+                className="inputField"
                 alt=""
               />
-              <img src={inputLine} className="mb-2" alt="" />
+              <img src={inputLine} className="mb-5" alt="" />
               <input
                 type="text"
                 placeholder="Your Email"
-                className=" inputField"
+                className="  inputField"
                 alt=""
               />
-              <img src={inputLine} className="mb-2" alt="" />
-              <button type="submit" className="btnSubmit">
+              <img src={inputLine} className="mb-4" alt="" />
+              <button type="submit" className="mt-4 btnSubmit">
                 Subcribe
               </button>
             </div>

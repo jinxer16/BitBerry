@@ -20,7 +20,7 @@ function Footer() {
           <div className="col-md-6  footerLeft">
             <div className="row rowInFooter  ">
               <div className="col-lg-4 col-md-6 colWise ps-sm-5 mt-2">
-                <h3 className="txtHeading">sitemap</h3>
+                <h1 className="txtHeading">sitemap</h1>
                 <span className="textSpanFooter mt-3"><a href="#home">Home</a></span>
                 <span className="textSpanFooter mt-3"><a href="#about">About us</a></span>
                 <span className="textSpanFooter mt-3"><a href="#howwework">How we work</a></span>
@@ -29,13 +29,13 @@ function Footer() {
                 <span className="textSpanFooter mt-3"><a href="#roadMap">Roadmap</a></span>
               </div>
               <div className="col-lg-4 col-md-6 colWise mt-2 ">
-                <h3 className="txtHeading">ecosystem</h3>
+                <h1 className="txtHeading">ecosystem</h1>
                 <span className="textSpanFooter mt-3"><a href="#tokenomics">Tokenomic</a></span>
                 <span className="textSpanFooter mt-3"><a href="">Launchpad</a></span>
                 <span className="textSpanFooter mt-3"><a href="">LP Pool</a></span>
               </div>
               <div className="col-lg-4 col-md-6 colWise mt-2">
-                <h3 className="txtHeading">community</h3>
+                <h1 className="txtHeading">community</h1>
                 <div className="d-flex gap-3 mt-3">
                 <a href="https://t.me/BitBerryOfficial" target={"_blank"}>
                   <img
@@ -85,8 +85,8 @@ function Footer() {
               </h3>
             </div>
           </div>
-          <h1 className="txtHeading ms-4 mt-2">sitemap</h1>
-          <div className="list d-flex flex-column txtHeading ms-4 mt-3 footer-text">
+          <div className="txtHeading ms-4 mt-2">sitemap</div>
+          <div className="list d-flex flex-column  ms-4 mt-3 footer-text">
           <div className="p-1"> <a href="#home">Home</a></div>
           <div  className="p-1"> <a href="#about">About us</a></div>
           <div  className="p-1"> <a href="#howwework" >How we work</a></div>
@@ -101,21 +101,14 @@ function Footer() {
               <li>Documents</li>
             </ul> */}
           </div>
-          <h1 className="txtHeading ms-4 mt-4">ecosystem</h1>
-          <div className="list d-flex flex-column txtHeading ms-4 mt-3 footer-text">
+          <div className="txtHeading ms-4 mt-4">ecosystem</div>
+          <div className="list d-flex flex-column  ms-4 mt-3 footer-text">
           <div className="p-1"> <a href="#tokenomics">Tokenomics</a></div>
           <div  className="p-1"> <a href="" >Launchpad</a></div>
           <div  className="p-1"> <a href="">Lp Pool</a></div>
-            {/* <ul className="txtHeading">
-              <li> <a href="">Home</a></li>
-              <li>About us</li>
-              <li>How we work</li>
-              <li>Documents</li>
-              <li>Roadmap</li>
-              <li>Documents</li>
-            </ul> */}
+
           </div>
-          <h1 className="txtHeading ms-4 mt-4">community</h1>
+          <div className="txtHeading ms-4 mt-4">community</div>
           <div className="row mt-3 g-0 mb-5">
             <div className="col-6 footerMobile footericon
             txtHeading d-flex gap-3 ms-4">

@@ -86,7 +86,7 @@ function EcoSystem() {
   return (
     <div className="contianer ecoSystem mt-5 mb-5">
       <div className="row ">
-        <div className="col-md-12 ps-5 pe-5">
+        <div className="col-md-12 ps-5 pe-5 text-center">
           <img src={ecosystem} className="img-fluid" alt="" />
         </div>
       </div>

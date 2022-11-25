@@ -46,7 +46,7 @@ function Works() {
       </div>
 
       <div className="line_bg row justify-content-center works">
-        <div className="col-lg-12 col-xl-8 col-xxl-8">
+        <div className="col-lg-12 col-xl-7 col-xxl-7">
 
         <div className="row d-flex justify-content-center mt-3"
           data-aos="fade-up"

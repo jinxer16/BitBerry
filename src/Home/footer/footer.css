@@ -1,5 +1,3 @@
-
-
 .footer {
   margin-top: 0% !important;
   background-image: url("../../Assets/Images/Rectangle17.png");
@@ -64,18 +62,28 @@
 .txtHeading {
   font-family: 'Inter';
 font-style: normal;
-font-weight: 300;
-font-size: 12px;
+font-weight: 700;
+font-size: 16px;
 line-height: 136.52%;
-/* or 16px */
-
-
 color: #FFFFFF; 
   text-align: left;
   text-transform: uppercase;
   margin-bottom: 5px;
   line-height: 136.52%;
   text-decoration: none !important;
+}
+.list{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 136.52%;
+  color: #FFFFFF; 
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    line-height: 136.52%;
+    text-decoration: none !important;
 }
 a{
   text-decoration: none !important;
@@ -137,11 +145,11 @@ a:hover{
   margin-left: 20px;
 }
 
-.list ul li{
+/* .list ul li{
   list-style: none;
   margin: 20px;
   text-align: left;
-}
+} */
 /* .footer-text{
   margin-left: 20px;
 } */

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import Logo from "../../Assets/Images/logo.png";
 import social from "../../Assets/Images/telegramIcon.png";
@@ -6,19 +6,35 @@ import social1 from "../../Assets/Images/twitterIcon.png";
 import social2 from "../../Assets/Images/discordIcon.png";
 
 function Header() {
+  const [isButton, setIsButton] = useState(false);
+
   return (
-    <div className="col-md-12 d-flex justify-content-center align-items-between border">
+    <div className="col-md-12 d-flex justify-content-center align-items-between">
       <nav className=" col-md-11 navbar navbar-expand-lg navbarscreen">
-        <div className="container">
-          <a className="navbar-brand ml-3" href="#home">
+        <div className={ isButton ? "container Header-bg" : "container"}>
+       { !isButton ? <div >
+          <a className="navbar-brand ml-3 "href="#home">
             <img
-              src={Logo}
+              src={ Logo}
               width={"80px"}
               height={"80px"}
               className="img-fluid img-responsive"
             />
           </a>
-          <div className="">
+        </div>
+        :
+        <div >
+          <a className="navbar-brand ml-3 "href="#home">
+            {/* <img
+              src={ Logo}
+              width={"80px"}
+              height={"80px"}
+              className="img-fluid img-responsive"
+            /> */}
+          </a>
+        </div>
+        }
+          <div className={isButton ? "button-none" : ""}>
             <button className="text-center btn-largescreen">
               LAUCNHPAD SOON
             </button>
@@ -31,6 +47,9 @@ function Header() {
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            onClick={() => {
+              setIsButton(!isButton);
+            }}
           >
             <span className="navbar-toggler-icon" />
           </button>
@@ -81,7 +100,9 @@ function Header() {
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#howwework">How we work</a>
+                <a className="nav-link" href="#howwework">
+                  How we work
+                </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#documents">
@@ -98,37 +119,46 @@ function Header() {
                   Our Work
                 </a>
               </li>
-              {/* <li className="nav-item mt-4">
+              <li className="nav-item mt-5">
                 <button className="text-center btn-largescreen">
                   LAUCNHPAD SOON
                 </button>
-              </li> */}
-              <li className="nav-item mt-4 large">
+              </li>
+              <li className="nav-item mt-5 large">
                 <div className="box-1 ">
                   <div className="d-flex flex-row justify-content-center">
                     <div className="p-2">
-                      <img
-                        classname="img-fluid"
-                        width={"30px"}
-                        height={"30px"}
-                        src={social}
-                      />
+                      <a href="https://t.me/BitBerryOfficial" target={"_blank"}>
+                        <img
+                          classname="img-fluid"
+                          width={"30px"}
+                          height={"30px"}
+                          src={social}
+                        />
+                      </a>
                     </div>
                     <div className="p-2 ">
-                      <img
-                        classname="img-fluid"
-                        width={"30px"}
-                        height={"30px"}
-                        src={social1}
-                      />
+                      <a href="https://twitter.com/BitberryF" target={"_blank"}>
+                        <img
+                          classname="img-fluid"
+                          width={"30px"}
+                          height={"30px"}
+                          src={social1}
+                        />
+                      </a>
                     </div>
                     <div className="p-2 ">
-                      <img
-                        classname="img-fluid"
-                        width={"30px"}
-                        height={"30px"}
-                        src={social2}
-                      />
+                      <a
+                        href="https://discord.com/invite/uqDWG3peeu"
+                        target={"_blank"}
+                      >
+                        <img
+                          classname="img-fluid"
+                          width={"30px"}
+                          height={"30px"}
+                          src={social2}
+                        />
+                      </a>
                     </div>
                   </div>
                 </div>

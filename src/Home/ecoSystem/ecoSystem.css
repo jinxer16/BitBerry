@@ -49,7 +49,7 @@
 .centerEco {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -330,6 +330,16 @@
     text-transform: uppercase;
   
     color: #000000;
+  }
+
+}
+
+
+
+
+@media  only screen and (max-width: 320px){
+  .eco-heading{
+    margin-left: 131px;
   }
 
 }

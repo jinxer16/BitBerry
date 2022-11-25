@@ -1,4 +1,5 @@
 .stayTouch {
+  margin-top: 100px;
   overflow: hidden;
 }
 
@@ -16,6 +17,7 @@
   background-image: url("../../Assets/Images/stayBgImage-01-01.png");
   background-size: cover;
   height: 590px;
+  width: 100%;
 }
 .subHeading-stayTouch {
   width: 635px;
@@ -36,6 +38,7 @@
 .inputField{
   border: none;
   outline: none;
+  background-color: transparent;
 }
 .inputField,
 input:focus,

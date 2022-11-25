@@ -15,15 +15,11 @@ import lineHor2 from "../../Assets/Images/Group27Hor.png";
 
 
 function Tokens() {
-  const myFunction=()=>{
-    // Get the text field
-    let copyText = document.getElementById("copytext");
-  
-    // Copy the text inside the text field
-    navigator.clipboard.writeText(copyText.value);
-    
-    // Alert the copied text
-    alert("Copied the text: " + copyText.value);
+  const address = "0XCA68EF680D3803CF2E055085149BE41216BAC3C8";
+  function copyToClipboard() {
+    navigator.clipboard.writeText(address).then(() => {
+        alert(`${address} Copied`);
+    });
   }
   return (
     <div className="tokenContainer mt-5" id="tokenomics">
@@ -161,13 +157,14 @@ function Tokens() {
               </div>
             </div>
             <div
-              className="col-sm-10 col-md-12 mt-3 text-center address ms-3 ms-md-5 copytext" value="0x8C7997E1D05833268ce36087517F333F9a158F21"
+              className="col-sm-10 col-md-12 mt-3 text-center address ms-3 ms-md-5 copytext" id="copyText"
+              value={address}
             >
-              0xcA68EF680d3803cF2e055085149be41216bAc3c8
+              {address}
             </div>
             <div className=" mt-3 d-flex justify-content-center ms-3 ms-md-5">
               <div className="">
-                <button type="copy" className="btn-btn">
+                <button  onClick={copyToClipboard} className="btn-btn">
                   Copy
                 </button>
               </div>
@@ -284,9 +281,9 @@ function Tokens() {
                 </div>
               </div>
               <div className="row d-flex justify-content-center ">
-                <div className="col-md-10 col-xxl-8 mt-5">
+                <div className="col-md-10 col-lg-12 col-xl-8 col-xxl-10 mt-5">
                   <div className="row d-flex justify-content-center ">
-                    <div className="col-md-3 text-cont">
+                    <div className="col-md-3 col-lg-3 col-xl-3 col-xxl-3 text-cont">
                       &nbsp; &nbsp; Contract address &nbsp;
                       <img
                         src={line3}
@@ -295,11 +292,11 @@ function Tokens() {
                         width={"16px"}
                       />
                     </div>
-                    <div className="col-md-6 txt-add ">
-                    0xcA68EF680d3803cF2e055085149be41216bAc3c8
+                    <div className="col-md-6 col-lg-6 col-xl-6 col-xxl-7 txt-add  " id="copyText" value={address}>
+                      {address}
                     </div>
-                    <div className="col-md-2">
-                      <button type="copy" onclick="myFunction()" className="btn">
+                    <div className="col-md-2 col-lg-3 col-xl-3 col-xxl-2">
+                      <button onClick={copyToClipboard} className="btn">
                         Copy
                       </button>
                     </div>

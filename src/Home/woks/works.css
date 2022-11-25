@@ -1,21 +1,25 @@
 .works {
   overflow: hidden;
+
 }
 .line_bg{
   background-image: url("../../Assets/Images/lineCross-01.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  overflow: hidden;
+  width: 100%;
+
 }
 .centerPlugContainer {
   position: relative;
+  overflow: hidden;
 }
 .imgCenterPlug {
   position: absolute;
   width: 500px;
   top: 34px;
   left: 37px;
+  overflow: hidden;
 }
 /* @media (max-width: 2560px) {
   .imgCenterPlug {
@@ -43,6 +47,8 @@
 .imgWork{
   /* width: 430px !important; */
 height: 259px !important;
+overflow: hidden;
+
 }
 @media (max-width: 1440px) {
   .imgCenterPlug {

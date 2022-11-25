@@ -6,6 +6,9 @@ import imgRight from "../../Assets/Images/Group351.png";
 import group1 from "../../Assets/Images/Group37.png";
 import group2 from "../../Assets/Images/Group38.png";
 import group3 from "../../Assets/Images/Group39.png";
+import Mobilegroup1 from "../../Assets/Images/Group 331m.png";
+import Mobilegroup2 from "../../Assets/Images/Group341m.png";
+import Mobilegroup3 from "../../Assets/Images/Group351m.png";
 import Circle from "../../Assets/Images/VectorCircle-01.png";
 import "./projectDocument.css";
 import Slider from "react-slick";
@@ -35,7 +38,7 @@ function ProjectDocument() {
   return (
     <div className="contianer projectDocument mt-5" id="documents">
       <div className="row">
-        <div className="col-md-12 ps-5 pe-5">
+        <div className="col-md-12 ps-5 pe-5 text-center">
           <img src={roadmap} className="img-fluid" alt="" />
         </div>
       </div>
@@ -139,27 +142,35 @@ function ProjectDocument() {
         </div>
 
         {/* *******************************************************Slider********************************************************** */}
-        <div classname="ProjectMobileScreen carousel slide"id="carouselExampleControls1">
+        <div id="carouselExampleControls1"
+          className="carousel slide">
           <Slider {...settings}>
-            <div className="col-12 p-3 text-center ProjectMobileScreen">
+            <div className="col-12 text-center">
               <figure>
                 <a
                   href="https://drive.google.com/file/d/1QrcvJ4RgyHmOYMsQRaIwPlQgN6r0gHPB/view"
                   target="_blank"
                 >
-                  <img src={group1} className="img-fluid" alt="" />
+                  <img src={Mobilegroup1} className="img-fluid" alt=""/>
                 </a>
               </figure>
-            </div>
+              
+                <span className="catext text-center">COMPANY PROFILE </span>
+                <button className="cabutton " type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">{"- - ->"}</button>
+              </div>
             <div>
               <figure>
                 <a
                   href="https://drive.google.com/file/d/1OIlbyo_Cru4trlVUVyozrfr8sMSkIiv7/view?usp=sharing"
                   target="_blank"
                 >
-                  <img src={group2} className="img-fluid" alt="" />
+                  <img src={Mobilegroup2} className="img-fluid" alt="" />
                 </a>
               </figure>
+              <div className="text-center">
+              <span className="catext text-center">PITCH DECK </span>
+              <button className="cabutton ms-2" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">{"- - ->"}</button>
+              </div>
             </div>
             <div>
               <figure>
@@ -168,12 +179,17 @@ function ProjectDocument() {
                   target="_blank"
                 >
                   <img
-                    src={group2}
-                    className="img-fluid  imgDoc hover-button--on"
+                    src={Mobilegroup3}
+                    className="img-fluid"
                     alt=""
+                  
                   />
                 </a>
               </figure>
+              <div className="text-center">
+              <span className="catext text-center">WHITEPAPER </span>
+              <button className="cabutton ms-2" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">{"- - ->"}</button>
+            </div>
             </div>
           </Slider>
         </div>

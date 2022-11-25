@@ -24,7 +24,7 @@ function HowWeWork() {
   return (
     <div className="contianer howWeWork w-80 mt-5" id="howwework">
       <div className="row">
-        <div className="col-md-12 ps-5 pe-5">
+        <div className="col-md-12 ps-5 pe-5 text-center">
           <img src={work} className="img-fluid" alt="" />
         </div>
       </div>
@@ -53,7 +53,7 @@ function HowWeWork() {
             data-aos-duration="1000"
          >
           <img src={largeScreen} alt="" className="img-fluid largeScreenDis" />
-          <div className="row imgContainer2 mobileScreenDis g-0" >
+          <div className="row imgContainer2 mobileScreenDis  mbl-bgWork g-0" >
             <div className=" col-6 col-md-6 col-lg-2 " >
               <div className="mt-4 d-flex flex-column justify-content-center align-items-center" >
                 <span className="txtHeading2" >01</span>
