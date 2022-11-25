@@ -17,7 +17,7 @@ function Stay() {
   }, [])
   return (
     <div className="contianer stayTouch mt-5 mb-5">
-      <div className="row">
+      <div className="row marginStay">
         <div className="col-md-12 ps-5 pe-5 text-center">
           <img src={contactUs} className="img-fluid" alt="" />
         </div>

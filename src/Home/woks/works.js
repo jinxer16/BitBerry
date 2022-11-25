@@ -28,7 +28,7 @@ function Works() {
   return (
     <>
       <div className="contianer works desktopWorks w-100 mt-5 mb-5" id="ourWork">
-        <div className="row">
+        <div className="row margin-work">
           <div className="col-md-12 ps-5 pe-5 text-center">
             <img src={works} className="img-fluid" alt="" />
           </div>

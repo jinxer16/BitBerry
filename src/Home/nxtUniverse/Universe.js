@@ -135,14 +135,14 @@ function Universe() {
 
           {/* **********************End Mobile Screen********* */}
           <div className="row d-flex justify-content-center pic-bg large-screen">
-            <div className="col-lg-10 col-xl-12 col-xxl-6 pic-bg">
-              <div className="row d-flex justify-content-center">
-                <div className="col-lg-6 col-xl-6 col-xxl-7" data-aos="fade-right" data-aos-duration="2000">
+            <div className="col-lg-11 col-xl-12 col-xxl-8 pic-bg">
+              <div className="row d-flex justify-content-between">
+                <div className="col-lg-5 col-xl-6 col-xxl-5" data-aos="fade-right" data-aos-duration="2000">
                   <div className="">
                     <img src={Picture1} className="img-fluid img-1" />
                   </div>
                 </div>
-                <div className=" col-lg-6 col-xl-4 col-xxl-5 text-para" data-aos="fade-left" data-aos-duration="2000">
+                <div className=" col-lg-6 col-xl-4 col-xxl-6 text-para" data-aos="fade-left" data-aos-duration="2000">
                   <p className="p1">
                     We provide a level playing field for all webtoon creators to
                     draw, contribute and earn money.

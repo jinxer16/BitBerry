@@ -1,3 +1,11 @@
+@media(min-width:769px){
+  .margin-projectdcoument{
+    margin-top:33px;
+  }
+  
+}
+
+
 .projectDocument {
   overflow: hidden;
 }
