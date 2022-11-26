@@ -4,36 +4,30 @@ import Logo from "../../Assets/Images/logo.png";
 import social from "../../Assets/Images/telegramIcon.png";
 import social1 from "../../Assets/Images/twitterIcon.png";
 import social2 from "../../Assets/Images/discordIcon.png";
-
+import { HashLink } from 'react-router-hash-link';
 function Header() {
   const [isButton, setIsButton] = useState(false);
 
   return (
     <div className="col-md-12 d-flex justify-content-center align-items-between">
       <nav className=" col-md-11 navbar navbar-expand-lg navbarscreen">
-        <div className={ isButton ? "container Header-bg" : "container"}>
-       { !isButton ? <div >
-          <a className="navbar-brand ml-3 "href="#home">
-            <img
-              src={ Logo}
-              width={"80px"}
-              height={"80px"}
-              className="img-fluid img-responsive"
-            />
-          </a>
-        </div>
-        :
-        <div >
-          <a className="navbar-brand ml-3 "href="#home">
-            {/* <img
-              src={ Logo}
-              width={"80px"}
-              height={"80px"}
-              className="img-fluid img-responsive"
-            /> */}
-          </a>
-        </div>
-        }
+        <div className={isButton ? "container Header-bg" : "container"}>
+          {!isButton ? <div >
+            <a className="navbar-brand ml-3 " href="#home">
+              <img
+                src={Logo}
+                width={"80px"}
+                height={"80px"}
+                className="img-fluid img-responsive"
+              />
+            </a>
+          </div>
+            :
+            <div >
+              <a className="navbar-brand ml-3 " href="#home">
+              </a>
+            </div>
+          }
           <div className={isButton ? "button-none" : ""}>
             <button className="text-center btn-largescreen">
               LAUCNHPAD SOON
@@ -57,19 +51,19 @@ function Header() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className=" col-md-12 navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="#home">
+                <HashLink className="nav-link" to="/#home">
                   Home
-                </a>
+                </HashLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#about">
+                <HashLink className="nav-link" to="/#about">
                   About
-                </a>
+                </HashLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#tokenomics">
+                <HashLink className="nav-link" to="/#tokenomics">
                   Tokenomics
-                </a>
+                </HashLink>
               </li>
               <li className="nav-item dropdown">
                 <a
@@ -88,6 +82,7 @@ function Header() {
                     </a>
                   </li>
                   <li>
+
                     <a className="dropdown-item" href="#">
                       Lucky Draw
                     </a>
@@ -100,24 +95,25 @@ function Header() {
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#howwework">
+                <HashLink className="nav-link" to="/#howwework">
                   How we work
-                </a>
+                </HashLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#documents">
+                <HashLink className="nav-link" to="/#documents"
+                >
                   Documents
-                </a>
+                </HashLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#roadMap">
+                <HashLink className="nav-link" to="/#roadMap">
                   Roadmap
-                </a>
+                </HashLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#ourWork">
+                <HashLink className="nav-link" to="/#ourWork">
                   Our Work
-                </a>
+                </HashLink>
               </li>
               <li className="nav-item mt-5">
                 <button className="text-center btn-largescreen">

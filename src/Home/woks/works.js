@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import works from "../../Assets/Images/works.png";
 import work1 from "../../Assets/Images/newbitberry-02.jpg";
 import work2 from "../../Assets/Images/newbitberry-03.jpg";
-import work3 from "../../Assets/Images/BITBerrystudios-01.png";
+import work3 from "../../Assets/Images/bitberryStudios-01.png";
 import work4 from "../../Assets/Images/newbitberry-01.jpg";
 import workMobile1 from "../../Assets/MobileImage/MobileImg-01.png";
 import workMobile2 from "../../Assets/MobileImage/MobileImg-02.png";
