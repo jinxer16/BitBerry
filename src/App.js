@@ -8,6 +8,8 @@ import Home from "./Home/Home";
 import LuckyDraw from "./components/luckyDraw/LuckyDraw";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Lp_Pool from "./components/LpPool/Lp_Pool";
+
 function App() {
   useEffect(() => {
     AOS.init();
@@ -19,6 +21,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home/>} />
         <Route exact path="/luckydraw" element={<LuckyDraw/>} />
+        <Route exact path="/lpPool" element={<Lp_Pool/>} />
       </Routes>
       <Footer />
       </BrowserRouter>

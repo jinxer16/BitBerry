@@ -1,7 +1,8 @@
 .luckyDrawMain {
-  background-image: url('../../Assets//Images/Group9.png');
+  background-image: url("../../Assets//Images/Group9.png");
   background-size: contain;
   background-repeat: no-repeat;
+  width: 100%;
 }
 .lucky_draw_border {
   border: 1px solid black;
@@ -13,7 +14,7 @@
   height: 2.81rem;
   border: 1px solid #000;
   border-radius: 50px;
-  font-family: 'inter';
+  font-family: "inter";
   font-style: normal;
   font-weight: 700;
   line-height: 17px;
@@ -24,7 +25,7 @@
   background: #fff854;
 }
 .lucky_draw_text {
-  font-family: 'inter';
+  font-family: "inter";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -33,7 +34,7 @@
 }
 
 .lucky_draw_heading {
-  font-family: 'RedFive';
+  font-family: "RedFive";
   font-style: normal;
   font-weight: 400;
   font-size: 50px;
@@ -80,7 +81,6 @@ background: #FFF854;
 }
 
 .pic-bg {
-  margin-left: 80px;
   width: 348px;
   height: 337.01px;
   background: #ffffff;
@@ -100,7 +100,7 @@ background: #FFF854;
   border-radius: 10px 0px 0px 10px;
 }
 .green_text {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -122,53 +122,218 @@ background: #FFF854;
 }
 .color5 {
   background: #a3a3a3;
+  height: auto;
 }
 .color6 {
   background: #b5b5b5;
   border-radius: 0px 10px 10px 0px;
 }
 
-.Point_bg{
-    background-image: url("../../Assets/Images/LuckyDraw/Rectangle32.png");
-    background-position: right;
-    background-size: contain;
-    font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 136.52%;
-/* identical to box height, or 22px */
+.Point_bg {
+  background-image: url("../../Assets/Images/LuckyDraw/Rectangle32.png");
+  background-position: right;
+  background-size: contain;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 136.52%;
+  /* identical to box height, or 22px */
 
-text-align: right;
+  text-align: right;
 
-color: #000000;
+  color: #000000;
 }
-.balance_text{
-    
-font-family: 'RedFive';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 109%;
-/* identical to box height, or 20px */
+.balance_text {
+  font-family: "RedFive";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 109%;
+  /* identical to box height, or 20px */
 
-letter-spacing: 0.005em;
+  letter-spacing: 0.005em;
 
-color: #000000;
+  color: #000000;
 }
-.borderLine{
-    border: 1px solid #000;
+.borderLine {
+  border: 1px solid #000;
 }
-.luckyDrawAmount_text{
-    font-family: 'Inter';
+.luckyDrawAmount_text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 136.52%;
+  /* identical to box height, or 25px */
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+.Minusbox-1 {
+  width: 39px;
+  height: 39px;
+  background: #e3e3e3;
+  border: 1px solid #000000;
+  border-radius: 3px;
+}
+.Textbox {
+  width: 141px;
+  height: 60px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+}
+
+
+.inputText{
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 136.52%;
+  /* identical to box height, or 25px */
+  
+  text-align: center;
+  text-transform: uppercase;
+  
+  color: #000000;
+}
+
+.Plusbox-1{
+  width: 39px;
+height: 39px;
+background: #FFFDD3;
+border: 1px solid #000000;
+border-radius: 3px;
+}
+
+.textBox-2{
+  width: 328px;
+height: 67px;
+background: #E9E9E9;
+border-radius: 6px;
+}
+.total_text{
+  font-family: 'Inter';
 font-style: normal;
-font-weight: 900;
+font-weight: 500;
 font-size: 18px;
 line-height: 136.52%;
 /* identical to box height, or 25px */
 
-text-align: center;
-text-transform: uppercase;
 
 color: #000000;
+}
+.total_text_1{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 136.52%;
+  /* identical to box height, or 25px */
+  
+  text-align: right;
+  
+  color: #000000;
+}
+
+.text_2{
+  
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 136.52%;
+/* identical to box height, or 22px */
+
+text-align: center;
+
+color: #000000;
+}
+
+.btn_mint{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+text-align: center;
+
+color: #000000;
+
+  width: 95px;
+height: 39px;
+background: #FFF854;
+
+border: 1px solid #000000;
+border-radius: 50px;
+}
+
+.btn_myNft{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+text-align: center;
+
+color: #000000;
+
+  width: 95px;
+height: 39px;
+background: #fff;
+
+border: 1px solid #000000;
+border-radius: 50px;
+}
+
+
+
+@media (max-width:1024px){
+  .detail_bg_2{
+    margin-top: 25px;
+  }
+}
+
+.luckdraw{
+  overflow: hidden;
+}
+
+@media(max-width:425px){
+  .pic-bg{
+    width: 248px;
+    height: 237.01px;
+    background: #ffffff;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px 10px 0px 0px;
+  }
+  .detail_bg {
+    width: 343px;
+    height: 82px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+  }
+  .green_text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    /* or 16px */
+    text-align: center;
+  
+    color: #000000;
+  }
+  .green_text{
+    padding-top: 5px;
+  }
 }
