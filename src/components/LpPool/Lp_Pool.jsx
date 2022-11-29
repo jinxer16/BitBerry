@@ -90,14 +90,14 @@ function Lp_Pool() {
               <div className="col-12">
                 <div className="row lucky_draw_top d-flex justify-conten-center">
                   <div className=" col-md-3 col-lg-3 col-xl-1 col-sm-12 "></div>
-                  <div className="col-lg-6 col-xl-8 col-sm-12 text-center">
+                  <div className="col-lg-12 col-xl-8 col-sm-12 text-center">
                     <div className="btn_bg lucky_draw_heading pe-5 ps-5 rounded-pill">
                       BITBERRY LP POOL
                       <span className="">
                         {/* <IoAlertCircle/> */}
                         <img
                           src={circle}
-                          className="img-fluid circle_luckydraw"
+                          className="img-fluid circle_lpPool"
                           width={"50px"}
                         />
                       </span>
@@ -108,7 +108,7 @@ function Lp_Pool() {
                       Treasure X NFT from a lucky draw!
                     </div>
                   </div>
-                  <div className="col-lg-3 col-xl-3 col-sm-12  button_responsive">
+                  <div className=" col-md-12 col-xl-3 col-sm-12  button_responsive">
                     <div className="p-2 float-end">
                       <button className="button btn_bg">CONNECT WALLET</button>
                     </div>
