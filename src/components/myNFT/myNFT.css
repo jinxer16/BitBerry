@@ -42,9 +42,9 @@
   letter-spacing: 0.005em;
 }
 
-.circle_luckydraw {
+.circle_luckydraw_myNFT {
   position: relative;
-  right: 235px;
+  right: 0px;
   bottom: 23px;
 }
 /* 
@@ -374,7 +374,11 @@ background: #FFF854;
   box-shadow: none !important;
 }
 .page-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 35px;
+  height: 35px;
   border-radius: 50px;
   margin: 5px;
   color: #000;
@@ -391,4 +395,38 @@ background: #FFF854;
 .page-item:first-child:focus-visible .page-link {
   color: #fff;
   background-color: #a2a2a2;
+}
+.page-item .active {
+  color: #000;
+  background-color: #a2a2a2;
+}
+.active > .page-link {
+  color: #fff;
+  background-color: #a2a2a2;
+}
+.disabled .page-link {
+  color: #fff !important  ;
+  background-color: #a2a2a2 !important;
+}
+.page-item .arrow {
+  color: #fff !important;
+  background-color: #000;
+}
+.nftImgTitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 136.52%;
+  text-align: center;
+  color: #000000;
+}
+.nftImgTransferButton {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #000000;
 }

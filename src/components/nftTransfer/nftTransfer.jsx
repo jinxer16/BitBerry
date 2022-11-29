@@ -22,15 +22,12 @@ function NftTransfer() {
                       <span className="">
                         <img
                           src={circle}
-                          className="img-fluid circle_luckydraw"
+                          className="img-fluid circle_luckydraw_nftTransfer"
                           width={"50px"}
                           alt=""
                         />
                       </span>
                     </div>
-                    {/* <div className="mt-2 lucky_draw_text text-center">
-                      Mint NFT Ticket and get awesome Treasure X NFT card !
-                    </div> */}
                   </div>
                   <div className="col-lg-3 col-xl-2 col-sm-12  button_responsive">
                     <div className="p-2 float-end">
@@ -61,100 +58,6 @@ function NftTransfer() {
                       <div className="col-10 col-md-10 col-lg-10 d-flex justify-content-center ">
                         #1001
                       </div>
-                      {/* <div className="col-12 col-md-12 col-sm-12 col-lg-12 detail_bg">
-                        <div className="row d-flex justify-content-center mbl_padding">
-                          <div className="col-2 col-md-2 color1">
-                            <div class="d-flex flex-column pt-2 pb-2">
-                              <div class="text-center">
-                                <img
-                                  src={greencolor}
-                                  className="img-fluid"
-                                  width={"15px"}
-                                />
-                              </div>
-                              <div class="green_text text-center">35.0%</div>
-                              <div class="green_text text-center">
-                                <b>Common</b>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="col-2 col-md-2color2">
-                            <div class="d-flex flex-column pt-2 pb-3">
-                              <div class="text-center">
-                                <img
-                                  src={colorcircle}
-                                  className="img-fluid"
-                                  width={"15px"}
-                                />
-                              </div>
-                              <div class="green_text text-center">22.0%</div>
-                              <div class="green_text text-center">
-                                <b>Uncommon</b>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="col-2 col-md-2 color3 ">
-                            <div class="d-flex flex-column pt-2 pb-3">
-                              <div class="text-center">
-                                <img
-                                  src={colorcircle1}
-                                  className="img-fluid"
-                                  width={"15px"}
-                                />
-                              </div>
-                              <div class="green_text text-center">19.0%</div>
-                              <div class="green_text text-center">
-                                <b>Rare</b>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="col-2 col-md-2 color4">
-                            <div class="d-flex flex-column pt-2 pb-3">
-                              <div class="text-center">
-                                <img
-                                  src={colorcircle2}
-                                  className="img-fluid"
-                                  width={"15px"}
-                                />
-                              </div>
-                              <div class="green_text text-center">14.0%</div>
-                              <div class="green_text text-center">
-                                <b>Epic</b>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="col-2 col-md-2  color5">
-                            <div class="d-flex flex-column pt-2 pb-3">
-                              <div class="text-center">
-                                <img
-                                  src={colorcircle3}
-                                  className="img-fluid"
-                                  width={"15px"}
-                                />
-                              </div>
-                              <div class="green_text text-center">8.5%</div>
-                              <div class="green_text text-center">
-                                <b>Legendry</b>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="col-2 col-md-2 color6">
-                            <div class="d-flex flex-column pt-2 pb-3">
-                              <div class="text-center">
-                                <img
-                                  src={colorcircle4}
-                                  className="img-fluid"
-                                  width={"15px"}
-                                />
-                              </div>
-                              <div class="green_text text-center">1.5%</div>
-                              <div class="green_text text-center">
-                                <b>Mythic</b>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div> */}
                     </div>
                   </div>
                   <div
@@ -177,21 +80,22 @@ function NftTransfer() {
 
                     {/* ************************************************************************************** */}
                     <div className="row mt-4 d-flex justify-content-center mb-4">
-                      {/* <div className="col-sm-8 d-flex justify-content-around">
+                      {/* alternate for confirm and success message */}
+                      <div className="col-sm-8 d-flex justify-content-around">
                         <div>
                           <button className="btn_mint_nft rounded-pill">
                             CONFIRM
                           </button>
                         </div>
-                      </div> */}
-                      <div className="col-sm-8 d-flex justify-content-center mb-3">
+                      </div>
+                      {/* <div className="col-sm-8 d-flex justify-content-center mb-3">
                         <img src={star} alt=""></img>
                       </div>
                       <div className="col-sm-12 d-flex justify-content-center">
                         <span className="bgForSuccess">
                           Card Successfully Transferred !
                         </span>
-                      </div>
+                      </div> */}
                     </div>
                     {/* ************************************************************************************** */}
                   </div>

@@ -1,9 +1,6 @@
 import React from "react";
 import "./myNFT.css";
 import circle from "../../Assets/Images/VectorCircle-01.png";
-import common from "../../Assets/Images/LuckyDraw/common.PNG";
-import rare from "../../Assets/Images/LuckyDraw/rare.PNG";
-import epic from "../../Assets/Images/LuckyDraw/epic.PNG";
 import PaginatedItems from "./nft";
 function MyNFT() {
   return (
@@ -24,7 +21,7 @@ function MyNFT() {
                       <span className="">
                         <img
                           src={circle}
-                          className="img-fluid circle_luckydraw"
+                          className="img-fluid circle_luckydraw_myNFT"
                           width={"50px"}
                           alt=""
                         />
@@ -43,62 +40,14 @@ function MyNFT() {
               </div>
             </div>
             <div className="row mt-5 mb-5">
-              <div className="col-12 col-lg-12 col-sm-12 ">
+              <div className="col-12 col-lg-12 col-sm-12 d-none d-xl-block">
                 <PaginatedItems itemsPerPage={3} />
-                {/* <div className="row d-flex justify-content-around ">
-                  <div className="col-xl-4 col-lg-6 col-sm-12 col-md-12 d-flex justify-content-center">
-                    <div className="row d-flex justify-content-center">
-                      <div className="col-10 col-md-10 col-lg-10 pic-bg-nft justify-content-center">
-                        <img
-                          src={epic}
-                          className="img-fluid mt-2 rounded mobileNftTransfer"
-                          alt=""
-                        />
-                      </div>
-                      <div className="col-10 col-md-10 col-lg-10 d-flex justify-content-center mt-3">
-                        <b className="text-uppercase">Epic</b>
-                      </div>
-                      <div className="col-10 col-md-10 col-lg-10 d-flex justify-content-center ">
-                        #1002
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="col-xl-4 col-lg-6 col-sm-12 col-md-12 d-flex justify-content-center">
-                    <div className="row d-flex justify-content-center">
-                      <div className="col-10 col-md-10 col-lg-10 pic-bg-nft justify-content-center">
-                        <img
-                          src={rare}
-                          className="img-fluid mt-2 rounded mobileNftTransfer"
-                          alt=""
-                        />
-                      </div>
-                      <div className="col-10 col-md-10 col-lg-10 d-flex justify-content-center mt-3">
-                        <b className="text-uppercase">Rare</b>
-                      </div>
-                      <div className="col-10 col-md-10 col-lg-10 d-flex justify-content-center ">
-                        #1002
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-xl-4 col-lg-6 col-sm-12 col-md-12 d-flex justify-content-center">
-                    <div className="row d-flex justify-content-center">
-                      <div className="col-10 col-md-10 col-lg-10 pic-bg-nft justify-content-center">
-                        <img
-                          src={common}
-                          className="img-fluid mt-2 rounded mobileNftTransfer"
-                          alt=""
-                        />
-                      </div>
-                      <div className="col-10 col-md-10 col-lg-10 d-flex justify-content-center mt-3">
-                        <b className="text-uppercase">Common</b>
-                      </div>
-                      <div className="col-10 col-md-10 col-lg-10 d-flex justify-content-center ">
-                        #1004
-                      </div>
-                    </div>
-                  </div>
-                </div> */}
+              </div>
+              <div className="col-12 col-lg-12 col-sm-12 d-none d-xl-none d-lg-block">
+                <PaginatedItems itemsPerPage={2} />
+              </div>
+              <div className="col-12 col-lg-12 col-sm-12 d-block d-lg-none d-xl-none">
+                <PaginatedItems itemsPerPage={1} />
               </div>
             </div>
           </div>
