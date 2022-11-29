@@ -98,6 +98,7 @@ background: #FFF854;
 .color1 {
   background: #fafafa;
   border-radius: 10px 0px 0px 10px;
+  border-bottom:1px black solid ;
 }
 .green_text {
   font-family: "Inter";
@@ -111,22 +112,31 @@ background: #FFF854;
 
   color: #000000;
 }
+/* .color2 {
+  background: #E3E3E3;
+  border-bottom:1px black solid ;
+} */
 .color2 {
-  background: #e3e3e3;
+  background: #cbcbcb;
+  border-bottom:1px black solid ;
 }
 .color3 {
   background: #cbcbcb;
+  border-bottom:1px black solid ;
 }
 .color4 {
   background: #b9b9b9;
+  border-bottom:1px black solid ;
 }
 .color5 {
   background: #a3a3a3;
   height: auto;
+  border-bottom:1px black solid ;
 }
 .color6 {
   background: #b5b5b5;
   border-radius: 0px 10px 10px 0px;
+  border-bottom:1px black solid ;
 }
 
 .Point_bg {

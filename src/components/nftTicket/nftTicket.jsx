@@ -4,6 +4,7 @@ import circle from "../../Assets/Images/VectorCircle-01.png";
 import common from "../../Assets/Images/LuckyDraw/common.PNG";
 import rare from "../../Assets/Images/LuckyDraw/rare.PNG";
 import epic from "../../Assets/Images/LuckyDraw/epic.PNG";
+import {IoClose} from "react-icons/io5";
 function NftTicket() {
   return (
     <div className="luckdraw">
@@ -11,7 +12,7 @@ function NftTicket() {
         <div className="row d-flex justify-content-center mb-5 ">
           <div className="col-11 lucky_draw_border mb-5 ">
             <div className="row ">
-              <div className="col-12 d-flex justify-content-end mt-1 ">X</div>
+            <div className="col-12 d-flex justify-content-end p-3"><IoClose/></div>
             </div>
             <div className="row ">
               <div className="col-12">

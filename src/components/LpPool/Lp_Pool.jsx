@@ -4,7 +4,7 @@ import circle from "../../Assets/Images/VectorCircle-01.png";
 import sign from "../../Assets/Images/LpPool/VectorSign.png";
 import Picture1 from "../../Assets/Images/LpPool/Rectangle110.png";
 import Picture2 from "../../Assets/Images/LpPool/Rectangle1101.png";
-import { IoAlertCircle } from "react-icons/io5";
+import { IoAlertCircle, IoClose } from "react-icons/io5";
 import { OverlayTrigger, Tooltip, Popover } from "react-bootstrap";
 function Lp_Pool() {
   const data = [
@@ -83,7 +83,7 @@ function Lp_Pool() {
         <div className="row d-flex justify-content-center mb-5 ">
           <div className="col-11 lp_pool_border">
             <div className="row ">
-              <div className="col-12 d-flex justify-content-end mt-1 ">X</div>
+            <div className="col-12 d-flex justify-content-end p-3"><IoClose/></div>
             </div>
             {/* ************************************************************************ */}
             <div className="row ">

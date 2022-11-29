@@ -2,6 +2,7 @@ import React from "react";
 import "./myNFT.css";
 import circle from "../../Assets/Images/VectorCircle-01.png";
 import PaginatedItems from "./nft";
+import {IoClose} from "react-icons/io5"
 function MyNFT() {
   return (
     <div className="luckdraw">
@@ -9,7 +10,7 @@ function MyNFT() {
         <div className="row d-flex justify-content-center mb-5 ">
           <div className="col-11 lucky_draw_border mb-5 ">
             <div className="row ">
-              <div className="col-12 d-flex justify-content-end mt-1 ">X</div>
+            <div className="col-12 d-flex justify-content-end p-3"><IoClose/></div>
             </div>
             <div className="row ">
               <div className="col-12">

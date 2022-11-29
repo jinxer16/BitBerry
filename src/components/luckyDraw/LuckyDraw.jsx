@@ -8,6 +8,7 @@ import colorcircle1 from "../../Assets/Images/LuckyDraw/Ellipse7.png";
 import colorcircle2 from "../../Assets/Images/LuckyDraw/Ellipse8.png";
 import colorcircle3 from "../../Assets/Images/LuckyDraw/Ellipse9.png";
 import colorcircle4 from "../../Assets/Images/LuckyDraw/Ellipse10.png";
+import {IoClose} from "react-icons/io5"
 function LuckyDraw() {
   return (
     <div className="luckdraw">
@@ -15,13 +16,13 @@ function LuckyDraw() {
         <div className="row d-flex justify-content-center mb-5 ">
           <div className="col-11 lucky_draw_border mb-5 ">
             <div className="row ">
-              <div className="col-12 d-flex justify-content-end mt-1 ">X</div>
+              <div className="col-12 d-flex justify-content-end p-3"><IoClose/></div>
             </div>
             <div className="row ">
               <div className="col-12">
-                <div className="row lucky_draw_top d-flex justify-conten-center border">
-                  <div className=" col-md-3 col-lg-3 col-xl-1 col-sm-12  border border-primary "></div>
-                  <div className="col-lg-6 col-xl-8 col-sm-12 border border-danger text-center">
+                <div className="row lucky_draw_top d-flex justify-conten-center ">
+                  <div className=" col-md-12 col-lg-3 col-xl-1 col-sm-12  "></div>
+                  <div className="col-md-12 col-xl-8 col-sm-12  text-center">
                     <div className="btn_bg lucky_draw_heading pe-5 ps-5 rounded-pill">
                       NFT LUCKY DRAW
                       <span className="">
@@ -36,7 +37,7 @@ function LuckyDraw() {
                       Mint NFT Ticket and get awesome Treasure X NFT card !
                     </div>
                   </div>
-                  <div className="col-lg-3 col-xl-3 col-sm-12 border border-warning button_responsive">
+                  <div className="col-md-12 col-xl-3 col-sm-12 button_responsive">
                     <div className="p-2 float-end">
                       <button className="button btn_bg">CONNECT WALLET</button>
                     </div>
@@ -72,7 +73,7 @@ function LuckyDraw() {
                               </div>
                             </div>
                           </div>
-                          <div className="col-2 col-md-2color2">
+                          <div className="col-2 col-md-2 color2">
                             <div class="d-flex flex-column pt-2 pb-3">
                               <div class="text-center">
                                 <img
@@ -179,7 +180,7 @@ function LuckyDraw() {
                     </div>
                     {/* ************************************************************************************** */}
                     <div className="row mt-3 d-flex justify-content-center">
-                      <div className=" col-sm-6 border ">
+                      <div className=" col-sm-6 ">
                         <div className="row d-flex justify-content-around align-items-center">
                           <div className=" col-sm-6 d-flex align-items-center  Minusbox-1 gap-2">
                             <div className="text-center">
@@ -199,7 +200,7 @@ function LuckyDraw() {
                     </div>
                     {/* ************************************************************************************** */}
                     <div className="row mt-4">
-                      <div className="col-12 border d-flex justify-content-center ">
+                      <div className="col-12 d-flex justify-content-center ">
                         <div className="textBox-2">
                           <div className="d-flex justify-content-around align-items-center mt-3">
                             <div className="align-self-center total_text">
