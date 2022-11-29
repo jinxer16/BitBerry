@@ -4,6 +4,11 @@ import circle from "../../Assets/Images/VectorCircle-01.png";
 import sign from "../../Assets/Images/LpPool/VectorSign.png";
 import Picture1 from "../../Assets/Images/LpPool/Rectangle110.png";
 import Picture2 from "../../Assets/Images/LpPool/Rectangle1101.png";
+import Picture3 from "../../Assets/Images/LpPool/Rectangle1102.png";
+import Picture4 from "../../Assets/Images/LpPool/Rectangle1103.png";
+import Picture5 from "../../Assets/Images/LpPool/Rectangle1104.png";
+import Picture6 from "../../Assets/Images/LpPool/Rectangle1105.png";
+
 import { IoAlertCircle, IoClose } from "react-icons/io5";
 import { OverlayTrigger, Tooltip, Popover } from "react-bootstrap";
 function Lp_Pool() {
@@ -20,7 +25,7 @@ function Lp_Pool() {
       *If unstake in locked period , 2.5% fee deduct.`,
     },
     {
-      picture: Picture2,
+      picture: Picture1,
       token1: "BBR",
       token2: "iBBR",
       wallet: "0 BBR",
@@ -31,15 +36,6 @@ function Lp_Pool() {
       * Token can not unstake in locked period.`,
     },
     {
-      picture: Picture1,
-      token1: "BBR",
-      token2: "iBBR",
-      wallet: "0 BBR",
-      iBBR_Point: "0 IBBR ",
-      staked: "o IBBR",
-      tooltip: "Stake NFT Tier Card to earn iBBR point. NFT Tier Card can unstake anytime",
-    },
-    {
       picture: Picture2,
       token1: "BBR",
       token2: "iBBR",
@@ -49,7 +45,7 @@ function Lp_Pool() {
       tooltip: "Stake NFT Tier Card to earn iBBR point. NFT Tier Card can unstake anytime",
     },
     {
-      picture: Picture1,
+      picture: Picture3,
       token1: "BBR",
       token2: "iBBR",
       wallet: "0 BBR",
@@ -58,7 +54,7 @@ function Lp_Pool() {
       tooltip: "Stake NFT Tier Card to earn iBBR point. NFT Tier Card can unstake anytime",
     },
     {
-      picture: Picture2,
+      picture: Picture4,
       token1: "BBR",
       token2: "iBBR",
       wallet: "0 BBR",
@@ -67,7 +63,16 @@ function Lp_Pool() {
       tooltip: "Stake NFT Tier Card to earn iBBR point. NFT Tier Card can unstake anytime",
     },
     {
-      picture: Picture1,
+      picture: Picture5,
+      token1: "BBR",
+      token2: "iBBR",
+      wallet: "0 BBR",
+      iBBR_Point: "0 IBBR ",
+      staked: "o IBBR",
+      tooltip: "Stake NFT Tier Card to earn iBBR point. NFT Tier Card can unstake anytime",
+    },
+    {
+      picture: Picture6,
       token1: "BBR",
       token2: "iBBR",
       wallet: "0 BBR",
