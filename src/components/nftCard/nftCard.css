@@ -52,8 +52,36 @@ color: #000000;
     letter-spacing: 0.005em;
   }
   
-  .circle_luckydraw {
+  .circle_nftCard {
     position: relative;
-    right: 235px;
-    bottom: 23px;
+    position: relative;
+    right: 249px;
+    bottom: 21px
+  }
+
+
+  @media(max-width:769px){
+    .tablet_responsive{
+      font-size: 35px;
+      
+    }
+    .circle_nftCard {
+      position: relative;
+    right: 181px;
+    bottom: 19px;
+    width: 41px;
+    }
+  }
+
+  @media(max-width:425px){
+    .tablet_responsive{
+      font-size: 18px;
+      text-align: center;
+      display: flex;
+      
+    }
+
+    .circle_nftCard {
+      display: none;
+    }
   }
