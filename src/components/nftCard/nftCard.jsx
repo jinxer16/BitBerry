@@ -1,5 +1,7 @@
 import React from 'react'
 import circle from "../../Assets/Images/VectorCircle-01.png";
+import {IoClose} from "react-icons/io5";
+import "./nftCard.css"
 
 function nftCard() {
   return (
@@ -8,7 +10,7 @@ function nftCard() {
     <div className='row d-flex justify-content-center mb-5 '>
     <div className='col-11 lucky_draw_border mb-5'>
     <div className="row ">
-              <div className="col-12 d-flex justify-content-end mt-1 ">X</div>
+    <div className="col-12 d-flex justify-content-end p-3"><IoClose/></div>
             </div>
             <div className="row ">
               <div className="col-12">
