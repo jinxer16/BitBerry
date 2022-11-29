@@ -23,13 +23,13 @@ function nftCard() {
             <div className="row ">
               <div className="col-12">
                 <div className="row lucky_draw_top d-flex justify-content-center">
-                  <div className="col-lg-6 col-xl-8 col-sm-12 text-center">
-                    <div className="btn_bg lucky_draw_heading pe-5 ps-5 rounded-pill">
+                  <div className="col-md-12 col-xl-8 col-sm-12 text-center">
+                    <div className="btn_bg lucky_draw_heading tablet_responsive pe-5 ps-5 rounded-pill">
                       What is Treasure X NFT card?
                       <span className="">
                         <img
                           src={circle}
-                          className="img-fluid circle_luckydraw"
+                          className="img-fluid circle_nftCard"
                           width={"50px"}
                         />
                       </span>
