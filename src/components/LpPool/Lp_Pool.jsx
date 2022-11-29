@@ -113,7 +113,7 @@ function Lp_Pool() {
                 <div className="row lucky_draw_top d-flex justify-conten-center">
                   <div className=" col-md-3 col-lg-3 col-xl-1 col-sm-12 "></div>
                   <div className="col-lg-12 col-xl-8 col-sm-12 text-center">
-                    <div className="btn_bg lucky_draw_heading  lucky_draw_heading_pool pe-5 ps-5 rounded-pill">
+                    <div className="btn_bg lucky_draw_heading  lucky_draw_heading_pool pe-5 ps-5 mt-4 rounded-pill">
                       <span
                         className={
                           animationState
@@ -142,10 +142,14 @@ function Lp_Pool() {
                         />
                       </span>
                     </div>
-                    <div className="mt-2 lucky_draw_text text-center">
-                      Stake $BBR to Earn iBBR Points iBBR point gives its users
-                      access to the Launchpad with the chance to receive a
-                      Treasure X NFT from a lucky draw!
+                    <div className="row">
+                      <div className="col d-flex justify-content-start mt-2">
+                        <div className="mt-2 lucky_draw_text  lucky_draw_text2 text-left">
+                          Stake $BBR to Earn iBBR Points iBBR point gives its
+                          users access to the Launchpad with the chance to
+                          receive a Treasure X NFT from a lucky draw!
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div className=" col-md-12 col-xl-3 col-sm-12  button_responsive">

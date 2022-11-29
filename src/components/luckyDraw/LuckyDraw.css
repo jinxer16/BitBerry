@@ -20,6 +20,7 @@
   line-height: 17px;
   padding: 10px 5px;
   background-color: #fff;
+  font-size: 14px;
 }
 .btn_bg {
   background: #fff854;
@@ -32,7 +33,10 @@
   line-height: 136.52%;
   color: #000;
 }
-
+.lucky_draw_text2 {
+  margin-top: 5px;
+  text-align: left !important;
+}
 .lucky_draw_heading {
   font-family: "RedFive";
   font-style: normal;

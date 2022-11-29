@@ -87,7 +87,7 @@ function Header() {
                     </HashLink>
                   </li>
                   <li>
-                    <HashLink className="dropdown-item" to="/myNft">
+                    <HashLink className="dropdown-item" to="/nftCard">
                       Tier NFTs
                     </HashLink>
                   </li>

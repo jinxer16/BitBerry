@@ -9,6 +9,10 @@ import { HashLink } from "react-router-hash-link";
 function NftTransfer() {
   let [animationState, setAnimationState] = useState(true);
   let [animationState1, setAnimationState1] = useState(false);
+  const [confirm, setConfirm] = useState(false);
+  const handleConfirm = () => {
+    setConfirm(true);
+  };
   useEffect(() => {
     let interval = setInterval(() => {
       setAnimationState((prevState) => !prevState);
@@ -115,21 +119,29 @@ function NftTransfer() {
                     {/* ************************************************************************************** */}
                     <div className="row mt-4 d-flex justify-content-center mb-4">
                       {/* alternate for confirm and success message */}
-                      <div className="col-sm-8 d-flex justify-content-around">
-                        <div>
-                          <button className="btn_mint_nft rounded-pill">
+                      {confirm === false ? (
+                        <div className="col-sm-8 d-flex justify-content-around">
+                          <button
+                            className="btn_mint_nft rounded-pill"
+                            onClick={() => {
+                              handleConfirm();
+                            }}
+                          >
                             CONFIRM
                           </button>
                         </div>
-                      </div>
-                      {/* <div className="col-sm-8 d-flex justify-content-center mb-3">
-                        <img src={star} alt=""></img>
-                      </div>
-                      <div className="col-sm-12 d-flex justify-content-center">
-                        <span className="bgForSuccess">
-                          Card Successfully Transferred !
-                        </span>
-                      </div> */}
+                      ) : (
+                        <>
+                          <div className="col-sm-8 d-flex justify-content-center mb-3">
+                            <img src={star} alt=""></img>
+                          </div>
+                          <div className="col-sm-12 d-flex justify-content-center">
+                            <span className="bgForSuccess">
+                              Card Successfully Transferred !
+                            </span>
+                          </div>
+                        </>
+                      )}
                     </div>
                     {/* ************************************************************************************** */}
                   </div>

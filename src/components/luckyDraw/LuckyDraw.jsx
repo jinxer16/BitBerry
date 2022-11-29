@@ -39,10 +39,10 @@ function LuckyDraw() {
             </div>
             <div className="row ">
               <div className="col-12">
-                <div className="row lucky_draw_top d-flex justify-conten-center ">
+                <div className="row lucky_draw_top d-flex justify-content-evenly ">
                   <div className=" col-md-12 col-lg-3 col-xl-1 col-sm-12  "></div>
-                  <div className="col-md-12 col-xl-8 col-sm-12  text-center">
-                    <div className="btn_bg lucky_draw_heading lucky_draw_heading2 pe-5 ps-5 rounded-pill">
+                  <div className="col-md-12 col-xl-8 col-sm-12  text-center d-flex justify-content-center align-items-center flex-column">
+                    <div className="btn_bg lucky_draw_heading lucky_draw_heading2 pe-5 ps-5 rounded-pill mt-4">
                       <span
                         className={
                           animationState
@@ -70,7 +70,7 @@ function LuckyDraw() {
                         />
                       </span>
                     </div>
-                    <div className="mt-2 lucky_draw_text text-center">
+                    <div className="mt-3 lucky_draw_text text-center">
                       Mint NFT Ticket and get awesome Treasure X NFT card !
                     </div>
                   </div>
@@ -197,14 +197,14 @@ function LuckyDraw() {
                   >
                     <div className="row mt-3">
                       <div className="col-12">
-                        <div className="d-flex justify-content-around mt-3">
+                        <div className="d-flex justify-content-between mt-3">
                           <div className="align-self-center balance_text">
                             Balance:
                           </div>
                           <div className="align-self-center Point_bg">
                             <span>
                               <b>100,000</b>
-                            </span>{" "}
+                            </span>
                             iBBR Point
                           </div>
                         </div>

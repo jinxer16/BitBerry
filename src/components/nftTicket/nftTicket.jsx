@@ -30,7 +30,7 @@ function NftTicket() {
                 <div className="row lucky_draw_top d-flex justify-content-evenly ">
                   <div className="col-md-3 col-lg-0 col-xl-1 col-sm-12 "></div>
                   <div className="col-lg-12 col-xl-9 col-sm-12 text-center d-flex justify-content-center align-items-center flex-column">
-                    <div className="btn_bg lucky_draw_heading pe-5 ps-5 rounded-pill nft_responsive">
+                    <div className="btn_bg lucky_draw_heading pe-5 ps-5 rounded-pill nft_responsive mt-4">
                       <span
                         className={
                           animationState
@@ -49,7 +49,7 @@ function NftTicket() {
                         />
                       </span>
                     </div>
-                    <div className="mt-2 lucky_draw_text text-center">
+                    <div className="mt-3 lucky_draw_text text-center">
                       You Got A NFT Ticket Now
                     </div>
                   </div>
