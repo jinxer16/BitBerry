@@ -38,6 +38,11 @@ function Items({ currentItems }) {
               <div className="col-10 col-md-10 col-lg-10 d-flex justify-content-center ">
                 {item.id}
               </div>
+              <div className="col-10 col-md-10 col-lg-10 d-flex justify-content-center mt-2">
+                <button onClick={""} className="button btn_bg">
+                  Transfer
+                </button>
+              </div>
             </div>
           </div>
         ))}
