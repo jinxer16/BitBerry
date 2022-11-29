@@ -1,14 +1,17 @@
+.tooltip.show {
+  opacity: 1 !important;
+}
 .lpPoolMain {
   background-image: url("../../Assets/Images/Group9.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
 }
-.lp_Pool_background{
+.lp_Pool_background {
   width: 728px;
-height: 57px;
-background: #FFF854;
-border-radius: 50px;
+  height: 57px;
+  background: #fff854;
+  border-radius: 50px;
 }
 .lp_pool_heading {
   font-family: "RedFive";
@@ -30,16 +33,16 @@ border-radius: 50px;
   border-radius: 10px;
 }
 .tooltip-inner {
-    color: #000000 !important;
-    text-align: left !important;
-    background-color: #ffffff !important;
-    border: #000000 solid 1px;
-    /* padding: 20px; */
-    width: 500px;
+  color: #000000 !important;
+  text-align: left !important;
+  background-color: #ffffff !important;
+  border: #000000 solid 1px;
+  /* padding: 20px; */
+  width: 500px;
 }
 .Cardborder {
   width: 283px;
- height: auto;
+  height: auto;
   border: 1px solid #000000;
   border-radius: 6px;
 }
@@ -93,91 +96,89 @@ border-radius: 50px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
   border-radius: 20px 20px 0px 0px;
 }
-.wallet_text{
-    font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 13px;
-line-height: 168.52%;
-/* or 22px */
-color: #000000;
+.wallet_text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 168.52%;
+  /* or 22px */
+  color: #000000;
 }
 
-.token_text{
-    font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 11px;
-line-height: 168.52%;
-/* or 19px */
+.token_text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 168.52%;
+  /* or 19px */
 
-
-color: #000000;
+  color: #000000;
 }
-.token_text_bg{
-    width: 81.57px;
-height: 19.42px;
+.token_text_bg {
+  width: 81.57px;
+  height: 19.42px;
 
-background: #FFFFFF;
-border: 1px solid #000000;
-border-radius: 5px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 5px;
 }
-.buttoun_background{
-    /* width: 283px; */
-height: 111px;
+.buttoun_background {
+  /* width: 283px; */
+  height: 111px;
 
-background: #FFFFFF;
-border: 1px solid #000000;
-border-bottom: 0 ;
-border-radius: 0 0 5px 5px;
-z-index: 1000000000;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-bottom: 0;
+  border-radius: 0 0 5px 5px;
+  z-index: 1000000000;
 }
-.button_bg{
-    width: 16rem;
-height: 30.59px;
+.button_bg {
+  width: 16rem;
+  height: 30.59px;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 13px;
-line-height: 16px;
-text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
 
-color: #000000;
-background: #FFF854;
-border-radius: 50px;
+  color: #000000;
+  background: #fff854;
+  border-radius: 50px;
 }
 
-.button_Unstake{
-    font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 13px;
-line-height: 16px;
-text-align: center;
+.button_Unstake {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
 
-color: #000000;
-    width: 125.75px;
-height: 30.59px;
-background: #FFF854;
-border: 1.5px solid #000000;
-border-radius: 50px;
+  color: #000000;
+  width: 125.75px;
+  height: 30.59px;
+  background: #fff854;
+  border: 1.5px solid #000000;
+  border-radius: 50px;
 }
-.button_redeem{
-    font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 13px;
-line-height: 16px;
-text-align: center;
+.button_redeem {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
 
-color: #000000;
-    width: 125.75px;
-height: 30.59px;
-background: #FFF854;
-border: 1.5px solid #000000;
-border-radius: 50px;
-
+  color: #000000;
+  width: 125.75px;
+  height: 30.59px;
+  background: #fff854;
+  border: 1.5px solid #000000;
+  border-radius: 50px;
 }
 
 /* @media(max-width:768px){
@@ -187,11 +188,11 @@ border-radius: 50px;
   }
 } */
 
-@media(max-width:425px){
-    .mbl_responsive{
-        justify-content: center !important;
-    }
-    /* .lp_pool_heading {
+@media (max-width: 425px) {
+  .mbl_responsive {
+    justify-content: center !important;
+  }
+  /* .lp_pool_heading {
       font-family: "RedFive";
       font-style: normal;
       font-weight: 400;
@@ -201,19 +202,16 @@ border-radius: 50px;
       text-align: center;
     }
     */
-    
 }
 
-
-.circle_lpPool{
+.circle_lpPool {
   position: relative;
   right: 327px;
   bottom: 27px;
 }
 
-
-@media(max-width:1024px){
-  .button_responsive{
+@media (max-width: 1024px) {
+  .button_responsive {
     margin-top: 20px;
     display: flex;
     justify-content: center;

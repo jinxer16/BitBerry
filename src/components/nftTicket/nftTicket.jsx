@@ -24,7 +24,7 @@ function NftTicket() {
                       <span className="">
                         <img
                           src={circle}
-                          className="img-fluid circle_luckydraw"
+                          className="img-fluid circle_luckydraw_nftTicket"
                           width={"50px"}
                           alt=""
                         />

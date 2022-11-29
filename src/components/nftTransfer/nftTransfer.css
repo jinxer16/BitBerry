@@ -42,9 +42,9 @@
   letter-spacing: 0.005em;
 }
 
-.circle_luckydraw {
+.circle_luckydraw_nftTransfer {
   position: relative;
-  right: 235px;
+  right: 575px;
   bottom: 23px;
 }
 /* 
@@ -353,4 +353,15 @@ background: #FFF854;
     #fff854 0%,
     rgba(255, 255, 255, 0) 134.6%
   );
+}
+.bgForSuccess {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 136.52%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  padding: 10px;
 }

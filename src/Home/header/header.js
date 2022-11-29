@@ -82,7 +82,7 @@ function Header() {
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item" href="/luckydraw">
                       Lucky Draw
                     </a>
                   </li>
