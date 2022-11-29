@@ -192,6 +192,12 @@
   .mbl_responsive {
     justify-content: center !important;
   }
+  .lucky_draw_heading_pool {
+    font-size: 20px !important;
+  }
+  .circle_lpPool {
+    display: none;
+  }
   /* .lp_pool_heading {
       font-family: "RedFive";
       font-style: normal;
@@ -208,6 +214,7 @@
   position: relative;
   right: 327px;
   bottom: 27px;
+  animation: circle-animation 1.5s ease infinite;
 }
 
 @media (max-width: 1024px) {

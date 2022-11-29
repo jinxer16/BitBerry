@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./LpPool.css";
 import circle from "../../Assets/Images/VectorCircle-01.png";
 import sign from "../../Assets/Images/LpPool/VectorSign.png";
@@ -11,7 +11,17 @@ import Picture6 from "../../Assets/Images/LpPool/Rectangle1105.png";
 
 import { IoAlertCircle, IoClose } from "react-icons/io5";
 import { OverlayTrigger, Tooltip, Popover } from "react-bootstrap";
+import { HashLink } from "react-router-hash-link";
 function Lp_Pool() {
+  let [animationState, setAnimationState] = useState(true);
+  let [animationState1, setAnimationState1] = useState(false);
+  useEffect(() => {
+    let interval = setInterval(() => {
+      setAnimationState((prevState) => !prevState);
+      setAnimationState1((prevState) => !prevState);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, []);
   const data = [
     {
       picture: Picture1,
@@ -42,7 +52,8 @@ function Lp_Pool() {
       wallet: "0 BBR",
       iBBR_Point: "0 IBBR ",
       staked: "o IBBR",
-      tooltip: "Stake NFT Tier Card to earn iBBR point. NFT Tier Card can unstake anytime",
+      tooltip:
+        "Stake NFT Tier Card to earn iBBR point. NFT Tier Card can unstake anytime",
     },
     {
       picture: Picture3,
@@ -51,7 +62,8 @@ function Lp_Pool() {
       wallet: "0 BBR",
       iBBR_Point: "0 IBBR ",
       staked: "o IBBR",
-      tooltip: "Stake NFT Tier Card to earn iBBR point. NFT Tier Card can unstake anytime",
+      tooltip:
+        "Stake NFT Tier Card to earn iBBR point. NFT Tier Card can unstake anytime",
     },
     {
       picture: Picture4,
@@ -60,7 +72,8 @@ function Lp_Pool() {
       wallet: "0 BBR",
       iBBR_Point: "0 IBBR ",
       staked: "o IBBR",
-      tooltip: "Stake NFT Tier Card to earn iBBR point. NFT Tier Card can unstake anytime",
+      tooltip:
+        "Stake NFT Tier Card to earn iBBR point. NFT Tier Card can unstake anytime",
     },
     {
       picture: Picture5,
@@ -69,7 +82,8 @@ function Lp_Pool() {
       wallet: "0 BBR",
       iBBR_Point: "0 IBBR ",
       staked: "o IBBR",
-      tooltip: "Stake NFT Tier Card to earn iBBR point. NFT Tier Card can unstake anytime",
+      tooltip:
+        "Stake NFT Tier Card to earn iBBR point. NFT Tier Card can unstake anytime",
     },
     {
       picture: Picture6,
@@ -78,7 +92,8 @@ function Lp_Pool() {
       wallet: "0 BBR",
       iBBR_Point: "0 IBBR ",
       staked: "o IBBR",
-      tooltip: "Stake NFT Tier Card to earn iBBR point. NFT Tier Card can unstake anytime",
+      tooltip:
+        "Stake NFT Tier Card to earn iBBR point. NFT Tier Card can unstake anytime",
     },
   ];
   console.log(data);
@@ -88,7 +103,9 @@ function Lp_Pool() {
         <div className="row d-flex justify-content-center mb-5 ">
           <div className="col-11 lp_pool_border">
             <div className="row ">
-            <div className="col-12 d-flex justify-content-end p-3"><IoClose/></div>
+              <div className="col-12 d-flex justify-content-end p-3">
+                <IoClose />
+              </div>
             </div>
             {/* ************************************************************************ */}
             <div className="row ">
@@ -96,8 +113,26 @@ function Lp_Pool() {
                 <div className="row lucky_draw_top d-flex justify-conten-center">
                   <div className=" col-md-3 col-lg-3 col-xl-1 col-sm-12 "></div>
                   <div className="col-lg-12 col-xl-8 col-sm-12 text-center">
-                    <div className="btn_bg lucky_draw_heading pe-5 ps-5 rounded-pill">
-                      BITBERRY LP POOL
+                    <div className="btn_bg lucky_draw_heading  lucky_draw_heading_pool pe-5 ps-5 rounded-pill">
+                      <span
+                        className={
+                          animationState
+                            ? "header header--pushDownOne"
+                            : "header"
+                        }
+                      >
+                        BITBERRY
+                      </span>
+                      &nbsp;
+                      <span
+                        className={
+                          animationState1
+                            ? "header header--pushDownTwo"
+                            : "header"
+                        }
+                      >
+                        LP POOL
+                      </span>
                       <span className="">
                         {/* <IoAlertCircle/> */}
                         <img
@@ -118,7 +153,9 @@ function Lp_Pool() {
                       <button className="button btn_bg">CONNECT WALLET</button>
                     </div>
                     <div className="p-2 float-end">
-                      <button className="button">My NFT</button>
+                      <HashLink to="/myNft">
+                        <button className="button">My NFT</button>
+                      </HashLink>
                     </div>
                     <div className="p-2 float-end lpPool_box">
                       <div className="balance_text">Balance:</div>
@@ -149,11 +186,11 @@ function Lp_Pool() {
                           </div>
                           <div className="text-end col-3">
                             <OverlayTrigger
-                            className="toolTip_inner"
+                              className="toolTip_inner"
                               placement="bottom-end"
                               overlay={
                                 <Tooltip
-                                //   id="tooltip-disabled"
+                                  //   id="tooltip-disabled"
                                   className="toolTip_inner"
                                 >
                                   {data.tooltip}
@@ -164,7 +201,6 @@ function Lp_Pool() {
                                 <IoAlertCircle />
                               </span>
                             </OverlayTrigger>
-
                           </div>
                         </div>
                         <div className=" d-flex flex-row justify-content-around">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import circle from "../../Assets/Images/VectorCircle-01.png";
 import { IoClose } from "react-icons/io5";
 import common from "../../Assets/Images/LuckyDraw/common.PNG";
@@ -8,8 +8,18 @@ import uncommon from "../../Assets/Images/LuckyDraw/uncommon.PNG";
 import legendery from "../../Assets/Images/LuckyDraw/legendary.PNG";
 import mythic from "../../Assets/Images/LuckyDraw/mythic.PNG";
 import "./nftCard.css";
+import { HashLink } from "react-router-hash-link";
 
-function nftCard() {
+function NftCard() {
+  let [animationState, setAnimationState] = useState(true);
+  let [animationState1, setAnimationState1] = useState(false);
+  useEffect(() => {
+    let interval = setInterval(() => {
+      setAnimationState((prevState) => !prevState);
+      setAnimationState1((prevState) => !prevState);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, []);
   return (
     <div>
       <div className="container luckyDrawMain mt-5">
@@ -25,7 +35,25 @@ function nftCard() {
                 <div className="row lucky_draw_top d-flex justify-content-center">
                   <div className="col-md-12 col-xl-8 col-sm-12 text-center">
                     <div className="btn_bg lucky_draw_heading tablet_responsive pe-5 ps-5 rounded-pill">
-                      What is Treasure X NFT card?
+                      <span
+                        className={
+                          animationState
+                            ? "header header--pushDownOne"
+                            : "header"
+                        }
+                      >
+                        What is Treasure X
+                      </span>
+                      &nbsp;
+                      <span
+                        className={
+                          animationState1
+                            ? "header header--pushDownTwo"
+                            : "header"
+                        }
+                      >
+                        NFT card?
+                      </span>
                       <span className="">
                         <img
                           src={circle}
@@ -160,4 +188,4 @@ function nftCard() {
   );
 }
 
-export default nftCard;
+export default NftCard;

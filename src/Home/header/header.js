@@ -77,19 +77,19 @@ function Header() {
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <a className="dropdown-item" href="/lpPool">
+                    <HashLink className="dropdown-item" to="/lpPool">
                       LP Pool
-                    </a>
+                    </HashLink>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/luckydraw">
+                    <HashLink className="dropdown-item" to="/luckydraw">
                       Lucky Draw
-                    </a>
+                    </HashLink>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/myNft">
+                    <HashLink className="dropdown-item" to="/myNft">
                       Tier NFTs
-                    </a>
+                    </HashLink>
                   </li>
                 </ul>
               </li>

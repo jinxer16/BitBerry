@@ -70,6 +70,7 @@ background: #FFF854;
     right: -50px;
     bottom: 15px;
     width: 30px;
+    animation: circle-animation 1.5s ease infinite;
   }
   .button_responsive {
     display: flex;
@@ -429,4 +430,13 @@ background: #FFF854;
   line-height: 17px;
   text-align: center;
   color: #000000;
+}
+
+@media (max-width: 425px) {
+  .mynft_responsive {
+    font-size: 25px !important;
+  }
+  .circle_luckydraw_myNFT {
+    display: none;
+  }
 }

@@ -1,31 +1,50 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./nftTicket.css";
 import circle from "../../Assets/Images/VectorCircle-01.png";
 import common from "../../Assets/Images/LuckyDraw/common.PNG";
 import rare from "../../Assets/Images/LuckyDraw/rare.PNG";
 import epic from "../../Assets/Images/LuckyDraw/epic.PNG";
-import {IoClose} from "react-icons/io5";
+import { IoClose } from "react-icons/io5";
+import { HashLink } from "react-router-hash-link";
+
 function NftTicket() {
+  let [animationState, setAnimationState] = useState(true);
+  useEffect(() => {
+    let interval = setInterval(() => {
+      setAnimationState((prevState) => !prevState);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, []);
   return (
     <div className="luckdraw">
       <div className="container luckyDrawMain mt-5">
         <div className="row d-flex justify-content-center mb-5 ">
-          <div className="col-11 lucky_draw_border mb-5 ">
+          <div className="col-11  mb-5 ">
             <div className="row ">
-            <div className="col-12 d-flex justify-content-end p-3"><IoClose/></div>
+              {/* <div className="col-12 d-flex justify-content-end p-3">
+                <IoClose />
+              </div> */}
             </div>
             <div className="row ">
               <div className="col-12">
                 <div className="row lucky_draw_top d-flex justify-content-evenly ">
                   <div className="col-md-3 col-lg-0 col-xl-1 col-sm-12 "></div>
                   <div className="col-lg-12 col-xl-9 col-sm-12 text-center d-flex justify-content-center align-items-center flex-column">
-                    <div className="btn_bg lucky_draw_heading pe-5 ps-5 rounded-pill ">
-                      Congratulation !
+                    <div className="btn_bg lucky_draw_heading pe-5 ps-5 rounded-pill nft_responsive">
+                      <span
+                        className={
+                          animationState
+                            ? "header header--pushDownOne"
+                            : "header"
+                        }
+                      >
+                        Congratulation !
+                      </span>
                       <span className="">
                         <img
                           src={circle}
                           className="img-fluid circle_luckydraw_nftTicket"
-                          width={"50px"}
+                          width={"45px"}
                           alt=""
                         />
                       </span>
@@ -39,7 +58,9 @@ function NftTicket() {
                       <button className="button btn_bg">CONNECT WALLET</button>
                     </div>
                     <div className="p-2 float-end">
-                      <button className="button">My NFT</button>
+                      <HashLink to="/myNft">
+                        <button className="button">My NFT</button>
+                      </HashLink>
                     </div>
                   </div>
                 </div>
@@ -48,9 +69,9 @@ function NftTicket() {
             <div className="row mt-5 mb-5">
               <div className="col-12 col-lg-12 col-sm-12 ">
                 <div className="row d-flex justify-content-around ">
-                  <div className="col-xl-4 col-lg-6 col-sm-12 col-md-12 d-flex justify-content-center">
+                  <div className="col-xl-3 col-lg-6 col-sm-12 col-md-12 d-flex justify-content-center">
                     <div className="row d-flex justify-content-center">
-                      <div className="col-10 col-md-10 col-lg-10 pic-bg-nft justify-content-center">
+                      <div className="col-10 col-md-10 col-lg-10 pic-bg-nftTicket justify-content-center">
                         <img
                           src={epic}
                           className="img-fluid mt-2 rounded mobileNftTransfer"
@@ -66,9 +87,9 @@ function NftTicket() {
                     </div>
                   </div>
 
-                  <div className="col-xl-4 col-lg-6 col-sm-12 col-md-12 d-flex justify-content-center">
+                  <div className="col-xl-3 col-lg-6 col-sm-12 col-md-12 d-flex justify-content-center">
                     <div className="row d-flex justify-content-center">
-                      <div className="col-10 col-md-10 col-lg-10 pic-bg-nft justify-content-center">
+                      <div className="col-10 col-md-10 col-lg-10 pic-bg-nftTicket justify-content-center">
                         <img
                           src={rare}
                           className="img-fluid mt-2 rounded mobileNftTransfer"
@@ -83,9 +104,9 @@ function NftTicket() {
                       </div>
                     </div>
                   </div>
-                  <div className="col-xl-4 col-lg-6 col-sm-12 col-md-12 d-flex justify-content-center">
+                  <div className="col-xl-3 col-lg-6 col-sm-12 col-md-12 d-flex justify-content-center">
                     <div className="row d-flex justify-content-center">
-                      <div className="col-10 col-md-10 col-lg-10 pic-bg-nft justify-content-center">
+                      <div className="col-10 col-md-10 col-lg-10 pic-bg-nftTicket justify-content-center">
                         <img
                           src={common}
                           className="img-fluid mt-2 rounded mobileNftTransfer"

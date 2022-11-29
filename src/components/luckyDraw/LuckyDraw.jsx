@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./LuckyDraw.css";
 import circle from "../../Assets/Images/VectorCircle-01.png";
 import Picture1 from "../../Assets/Images/LuckyDraw/Rectangle42.png";
@@ -8,23 +8,60 @@ import colorcircle1 from "../../Assets/Images/LuckyDraw/Ellipse7.png";
 import colorcircle2 from "../../Assets/Images/LuckyDraw/Ellipse8.png";
 import colorcircle3 from "../../Assets/Images/LuckyDraw/Ellipse9.png";
 import colorcircle4 from "../../Assets/Images/LuckyDraw/Ellipse10.png";
-import {IoClose} from "react-icons/io5"
+import { IoClose } from "react-icons/io5";
+import { HashLink } from "react-router-hash-link";
+import NftTicket from "../nftTicket/nftTicket";
+import { Modal, ModalFooter } from "react-bootstrap";
 function LuckyDraw() {
+  const [show, setShow] = useState(false);
+  const handleMint = () => {
+    console.log("handle Mint");
+    setShow(true);
+  };
+  let [animationState, setAnimationState] = useState(true);
+  let [animationState1, setAnimationState1] = useState(false);
+  useEffect(() => {
+    let interval = setInterval(() => {
+      setAnimationState((prevState) => !prevState);
+      setAnimationState1((prevState) => !prevState);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, []);
   return (
     <div className="luckdraw">
       <div className="container luckyDrawMain mt-5">
         <div className="row d-flex justify-content-center mb-5 ">
           <div className="col-11 lucky_draw_border mb-5 ">
             <div className="row ">
-              <div className="col-12 d-flex justify-content-end p-3"><IoClose/></div>
+              <div className="col-12 d-flex justify-content-end p-3">
+                <IoClose />
+              </div>
             </div>
             <div className="row ">
               <div className="col-12">
                 <div className="row lucky_draw_top d-flex justify-conten-center ">
                   <div className=" col-md-12 col-lg-3 col-xl-1 col-sm-12  "></div>
                   <div className="col-md-12 col-xl-8 col-sm-12  text-center">
-                    <div className="btn_bg lucky_draw_heading pe-5 ps-5 rounded-pill">
-                      NFT LUCKY DRAW
+                    <div className="btn_bg lucky_draw_heading lucky_draw_heading2 pe-5 ps-5 rounded-pill">
+                      <span
+                        className={
+                          animationState
+                            ? "header header--pushDownOne"
+                            : "header"
+                        }
+                      >
+                        NFT
+                      </span>
+                      &nbsp;
+                      <span
+                        className={
+                          animationState1
+                            ? "header header--pushDownTwo"
+                            : "header"
+                        }
+                      >
+                        LUCKY DRAW
+                      </span>
                       <span className="">
                         <img
                           src={circle}
@@ -42,7 +79,9 @@ function LuckyDraw() {
                       <button className="button btn_bg">CONNECT WALLET</button>
                     </div>
                     <div className="p-2 float-end">
-                      <button className="button">My NFT</button>
+                      <HashLink to="/myNft">
+                        <button className="button">My NFT</button>
+                      </HashLink>
                     </div>
                   </div>
                 </div>
@@ -152,7 +191,10 @@ function LuckyDraw() {
                       </div>
                     </div>
                   </div>
-                  <div className="col-6  col-md- col-lg-6 detail_bg detail_bg_2" style={{ height: "auto" }}>
+                  <div
+                    className="col-6  col-md- col-lg-6 detail_bg detail_bg_2"
+                    style={{ height: "auto" }}
+                  >
                     <div className="row mt-3">
                       <div className="col-12">
                         <div className="d-flex justify-content-around mt-3">
@@ -226,14 +268,21 @@ function LuckyDraw() {
                     <div className="row mt-4 d-flex justify-content-center mb-4">
                       <div className="col-sm-8 d-flex justify-content-around">
                         <div>
-                          <button className="btn_mint rounded-pill">
+                          <button
+                            className="btn_mint rounded-pill"
+                            onClick={() => {
+                              handleMint();
+                            }}
+                          >
                             Mint
                           </button>
                         </div>
                         <div>
-                          <button className="btn_myNft rounded-pill">
-                            My NFT
-                          </button>
+                          <HashLink to="/myNft">
+                            <button className="btn_myNft rounded-pill">
+                              My NFT
+                            </button>
+                          </HashLink>
                         </div>
                       </div>
                     </div>
@@ -245,6 +294,23 @@ function LuckyDraw() {
           </div>
         </div>
       </div>
+      {/* **************************Modal******************************* */}
+      {show && (
+        <Modal
+          className="model"
+          show={show}
+          size="xl"
+          backdrop="static"
+          keyboard={false}
+          dialogClassName="modal-100w"
+          onHide={() => setShow(false)}
+        >
+          <Modal.Header closeButton></Modal.Header>
+          <Modal.Body>
+            <NftTicket />
+          </Modal.Body>
+        </Modal>
+      )}
     </div>
   );
 }
