@@ -12,15 +12,19 @@ import figure5 from "../../Assets/Images/_x0020_13.png";
 import line3 from "../../Assets/Images/Group27.png";
 import lineHor from "../../Assets/Images/Group14hor.png";
 import lineHor2 from "../../Assets/Images/Group27Hor.png";
+import toast, { Toaster } from 'react-hot-toast';
 
 function Tokens() {
   const address = "0XCA68EF680D3803CF2E055085149BE41216BAC3C8";
   function copyToClipboard() {
     navigator.clipboard.writeText(address).then(() => {
-      alert(`${address} Copied`);
     });
+    toast.success('Address Copied!')
   }
+
+  
   return (
+    <>
     <div className="tokenContainer mt-5" id="tokenomics">
       <div className="col-md-12 ">
         <div className="container">
@@ -324,6 +328,11 @@ function Tokens() {
         </div> */}
       </div>
     </div>
+    <Toaster
+  position="top-right"
+  reverseOrder={false}
+/>
+    </>
   );
 }
 
