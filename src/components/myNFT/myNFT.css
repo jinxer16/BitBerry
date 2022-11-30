@@ -43,9 +43,13 @@
 }
 
 .circle_luckydraw_myNFT {
-  position: relative;
-  right: 0px;
+  position: absolute;
+  right: -45px;
   bottom: 23px;
+  animation: circle-animation 1.5s ease infinite;
+}
+.pos-rel{
+  position: relative;
 }
 /* 
 .lucky_draw_bg{
@@ -65,7 +69,7 @@ background: #FFF854;
   .lucky_draw_heading {
     font-size: 20px;
   }
-  .circle_luckydraw {
+  .circle_luckydraw_myNFT {
     position: relative;
     right: -50px;
     bottom: 15px;

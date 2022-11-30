@@ -22,8 +22,8 @@ function NftCard() {
   }, []);
   return (
     <div>
-      <div className="container luckyDrawMain mt-5">
-        <div className="row d-flex justify-content-center mb-5 ">
+      <div className="container luckyDrawMain mt-4">
+        <div className="row d-flex justify-content-center mb-4 ">
           <div className="col-11 lucky_draw_border mb-5">
             <div className="row ">
               <div className="col-12 d-flex justify-content-end p-3">
@@ -34,7 +34,7 @@ function NftCard() {
               <div className="col-12">
                 <div className="row lucky_draw_top d-flex justify-content-center">
                   <div className="col-md-12 col-xl-8 col-sm-12 text-center">
-                    <div className="btn_bg lucky_draw_heading tablet_responsive pe-5 ps-5 rounded-pill">
+                    <div className="btn_bg lucky_draw_heading3 tablet_responsive pe-5 ps-5 rounded-pill">
                       <span
                         className={
                           animationState

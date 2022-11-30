@@ -29,8 +29,8 @@ function LuckyDraw() {
   }, []);
   return (
     <div className="luckdraw">
-      <div className="container luckyDrawMain mt-5">
-        <div className="row d-flex justify-content-center mb-5 ">
+      <div className="container luckyDrawMain mt-4">
+        <div className="row d-flex justify-content-center mb-4 ">
           <div className="col-11 lucky_draw_border mb-5 ">
             <div className="row ">
               <div className="col-12 d-flex justify-content-end p-3">
@@ -43,32 +43,34 @@ function LuckyDraw() {
                   <div className=" col-md-12 col-lg-3 col-xl-1 col-sm-12  "></div>
                   <div className="col-md-12 col-xl-8 col-sm-12  text-center d-flex justify-content-center align-items-center flex-column">
                     <div className="btn_bg lucky_draw_heading lucky_draw_heading2 pe-5 ps-5 rounded-pill mt-4">
-                      <span
-                        className={
-                          animationState
-                            ? "header header--pushDownOne"
-                            : "header"
-                        }
-                      >
-                        NFT
-                      </span>
-                      &nbsp;
-                      <span
-                        className={
-                          animationState1
-                            ? "header header--pushDownTwo"
-                            : "header"
-                        }
-                      >
-                        LUCKY DRAW
-                      </span>
-                      <span className="">
-                        <img
-                          src={circle}
-                          className="img-fluid circle_luckydraw"
-                          width={"50px"}
-                        />
-                      </span>
+                      <div className="d-flex pos-rel">
+                        <span
+                          className={
+                            animationState
+                              ? "header header--pushDownOne"
+                              : "header"
+                          }
+                        >
+                          NFT
+                        </span>
+                        &nbsp;
+                        <span
+                          className={
+                            animationState1
+                              ? "header header--pushDownTwo"
+                              : "header"
+                          }
+                        >
+                          LUCKY DRAW
+                        </span>
+                        <span className="">
+                          <img
+                            src={circle}
+                            className="img-fluid circle_luckydraw_lucky"
+                            width={"50px"}
+                          />
+                        </span>
+                      </div>
                     </div>
                     <div className="mt-3 lucky_draw_text text-center">
                       Mint NFT Ticket and get awesome Treasure X NFT card !
@@ -88,7 +90,7 @@ function LuckyDraw() {
               </div>
             </div>
             <div className="row mt-5 mb-5">
-              <div className="col-12 col-lg-12 col-sm-12 ">
+              <div className="col-12 col-lg-12 col-sm-12 mt-lg-5">
                 <div className="row d-flex justify-content-center ">
                   <div className="col-lg-6 col-sm-12 col-md-12 d-flex justify-content-center">
                     <div className="row d-flex justify-content-center">

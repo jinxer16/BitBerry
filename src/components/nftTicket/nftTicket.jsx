@@ -18,7 +18,7 @@ function NftTicket() {
   return (
     <div className="luckdraw">
       <div className="container luckyDrawMain mt-5">
-        <div className="row d-flex justify-content-center mb-5 ">
+        <div className="row d-flex justify-content-center mb-4 ">
           <div className="col-11  mb-5 ">
             <div className="row ">
               {/* <div className="col-12 d-flex justify-content-end p-3">

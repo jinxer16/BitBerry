@@ -43,7 +43,7 @@
   color: #000;
 }
 
-.lucky_draw_heading {
+.lucky_draw_heading3 {
   font-family: "RedFive";
   font-style: normal;
   font-weight: 400;
@@ -80,5 +80,19 @@
 
   .circle_nftCard {
     display: none;
+  }
+}
+@media (max-width: 769px) {
+  .lucky_draw_heading3 {
+    font-size: 30px !important;
+    padding: 10px;
+  }
+}
+@media (max-width: 426px) {
+  .lucky_draw_heading3 {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px !important;
+    padding: 10px;
   }
 }

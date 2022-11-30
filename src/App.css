@@ -116,9 +116,9 @@
   text-align: center;
   font-family: "RedFive";
   font-style: normal;
-  color: #333;
-  text-shadow: 1.5px 1.5px 0 #cac6c5, -1.5px -1.5px 0 #cac6c5,
-    -1.5px -1.5px 0 #cac6c5, -1.5px 1.5px 0 #cac6c5, 1.5px -1.5px 0 #cac6c5;
+  color: rgb(0, 0, 0);
+  /* text-shadow: 1.5px 1.5px 0 #cac6c5, -1.5px -1.5px 0 #cac6c5,
+    -1.5px -1.5px 0 #cac6c5, -1.5px 1.5px 0 #cac6c5, 1.5px -1.5px 0 #cac6c5; */
 }
 .color-bright .header {
   color: #000000;

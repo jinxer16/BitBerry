@@ -45,10 +45,12 @@
   line-height: 109%;
   letter-spacing: 0.005em;
 }
-
-.circle_luckydraw {
+.pos-rel {
   position: relative;
-  right: 235px;
+}
+.circle_luckydraw_lucky {
+  position: absolute;
+  right: 180px;
   bottom: 23px;
   animation: circle-animation 1.5s ease infinite;
 }
@@ -70,9 +72,9 @@ background: #FFF854;
   .lucky_draw_heading {
     font-size: 20px;
   }
-  .circle_luckydraw {
+  .circle_luckydraw_lucky {
     position: relative;
-    right: -50px;
+    right: 140px;
     bottom: 15px;
     width: 30px;
   }
@@ -319,13 +321,15 @@ background: #FFF854;
 @media (max-width: 769px) {
   .lucky_draw_heading2 {
     font-size: 30px !important;
+    padding: 10px;
   }
 }
 @media (max-width: 426px) {
   .lucky_draw_heading2 {
     font-size: 20px !important;
+    padding: 10px;
   }
-  .circle_luckydraw {
+  .circle_luckydraw_lucky {
     display: none;
   }
   .pic-bg {

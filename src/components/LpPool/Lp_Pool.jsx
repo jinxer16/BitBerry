@@ -100,7 +100,7 @@ function Lp_Pool() {
   return (
     <div className="lpPoolMain">
       <div className="container  mt-5">
-        <div className="row d-flex justify-content-center mb-5 ">
+        <div className="row d-flex justify-content-center mb-4 ">
           <div className="col-11 lp_pool_border">
             <div className="row ">
               <div className="col-12 d-flex justify-content-end p-3">
@@ -144,7 +144,7 @@ function Lp_Pool() {
                     </div>
                     <div className="row">
                       <div className="col d-flex justify-content-start mt-2">
-                        <div className="mt-2 lucky_draw_text  lucky_draw_text2 text-left">
+                        <div className="mt-4 lucky_draw_text  lucky_draw_text2 text-left">
                           Stake $BBR to Earn iBBR Points iBBR point gives its
                           users access to the Launchpad with the chance to
                           receive a Treasure X NFT from a lucky draw!
@@ -177,12 +177,12 @@ function Lp_Pool() {
               </div>
             </div>
             {/* ************************************************************************ */}
-            <div className="row mt-5 d-flex justify-content-center mb-3">
+            <div className="row mt-4 d-flex justify-content-center mb-3">
               <div className="col-11">
                 <div className="row d-flex justify-content-between mbl_responsive">
                   {data.map((data) => {
                     return (
-                      <div className="col-3 Cardborder background_card mb-4 ">
+                      <div className="col-3 Cardborder background_card mb-5  ">
                         <div className="row mt-2 mb-2">
                           <div className="col-3"></div>
                           <div className="text-center card_title col-6">

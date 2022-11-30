@@ -149,7 +149,16 @@
   background: #fff854;
   border-radius: 50px;
 }
-
+@media (max-width: 425px) {
+  .button_bg {
+    width: 253px;
+  }
+}
+@media (max-width: 320px) {
+  .button_bg {
+    width: 240px;
+  }
+}
 .button_Unstake {
   font-family: "Inter";
   font-style: normal;
@@ -211,12 +220,15 @@
 }
 
 .circle_lpPool {
-  position: relative;
+  position: absolute;
   right: 327px;
   bottom: 27px;
   animation: circle-animation 1.5s ease infinite;
 }
-
+.pos-rel,
+.lucky_draw_heading_pool {
+  position: relative;
+}
 @media (max-width: 1024px) {
   .button_responsive {
     margin-top: 20px;
