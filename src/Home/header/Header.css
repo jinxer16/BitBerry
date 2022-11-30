@@ -17,7 +17,12 @@
   /* padding-left: 34%;
   padding-right: 1%; */
 }
-
+.dropdown-item:hover {
+  background: linear-gradient(-90deg, #fff854 49.47%, #ffffff00 114.63%);
+  background-color: none !important;
+  /* padding-left: 34%;
+  padding-right: 1%; */
+}
 .dropdown-item {
   left: 801px;
   top: 156px;
@@ -164,6 +169,16 @@
   }
   .nav-link:hover {
     background: linear-gradient(-90deg, #fff854 49.47%, #ffffff00 114.63%);
+  }
+  .dropdown-item:hover {
+    background: linear-gradient(
+      -90deg,
+      #fff854 49.47%,
+      #ffffff00 114.63%
+    ) !important;
+    background-color: none !important;
+    /* padding-left: 34%;
+    padding-right: 1%; */
   }
   .nav-item {
     margin-top: 20px;

@@ -35,10 +35,7 @@ function NftCard() {
                 <div className="row lucky_draw_top d-flex justify-content-center">
                   <div className="col-md-12 col-xl-8 col-sm-12 text-center">
                     <div className="btn_bg lucky_draw_heading3 tablet_responsive pe-5 ps-5 rounded-pill">
-                     
-
                       <span
-
                         className={
                           animationState
                             ? "header header--pushDownOne"

@@ -36,35 +36,33 @@ function NftTransfer() {
                   <div className=" col-md-3 col-lg-0 col-xl-1 col-sm-12 "></div>
                   <div className="col-lg-12 col-xl-9 col-sm-12 text-center d-flex justify-content-center align-items-center flex-column">
                     <div className="btn_bg lucky_draw_heading_Transfer pe-5 ps-5 rounded-pill  nft_responsive">
-                      <div className="d-flex pos-rel">
-                        <span
-                          className={
-                            animationState
-                              ? "header header--pushDownOne"
-                              : "header"
-                          }
-                        >
-                          NFT
-                        </span>
-                        &nbsp;
-                        <span
-                          className={
-                            animationState1
-                              ? "header header--pushDownTwo"
-                              : "header"
-                          }
-                        >
-                          Card Transfer
-                        </span>
-                        <span className="">
-                          <img
-                            src={circle}
-                            className="img-fluid circle_luckydraw_nftTransfer"
-                            width={"50px"}
-                            alt=""
-                          />
-                        </span>
-                      </div>
+                      <span
+                        className={
+                          animationState
+                            ? "header header--pushDownOne"
+                            : "header"
+                        }
+                      >
+                        NFT
+                      </span>
+                      &nbsp;
+                      <span
+                        className={
+                          animationState1
+                            ? "header header--pushDownTwo"
+                            : "header"
+                        }
+                      >
+                        Card Transfer
+                      </span>
+                      <span className="">
+                        <img
+                          src={circle}
+                          className="img-fluid circle_luckydraw_nftTransfer"
+                          width={"50px"}
+                          alt=""
+                        />
+                      </span>
                     </div>
                   </div>
                   <div className="col-lg-12 col-xl-2 col-sm-12  button_responsive">

@@ -110,7 +110,6 @@ background: #FFF854;
   color: #000000;
 }
 
-
 .Point_bg {
   background-image: url("../../Assets/Images/LuckyDraw/Rectangle32.png");
   background-position: right;
@@ -347,15 +346,23 @@ background: #FFF854;
   color: #000000;
   padding: 10px;
 }
+@media (max-width: 1080px) {
+  .circle_luckydraw_nftTransfer{
+    display: none;
+  }
+}
 @media (max-width: 769px) {
   .tablet_responsive {
     font-size: 35px;
   }
   .circle_nftCard {
-    position: relative;
+    position: absolute;
     right: 181px;
     bottom: 19px;
     width: 41px;
+  }
+  .circle_nftCard {
+    display: none;
   }
 }
 
@@ -368,11 +375,10 @@ background: #FFF854;
   .lucky_draw_heading_Transfer {
     font-size: 18px;
     padding: 10px;
+    position: relative;
   }
 
-  .circle_nftCard {
-    display: none;
-  }
+  
 }
 @media (max-width: 321px) {
   .inputForTransfer {
@@ -387,7 +393,5 @@ background: #FFF854;
   font-weight: 400;
   line-height: 109%;
   letter-spacing: 0.005em;
-}
-.pos-rel {
   position: relative;
 }
