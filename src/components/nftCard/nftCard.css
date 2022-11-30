@@ -64,11 +64,14 @@
     font-size: 35px;
   }
   .circle_nftCard {
-    position: relative;
+    position: absolute;
     right: 181px;
     bottom: 19px;
     width: 41px;
   }
+}
+.pos-rel {
+  position: relative;
 }
 
 @media (max-width: 425px) {
@@ -94,5 +97,11 @@
     flex-direction: column;
     font-size: 16px !important;
     padding: 10px;
+  }
+}
+
+@media(max-width:769px){
+  .circle_nftCard{
+    display: none;
   }
 }
