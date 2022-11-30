@@ -48,7 +48,7 @@
   bottom: 23px;
   animation: circle-animation 1.5s ease infinite;
 }
-.pos-rel{
+.pos-rel {
   position: relative;
 }
 /* 
@@ -100,10 +100,7 @@ background: #FFF854;
   border: 1px solid #000000;
   border-radius: 10px;
 }
-.color1 {
-  background: #fafafa;
-  border-radius: 10px 0px 0px 10px;
-}
+
 .green_text {
   font-family: "Inter";
   font-style: normal;
@@ -115,23 +112,6 @@ background: #FFF854;
   text-align: center;
 
   color: #000000;
-}
-.color2 {
-  background: #e3e3e3;
-}
-.color3 {
-  background: #cbcbcb;
-}
-.color4 {
-  background: #b9b9b9;
-}
-.color5 {
-  background: #a3a3a3;
-  height: auto;
-}
-.color6 {
-  background: #b5b5b5;
-  border-radius: 0px 10px 10px 0px;
 }
 
 .Point_bg {

@@ -97,7 +97,7 @@ function LuckyDraw() {
                       <div className="col-10 col-md-10 col-lg-10 pic-bg justify-content-center">
                         <img src={Picture1} className="img-fluid mt-3" />
                       </div>
-                      <div className="col-12 col-md-12 col-sm-12 col-lg-12 detail_bg">
+                      <div className="col-12 col-md-12 col-sm-12 col-lg-12 detail_bg_lucky">
                         <div className="row d-flex justify-content-center mbl_padding">
                           <div className="col-2 col-md-2 color1">
                             <div class="d-flex flex-column pt-2 pb-2">
@@ -194,7 +194,7 @@ function LuckyDraw() {
                     </div>
                   </div>
                   <div
-                    className="col-6  col-md- col-lg-6 detail_bg detail_bg_2"
+                    className="col-6  col-md- col-lg-6 detail_bg_lucky detail_bg_2"
                     style={{ height: "auto" }}
                   >
                     <div className="row mt-3 Point_bg2">
@@ -207,7 +207,6 @@ function LuckyDraw() {
                             <span>
                               <b>100,000</b> iBBR Point
                             </span>
-                            
                           </div>
                         </div>
                       </div>
