@@ -43,9 +43,13 @@
 }
 
 .circle_luckydraw_myNFT {
-  position: relative;
-  right: 0px;
+  position: absolute;
+  right: -45px;
   bottom: 23px;
+  animation: circle-animation 1.5s ease infinite;
+}
+.pos-rel{
+  position: relative;
 }
 /* 
 .lucky_draw_bg{
@@ -65,11 +69,12 @@ background: #FFF854;
   .lucky_draw_heading {
     font-size: 20px;
   }
-  .circle_luckydraw {
+  .circle_luckydraw_myNFT {
     position: relative;
     right: -50px;
     bottom: 15px;
     width: 30px;
+    animation: circle-animation 1.5s ease infinite;
   }
   .button_responsive {
     display: flex;
@@ -429,4 +434,13 @@ background: #FFF854;
   line-height: 17px;
   text-align: center;
   color: #000000;
+}
+
+@media (max-width: 425px) {
+  .mynft_responsive {
+    font-size: 25px !important;
+  }
+  .circle_luckydraw_myNFT {
+    display: none;
+  }
 }

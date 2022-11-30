@@ -8,6 +8,8 @@ import legendery from "../../Assets/Images/LuckyDraw/legendary.PNG";
 import mythic from "../../Assets/Images/LuckyDraw/mythic.PNG";
 import { IoCaretBackSharp, IoCaretForwardSharp } from "react-icons/io5";
 import "./myNFT.css";
+import { Modal, ModalFooter } from "react-bootstrap";
+import NftTransfer from "../nftTransfer/nftTransfer";
 
 const array = [
   { title: "Common", id: "#1001", pic: common },
@@ -23,6 +25,11 @@ const array = [
 const items = [...array];
 
 function Items({ currentItems }) {
+  const [show, setShow] = useState(false);
+  const handleMint = () => {
+    console.log("handle Mint");
+    setShow(true);
+  };
   return (
     <div className="items row d-flex justify-content-center">
       {currentItems &&
@@ -44,7 +51,9 @@ function Items({ currentItems }) {
               </div>
               <div className="col-10 col-md-10 col-lg-10 d-flex justify-content-center mt-4">
                 <button
-                  onClick={""}
+                  onClick={() => {
+                    handleMint();
+                  }}
                   className="button btn_bg nftImgTransferButton"
                 >
                   Transfer
@@ -53,6 +62,22 @@ function Items({ currentItems }) {
             </div>
           </div>
         ))}
+      {show && (
+        <Modal
+          className="model"
+          show={show}
+          size="xl"
+          backdrop="static"
+          keyboard={false}
+          dialogClassName="modal-100w"
+          onHide={() => setShow(false)}
+        >
+          <Modal.Header closeButton></Modal.Header>
+          <Modal.Body>
+            <NftTransfer />
+          </Modal.Body>
+        </Modal>
+      )}
     </div>
   );
 }
@@ -68,13 +93,10 @@ function PaginatedItems({ itemsPerPage }) {
   useEffect(() => {
     // Fetch items from another resources.
     const endOffset = itemOffset + itemsPerPage;
-    console.log(`Loading items from ${itemOffset} to ${endOffset}`);
-    console.log("items", items.length);
     let sliced;
     for (var i = 0; i < items.length; i++) {
       sliced = items.slice(itemOffset, endOffset);
     }
-    console.log("items", sliced);
 
     setCurrentItems(sliced);
     setPageCount(Math.ceil(items.length / itemsPerPage));
