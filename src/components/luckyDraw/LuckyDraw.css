@@ -336,7 +336,7 @@ background: #FFF854;
 }
 @media (max-width: 426px) {
   .lucky_draw_heading2 {
-    font-size: 20px !important;
+    font-size: 15px !important;
     padding: 10px;
   }
   .circle_luckydraw_lucky {
