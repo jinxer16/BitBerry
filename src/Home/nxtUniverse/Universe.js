@@ -134,8 +134,8 @@ function Universe() {
           </div>
 
           {/* **********************End Mobile Screen********* */}
-          <div className="row d-flex justify-content-center pic-bg large-screen">
-            <div className="col-lg-11 col-xl-10 col-xxl-8 pic-bg">
+          <div className="row d-flex justify-content-center pic-bg2 large-screen">
+            <div className="col-lg-11 col-xl-10 col-xxl-8 pic-bg2">
               <div className="row d-flex justify-content-between">
                 <div className="col-lg-5 col-xl-6 col-xxl-5" data-aos="fade-right" data-aos-duration="2000">
                   <div className="">

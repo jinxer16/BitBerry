@@ -17,7 +17,7 @@ function NftTransfer() {
               <div className="col-12">
                 <div className="row lucky_draw_top d-flex justify-content-evenly ">
                   <div className=" col-md-3 col-lg-3 col-xl-1 col-sm-12 "></div>
-                  <div className="col-lg-6 col-xl-9 col-sm-12 text-center d-flex justify-content-center align-items-center">
+                  <div className="col-md-12 col-xl-9 col-sm-12 text-center d-flex justify-content-center align-items-center">
                     <div className="btn_bg lucky_draw_heading pe-5 ps-5 rounded-pill ">
                       NFT Card Transfer
                       <span className="">
