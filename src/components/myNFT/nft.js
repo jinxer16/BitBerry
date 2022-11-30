@@ -44,7 +44,9 @@ function Items({ currentItems }) {
                 />
               </div>
               <div className="col-10 col-md-10 col-lg-10 d-flex justify-content-center mt-4">
-                <span className="text-uppercase nftImgTitle">{item.title}</span>
+                <span className="text-uppercase nftImgTitle ">
+                  {item.title}
+                </span>
               </div>
               <div className="col-10 col-md-10 col-lg-10 d-flex justify-content-center mt-2">
                 {item.id}
@@ -117,15 +119,15 @@ function PaginatedItems({ itemsPerPage }) {
       <ReactPaginate
         nextLabel={<IoCaretForwardSharp />}
         onPageChange={handlePageClick}
-        pageRangeDisplayed={2}
-        marginPagesDisplayed={2}
+        pageRangeDisplayed={1}
+        marginPagesDisplayed={1}
         pageCount={pageCount}
         previousLabel={<IoCaretBackSharp />}
         pageClassName="page-item"
         pageLinkClassName="page-link"
-        previousClassName="page-item"
+        previousClassName="page-item page-item2"
         previousLinkClassName="page-link arrow"
-        nextClassName="page-item"
+        nextClassName="page-item page-item2"
         nextLinkClassName="page-link arrow"
         breakLabel="..."
         breakClassName="page-item"

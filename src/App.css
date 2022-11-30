@@ -170,3 +170,9 @@
 .modal-header {
   border-bottom: none !important;
 }
+.cardTitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800 !important;
+  font-size: 18px !important;
+}

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.373c5c57.css",
-    "main.js": "/static/js/main.89294871.js",
+    "main.css": "/static/css/main.70bdb1ad.css",
+    "main.js": "/static/js/main.d713b9e3.js",
     "static/js/787.ba258d20.chunk.js": "/static/js/787.ba258d20.chunk.js",
     "static/media/mythic.PNG": "/static/media/mythic.57d35266a1f1dc538b5c.PNG",
     "static/media/epic.PNG": "/static/media/epic.85e4b3dc1cd8a68197bd.PNG",
@@ -23,7 +23,7 @@
     "static/media/roadmap1.png": "/static/media/roadmap1.ac2ed1ab3cabee0c4edc.png",
     "static/media/Group222.png": "/static/media/Group222.fd306390e14c0427ba0c.png",
     "static/media/2solider-01.png": "/static/media/2solider-01.f980ed44cfb0dd2c1357.png",
-    "static/media/logo.svg": "/static/media/logo.f2e5d122901ac5b0c85356338ca7bbaf.svg",
+    "static/media/logo.svg": "/static/media/logo.2bbaed4260ee85f289c9cbfb381a738d.svg",
     "static/media/roadmap3.png": "/static/media/roadmap3.fe794264c2a398d179fe.png",
     "static/media/newbitberry-03.jpg": "/static/media/newbitberry-03.f676b7092035cb97b0b3.jpg",
     "static/media/IMG_2065.png": "/static/media/IMG_2065.c9a14660693704746d3d.png",
@@ -76,13 +76,13 @@
     "static/media/_2774646056384.png": "/static/media/_2774646056384.a19b4ad268d7144c847a.png",
     "static/media/lineCross-01.svg": "/static/media/lineCross-01.b4ea7dd249a437b28ee8.svg",
     "index.html": "/index.html",
-    "static/media/Vector24Line.svg": "/static/media/Vector24Line.60f50c64891d1d044682253e450b3ddb.svg",
-    "main.373c5c57.css.map": "/static/css/main.373c5c57.css.map",
-    "main.89294871.js.map": "/static/js/main.89294871.js.map",
+    "static/media/Vector24Line.svg": "/static/media/Vector24Line.48114a462751774306150121a53263bd.svg",
+    "main.70bdb1ad.css.map": "/static/css/main.70bdb1ad.css.map",
+    "main.d713b9e3.js.map": "/static/js/main.d713b9e3.js.map",
     "787.ba258d20.chunk.js.map": "/static/js/787.ba258d20.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.373c5c57.css",
-    "static/js/main.89294871.js"
+    "static/css/main.70bdb1ad.css",
+    "static/js/main.d713b9e3.js"
   ]
 }

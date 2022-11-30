@@ -152,15 +152,15 @@ function Lp_Pool() {
                     </div>
                   </div>
                   <div className=" col-md-12 col-xl-3 col-sm-12  button_responsive">
-                    <div className="p-2 float-center">
+                    <div className="p-2 me-4 float-end">
                       <button className="button btn_bg">CONNECT WALLET</button>
                     </div>
-                    <div className="p-2 float-center">
+                    <div className="p-2 me-4 float-end">
                       <HashLink to="/myNft">
                         <button className="button">My NFT</button>
                       </HashLink>
                     </div>
-                    <div className="p-2 float-center lpPool_box">
+                    <div className="p-2 me-4 float-end lpPool_box">
                       <div className="balance_text">Balance:</div>
                       <div className="d-flex flex-row justify-content-between ">
                         <div className="">BBR</div>
