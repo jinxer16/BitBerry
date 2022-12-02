@@ -205,7 +205,7 @@ function LuckyDraw() {
                           </div>
                           <div className="align-self-center">
                             <span>
-                              <b>100,000</b> iBBR Point
+                              <b>0.000</b> iBBR Point
                             </span>
                           </div>
                         </div>

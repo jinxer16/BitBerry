@@ -8,7 +8,7 @@ import Picture3 from "../../Assets/Images/LpPool/Rectangle1102.png";
 import Picture4 from "../../Assets/Images/LpPool/Rectangle1103.png";
 import Picture5 from "../../Assets/Images/LpPool/Rectangle1104.png";
 import Picture6 from "../../Assets/Images/LpPool/Rectangle1105.png";
-
+import ComingSoonButton from "../../Assets/Images/coming-soon1.png"
 import { IoAlertCircle, IoClose } from "react-icons/io5";
 import { OverlayTrigger, Tooltip, Popover } from "react-bootstrap";
 import { HashLink } from "react-router-hash-link";
@@ -54,6 +54,7 @@ function Lp_Pool() {
       staked: "o IBBR",
       tooltip:
         "Stake NFT Tier Card to earn iBBR point. NFT Tier Card can unstake anytime",
+        button: ComingSoonButton
     },
     {
       picture: Picture3,
@@ -64,6 +65,7 @@ function Lp_Pool() {
       staked: "o IBBR",
       tooltip:
         "Stake NFT Tier Card to earn iBBR point. NFT Tier Card can unstake anytime",
+        button: ComingSoonButton
     },
     {
       picture: Picture4,
@@ -74,6 +76,7 @@ function Lp_Pool() {
       staked: "o IBBR",
       tooltip:
         "Stake NFT Tier Card to earn iBBR point. NFT Tier Card can unstake anytime",
+        button: ComingSoonButton
     },
     {
       picture: Picture5,
@@ -84,6 +87,7 @@ function Lp_Pool() {
       staked: "o IBBR",
       tooltip:
         "Stake NFT Tier Card to earn iBBR point. NFT Tier Card can unstake anytime",
+        button: ComingSoonButton
     },
     {
       picture: Picture6,
@@ -94,6 +98,7 @@ function Lp_Pool() {
       staked: "o IBBR",
       tooltip:
         "Stake NFT Tier Card to earn iBBR point. NFT Tier Card can unstake anytime",
+        button: ComingSoonButton
     },
   ];
   return (
@@ -142,11 +147,21 @@ function Lp_Pool() {
                       </span>
                     </div>
                     <div className="row">
-                      <div className="col d-flex justify-content-start mt-2">
-                        <div className="mt-4 lucky_draw_text  lucky_draw_text2 text-left">
-                          Stake $BBR to Earn iBBR Points iBBR point gives its
-                          users access to the Launchpad with the chance to
-                          receive a Treasure X NFT from a lucky draw!
+                      <div className="col d-flex justify-content-center mt-2">
+                        <div className="mt-4 lucky_draw_text  lucky_draw_text2 text-center">
+                          <p className="text-center m-0">
+                            {" "}
+                            Stake $BBR to Earn iBBR Points.
+                          </p>
+                          <p className="text-center m-0">
+                            {" "}
+                            iBBR point gives its users access to the Launchpad
+                          </p>
+                          <p className="text-center m-0">
+                            {" "}
+                            with the chance to receive a Treasure X NFT from a
+                            lucky draw!
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -164,11 +179,11 @@ function Lp_Pool() {
                       <div className="balance_text">Balance:</div>
                       <div className="d-flex flex-row justify-content-between ">
                         <div className="">BBR</div>
-                        <div className=" ">1000</div>
+                        <div className=" ">0.00</div>
                       </div>
                       <div className="d-flex flex-row justify-content-between ">
                         <div className="">iBBR</div>
-                        <div className="pb-2">40</div>
+                        <div className="pb-2">0.00</div>
                       </div>
                     </div>
                   </div>
@@ -218,13 +233,18 @@ function Lp_Pool() {
                         </div>
                         <div className="row mt-3 d-flex justify-content-center">
                           <div className="col-10 card_body ">
-                            <div className="row d-flex justify-content-center">
-                              <div className="col-8 mt-3">
+                            <div className="row">
+                              <div className="col-10  d-flex justify-content-between mt-3">
+                              <div className="">
+                              <img src={data.button}  className="img-fluid" width={"33px"}/>
+                              </div>
+                              <div>
                                 <img
                                   src={data.picture}
                                   className="img-fluid"
                                   width={"147px"}
                                 />
+                              </div>
                               </div>
                             </div>
                             <div className="row d-flex justify-content-center">
