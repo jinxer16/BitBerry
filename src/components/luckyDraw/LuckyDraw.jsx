@@ -267,7 +267,7 @@ function LuckyDraw() {
                             </div>
                             <div className="align-self-center total_text_1">
                               <span>
-                                <b>50 000</b>
+                                <b>50000.00</b>
                               </span>{" "}
                               iBBR
                             </div>
