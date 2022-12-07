@@ -40,8 +40,7 @@ function Lp_Pool() {
       iBBR_Point: "0 IBBR ",
       staked: "o IBBR",
       tooltip: `Stake BBR token to earn iBBR point.
-      Token Lock 7days condition.
-      *If unstake in locked period , 10% fee deduct.`,
+      Token Lock 7days condition.`,
     },
     {
       picture: Picture7,
