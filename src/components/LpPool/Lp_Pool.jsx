@@ -12,9 +12,17 @@ import ComingSoonButton from "../../Assets/Images/coming-soon1.png"
 import { IoAlertCircle, IoClose } from "react-icons/io5";
 import { OverlayTrigger, Tooltip, Popover } from "react-bootstrap";
 import { HashLink } from "react-router-hash-link";
+import {useDispatch, useSelector} from "react-redux";
+import {connectionAction} from "../../Redux/connection/actions"
 function Lp_Pool() {
+  const dispatch = useDispatch();
+	let acc = useSelector((state) => state.connect?.connection);
   let [animationState, setAnimationState] = useState(true);
   let [animationState1, setAnimationState1] = useState(false);
+
+  const connectWallet = () =>{
+		dispatch(connectionAction())
+	}
   useEffect(() => {
     let interval = setInterval(() => {
       setAnimationState((prevState) => !prevState);
@@ -168,7 +176,16 @@ function Lp_Pool() {
                   </div>
                   <div className=" col-md-12 col-xl-3 col-sm-12  button_responsive">
                     <div className="p-2 me-4 float-end">
-                      <button className="button btn_bg">CONNECT WALLET</button>
+                      <button className="button btn_bg" onClick={connectWallet}>
+                      {acc === "No Wallet"
+                ? "Connect"
+                : acc === "Connect Wallet"
+                ? "Connect"
+                : acc === "Wrong Network"
+                ? acc
+                : acc.substring(0, 3) + "..." + acc.substring(acc.length - 3)}
+                      </button>
+                      
                     </div>
                     <div className="p-2 me-4 float-end">
                       <HashLink to="/myNft">

@@ -12,8 +12,16 @@ import { IoClose } from "react-icons/io5";
 import { HashLink } from "react-router-hash-link";
 import NftTicket from "../nftTicket/nftTicket";
 import { Modal, ModalFooter } from "react-bootstrap";
+import {useDispatch, useSelector} from "react-redux";
+import {connectionAction} from "../../Redux/connection/actions"
 function LuckyDraw() {
+  const dispatch = useDispatch();
+	let acc = useSelector((state) => state.connect?.connection);
   const [show, setShow] = useState(false);
+
+  const connectWallet = () =>{
+		dispatch(connectionAction())
+	}
   const handleMint = () => {
     console.log("handle Mint");
     setShow(true);
@@ -78,7 +86,15 @@ function LuckyDraw() {
                   </div>
                   <div className="col-md-12 col-xl-3 col-sm-12 button_responsive">
                     <div className="p-2 float-end">
-                      <button className="button btn_bg">CONNECT WALLET</button>
+                      <button className="button btn_bg" onClick={connectWallet}>
+                      {acc === "No Wallet"
+                ? "Connect"
+                : acc === "Connect Wallet"
+                ? "Connect"
+                : acc === "Wrong Network"
+                ? acc
+                : acc.substring(0, 3) + "..." + acc.substring(acc.length - 3)}
+                      </button>
                     </div>
                     <div className="p-2 float-end">
                       <HashLink to="/myNft">
