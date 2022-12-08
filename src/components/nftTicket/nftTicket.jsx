@@ -6,9 +6,17 @@ import rare from "../../Assets/Images/LuckyDraw/rare.PNG";
 import epic from "../../Assets/Images/LuckyDraw/epic.PNG";
 import { IoClose } from "react-icons/io5";
 import { HashLink } from "react-router-hash-link";
+import {useDispatch, useSelector} from "react-redux";
+import {connectionAction} from "../../Redux/connection/actions"
 
 function NftTicket() {
+  const dispatch = useDispatch();
+	let acc = useSelector((state) => state.connect?.connection);
   let [animationState, setAnimationState] = useState(true);
+
+  const connectWallet = () =>{
+		dispatch(connectionAction())
+	}
   useEffect(() => {
     let interval = setInterval(() => {
       setAnimationState((prevState) => !prevState);
@@ -57,7 +65,15 @@ function NftTicket() {
                   </div>
                   <div className="col-lg-12 col-xl-2 col-sm-12  button_responsive">
                     <div className="p-2 float-end">
-                      <button className="button btn_bg">CONNECT WALLET</button>
+                      <button className="button btn_bg" onClick={connectWallet}>
+                      {acc === "No Wallet"
+                ? "Connect"
+                : acc === "Connect Wallet"
+                ? "Connect"
+                : acc === "Wrong Network"
+                ? acc
+                : acc.substring(0, 3) + "..." + acc.substring(acc.length - 3)}
+                      </button>
                     </div>
                     <div className="p-2 float-end">
                       <HashLink to="/myNft">

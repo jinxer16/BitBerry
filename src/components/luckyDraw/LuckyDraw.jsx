@@ -87,7 +87,7 @@ function LuckyDraw() {
                   <div className="col-md-12 col-xl-3 col-sm-12 button_responsive">
                     <div className="p-2 float-end">
                       <button className="button btn_bg" onClick={connectWallet}>
-                      {acc === "No Wallet"
+                             {acc === "No Wallet"
                 ? "Connect"
                 : acc === "Connect Wallet"
                 ? "Connect"
