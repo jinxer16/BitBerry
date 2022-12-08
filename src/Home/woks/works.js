@@ -53,7 +53,7 @@ function Works() {
           data-aos-easing="linear"
           data-aos-duration="2000"
           >
-          <div className="col-lg-6 col-xl-6 col-xxl-5 text-center "><a href="https://www.youtube.com/watch?v=19LTqFlTcIo" target={"blank"}> <img src={work1} alt="" className="img-fluid imgWork" /></a></div>
+          <div className="col-lg-6 col-xl-6 col-xxl-5 text-center "><a href="https://www.youtube.com/watch?v=YHgJRdVZB5Y" target={"blank"}> <img src={work1} alt="" className="img-fluid imgWork" /></a></div>
           <div className="col-lg-6 col-xl-6 col-xxl-5 text-center"><a href="https://www.youtube.com/watch?v=8KL91Htir9o" target={"blank"}> <img src={work2} alt="" className="img-fluid imgWork" /></a></div>
         </div>
 
@@ -86,7 +86,7 @@ function Works() {
         </div>
         <div className="row">
           <div className="col-12 mt-5">
-            <a href="https://www.youtube.com/watch?v=19LTqFlTcIo" target={"blank"}> <img src={workMobile1} alt="" className="img-fluid " /></a>
+            <a href="https://www.youtube.com/watch?v=YHgJRdVZB5Y" target={"blank"}> <img src={workMobile1} alt="" className="img-fluid " /></a>
             
           </div>
           <div className="col-12 mt-5">

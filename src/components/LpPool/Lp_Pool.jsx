@@ -3,11 +3,12 @@ import "./LpPool.css";
 import circle from "../../Assets/Images/VectorCircle-01.png";
 import sign from "../../Assets/Images/LpPool/VectorSign.png";
 import Picture1 from "../../Assets/Images/LpPool/Rectangle110.png";
-import Picture2 from "../../Assets/Images/LpPool/Rectangle1101.png";
+import Picture2 from "../../Assets/Images/LpPool/Rectangle11012.png";
 import Picture3 from "../../Assets/Images/LpPool/Rectangle1102.png";
 import Picture4 from "../../Assets/Images/LpPool/Rectangle1103.png";
 import Picture5 from "../../Assets/Images/LpPool/Rectangle1104.png";
 import Picture6 from "../../Assets/Images/LpPool/Rectangle1105.png";
+import Picture7 from "../../Assets/Images/LpPool/Rectangle1101.png"
 import ComingSoonButton from "../../Assets/Images/coming-soon1.png"
 import { IoAlertCircle, IoClose } from "react-icons/io5";
 import { OverlayTrigger, Tooltip, Popover } from "react-bootstrap";
@@ -39,18 +40,17 @@ function Lp_Pool() {
       iBBR_Point: "0 IBBR ",
       staked: "o IBBR",
       tooltip: `Stake BBR token to earn iBBR point.
-      Token Lock 7days condition.
-      *If unstake in locked period , 2.5% fee deduct.`,
+      Token Lock 7days condition.`,
     },
     {
-      picture: Picture1,
+      picture: Picture7,
       token1: "BBR",
       token2: "iBBR",
       wallet: "0 BBR",
       iBBR_Point: "0 IBBR ",
       staked: "o IBBR",
       tooltip: `Stake BBR LP token to earn iBBR point.
-      LP Token Lock 14days , X 2 Reward point
+      LP Token Lock 10days , X 2 Reward point
       * Token can not unstake in locked period.`,
     },
     {
