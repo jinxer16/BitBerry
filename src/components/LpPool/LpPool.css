@@ -112,9 +112,34 @@
   font-weight: 500;
   font-size: 11px;
   line-height: 168.52%;
-  /* or 19px */
-
   color: #000000;
+}
+.button_inside{
+  position: relative;
+  width: 50%;
+}
+.input_inside_button{
+  height: 20px;
+  width: 100%;
+   /* border: none; */
+  
+   border-radius: 5px;
+border: 1px solid black;
+}
+.insideButton{
+  position: absolute;
+  right: 0px;
+  top: -1px;
+  height: 20px;
+  /* width: 20px; */
+  border: none;outline: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 168.52%;
+  color: #000000;
+  background: transparent;
 }
 .token_text_bg {
   width: 81.57px;
