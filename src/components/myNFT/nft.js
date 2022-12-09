@@ -10,6 +10,10 @@ import { IoCaretBackSharp, IoCaretForwardSharp } from "react-icons/io5";
 import "./myNFT.css";
 import { Modal, ModalFooter } from "react-bootstrap";
 import NftTransfer from "../nftTransfer/nftTransfer";
+import {useDispatch, useSelector} from "react-redux";
+import {connectionAction} from "../../Redux/connection/actions"
+import {nftAddress,nftAbi} from "../../utils/nft";
+
 
 const array = [
   { title: "Common", id: "#1001", pic: common },
@@ -30,6 +34,8 @@ function Items({ currentItems }) {
     console.log("handle Mint");
     setShow(true);
   };
+
+
   return (
     <div className="items row d-flex justify-content-center">
       {currentItems &&
@@ -38,18 +44,18 @@ function Items({ currentItems }) {
             <div className="row d-flex justify-content-center">
               <div className="col-10 col-md-10 col-lg-10 pic-bg-nft ">
                 <img
-                  src={item.pic}
+                  src={item.imageUrl}
                   className="img-fluid mt-2 rounded mobileNftTransfer"
                   alt=""
                 />
               </div>
               <div className="col-10 col-md-10 col-lg-10 d-flex justify-content-center mt-4">
                 <span className="text-uppercase nftImgTitle ">
-                  {item.title}
+                  {item.imageName}
                 </span>
               </div>
               <div className="col-10 col-md-10 col-lg-10 d-flex justify-content-center mt-2">
-                {item.id}
+                {item.tokenId}
               </div>
               <div className="col-10 col-md-10 col-lg-10 d-flex justify-content-center mt-4">
                 <button
@@ -86,32 +92,128 @@ function Items({ currentItems }) {
 
 function PaginatedItems({ itemsPerPage }) {
   // We start with an empty list of items.
+  let acc = useSelector((state) => state.connect?.connection);
   const [currentItems, setCurrentItems] = useState([]);
   const [pageCount, setPageCount] = useState(0);
+  let [nftArray,setNftsArray]=useState([])
   // Here we use item offsets; we could also use page offsets
   // following the API or data you're working with.
   const [itemOffset, setItemOffset] = useState(0);
+
+  const getNfts = async () => {
+    
+    try {
+      
+        const web3 = window.web3;
+        const nftContract = new web3.eth.Contract(
+          nftAbi,
+          nftAddress
+        );
+       
+        let totalIds = await nftContract.methods.walletOfOwner(acc).call();
+        console.log("nfts",totalIds)
+        let simplleArray = [];
+       
+        for (let i = 0; i < totalIds.length; i++) {
+          if (totalIds[i] <= 35000) {
+            let imageUrl = common;
+            let imageName = `Common #${totalIds[i]}`;
+            let tokenId = totalIds[i];
+            simplleArray = [
+              ...simplleArray,
+              { imageUrl, imageName, tokenId },
+            ];
+            setNftsArray(simplleArray);
+          } else if (totalIds[i] > 35001 && totalIds[i] <= 57000) {
+            let imageUrl = uncommon;
+            let imageName = `Uncommon #${totalIds[i]}`;
+            let tokenId = totalIds[i];
+            simplleArray = [
+              ...simplleArray,
+              { imageUrl, imageName, tokenId},
+            ];
+            setNftsArray(simplleArray);
+          } else if (totalIds[i] > 57001 && totalIds[i] <= 76000) {
+            let imageUrl = rare;
+            let imageName = `Rare #${totalIds[i]}`;
+            let tokenId = totalIds[i];
+            simplleArray = [
+              ...simplleArray,
+              { imageUrl, imageName, tokenId},
+            ];
+            setNftsArray(simplleArray);
+          } else if (totalIds[i] > 76001 && totalIds[i] <= 90000) {
+            let imageUrl = epic;
+            let imageName = `Epic #${totalIds[i]}`;
+            let tokenId = totalIds[i];
+            simplleArray = [
+              ...simplleArray,
+              { imageUrl, imageName, tokenId},
+            ];
+            setNftsArray(simplleArray);
+          } else if (totalIds[i] > 90001 && totalIds[i] <= 98500) {
+            let imageUrl = legendery;
+            let imageName = `Legendary #${totalIds[i]}`;
+            let tokenId = totalIds[i];
+            simplleArray = [
+              ...simplleArray,
+              { imageUrl, imageName, tokenId},
+            ];
+            setNftsArray(simplleArray);
+          } else if (totalIds[i] > 98501 && totalIds[i] <= 100000) {
+            let imageUrl = mythic;
+            let imageName = `Mythic #${totalIds[i]}`;
+            let tokenId = totalIds[i];
+            simplleArray = [
+              ...simplleArray,
+              { imageUrl, imageName, tokenId},
+            ];
+            console.log("simplleArray", simplleArray);
+            setNftsArray(simplleArray);
+          }
+        }
+      
+    } catch (e) {
+      console.error("error while get nfts", e);
+    }
+  };
+
+  const getData = () => {
+    if (
+      acc != "No Wallet" &&
+      acc != "Wrong Network" &&
+      acc != "Connect Wallet"
+    ) {
+      console.log("welcome")
+      getNfts();
+    }
+  };
+
+  useEffect(()=>{
+    getData()
+  },[acc])
 
   useEffect(() => {
     // Fetch items from another resources.
     const endOffset = itemOffset + itemsPerPage;
     let sliced;
-    for (var i = 0; i < items.length; i++) {
-      sliced = items.slice(itemOffset, endOffset);
+    for (var i = 0; i < nftArray.length; i++) {
+      sliced = nftArray.slice(itemOffset, endOffset);
     }
 
     setCurrentItems(sliced);
-    setPageCount(Math.ceil(items.length / itemsPerPage));
+    setPageCount(Math.ceil(nftArray.length / itemsPerPage));
   }, [itemOffset, itemsPerPage]);
 
   // Invoke when user click to request another page.
   const handlePageClick = (event) => {
-    const newOffset = (event.selected * itemsPerPage) % items.length;
+    const newOffset = (event.selected * itemsPerPage) % nftArray.length;
     console.log(
       `User requested page number ${event.selected}, which is offset ${newOffset}`
     );
     setItemOffset(newOffset);
   };
+
 
   return (
     <>

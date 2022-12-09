@@ -1,4 +1,4 @@
-export const tokenLpStaking = "0xb40F4069cCF802092Ffb7319219f1ed3A8814469";
+export const tokenLpStaking = "0xEBC15d578426cF4e1792Ec786786F34bC643Ae08";
 export const tokenLpStakingAbi = [
   { inputs: [], stateMutability: "nonpayable", type: "constructor" },
   {
@@ -185,13 +185,6 @@ export const tokenLpStakingAbi = [
   },
   {
     inputs: [],
-    name: "LPlocktime",
-    outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
-    stateMutability: "view",
-    type: "function",
-  },
-  {
-    inputs: [],
     name: "LpToken",
     outputs: [{ internalType: "contract IERC20", name: "", type: "address" }],
     stateMutability: "view",
@@ -282,6 +275,20 @@ export const tokenLpStakingAbi = [
     inputs: [],
     name: "currentRP",
     outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [{ internalType: "address", name: "_user", type: "address" }],
+    name: "isBBRTimeCompleted",
+    outputs: [{ internalType: "bool", name: "", type: "bool" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [{ internalType: "address", name: "_user", type: "address" }],
+    name: "isLPTimeCompleted",
+    outputs: [{ internalType: "bool", name: "", type: "bool" }],
     stateMutability: "view",
     type: "function",
   },

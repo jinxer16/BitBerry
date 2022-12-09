@@ -34,6 +34,7 @@ function Lp_Pool() {
   let [stake,setStaked]=useState("0")
   let [ibrValue,setIbr]=useState("0")
   let [balanc,setBalance]=useState("0")
+  let [ibbrValue,setIbbrValue]=useState("0")
 
   const connectWallet = () =>{
 		dispatch(connectionAction())
@@ -55,6 +56,14 @@ function Lp_Pool() {
     let value=await tokenStaking.methods.BBPcalculator(acc).call();
     let newValue=Number((web3.utils.fromWei(value))).toFixed(2)
     setIbr(newValue)
+  }
+
+  const balances=async()=>{
+    const web3 = window.web3;
+    let tokenStaking = new web3.eth.Contract(tokenLpStakingAbi, tokenLpStaking);
+    let value=await tokenStaking.methods._balances(acc).call();
+    let newValue=parseInt(Number((web3.utils.fromWei(value))))
+    setIbbrValue( newValue)
   }
 
   const balance=async()=>{
@@ -125,6 +134,7 @@ function Lp_Pool() {
     staked()
     ibr()
     balance()
+    balances()
   },[acc])
   useEffect(() => {
     
@@ -305,7 +315,7 @@ function Lp_Pool() {
                       </div>
                       <div className="d-flex flex-row justify-content-between ">
                         <div className="">iBBR</div>
-                        <div className="pb-2">0.00</div>
+                        <div className="pb-2">{ibbrValue}</div>
                       </div>
                     </div>
                   </div>

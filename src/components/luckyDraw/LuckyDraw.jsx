@@ -9,25 +9,103 @@ import colorcircle2 from "../../Assets/Images/LuckyDraw/Ellipse8.png";
 import colorcircle3 from "../../Assets/Images/LuckyDraw/Ellipse9.png";
 import colorcircle4 from "../../Assets/Images/LuckyDraw/Ellipse10.png";
 import { IoClose } from "react-icons/io5";
+import { toast } from "react-toastify";
 import { HashLink } from "react-router-hash-link";
 import NftTicket from "../nftTicket/nftTicket";
 import { Modal, ModalFooter } from "react-bootstrap";
 import {useDispatch, useSelector} from "react-redux";
 import {connectionAction} from "../../Redux/connection/actions"
+import {bbrTokenAddress,bbrtokenAbi} from "../../utils/bbr";
+import {tokenLpStaking,tokenLpStakingAbi} from "../../utils/tokenLptokenStaking";
+import {nftAddress,nftAbi} from "../../utils/nft";
+import Web3 from 'web3';
+const web3EndPoint = new Web3("https://data-seed-prebsc-1-s3.binance.org:8545/")
 function LuckyDraw() {
   const dispatch = useDispatch();
 	let acc = useSelector((state) => state.connect?.connection);
   const [show, setShow] = useState(false);
+  const [value,setValue]=useState(1)
+  let [ibbrValue,setIbbrValue]=useState("0")
+  let [totalCost,setTotalCost]=useState()
 
   const connectWallet = () =>{
 		dispatch(connectionAction())
 	}
-  const handleMint = () => {
-    console.log("handle Mint");
-    setShow(true);
+
+  const mintingPrice=async()=>{
+    let tokenContract = new web3EndPoint.eth.Contract(nftAbi,nftAddress);
+    let value=await tokenContract.methods.MinitngPrice().call();
+    let newValue=web3EndPoint.utils.fromWei(value)
+    console.log("newValue",newValue)
+    setTotalCost(newValue)
+    
+  }
+  const handleMint =async() => {
+    try{
+      if (acc == "No Wallet") {
+        toast.info("Wallet not connected");
+      } else if (acc == "Wrong Network") {
+        toast.info("Wrong Network");
+      } else if (acc == "Connect Wallet") {
+        toast.info("Please connect wallet");
+      }
+      else{
+        if(totalCost>ibbrValue){
+          toast.info("Your balance is not enough");
+        }
+        else{
+          const web3 = window.web3;
+          let nftContract = new web3.eth.Contract(nftAbi,nftAddress);
+          await nftContract.methods.mint(value).send({
+            from:acc
+          });
+          
+          toast.success("successfully mint")
+          setShow(true);
+        }
+      }
+    }
+    catch(e){
+      console.log("e", e);
+      toast.error("Failed")
+    }
   };
   let [animationState, setAnimationState] = useState(true);
   let [animationState1, setAnimationState1] = useState(false);
+
+  const Plus= async()=>{
+    let tokenContract = new web3EndPoint.eth.Contract(nftAbi,nftAddress);
+    let tokenValue=await tokenContract.methods.MinitngPrice().call();
+    let limitValue=await tokenContract.methods.MaxLimitPerTransaction().call();
+    let newValue=web3EndPoint.utils.fromWei(tokenValue)
+    if(value<limitValue){
+    setValue((value)=>value + 1)
+    setTotalCost(newValue * (value + 1))
+    }
+    else{
+      toast.error("limit increase")
+    }
+  }
+
+  const Miuns=()=>{
+  if(value>1){
+    setTotalCost((totalCost)=>totalCost-50000)
+   setValue((value)=>value-1)
+  }
+}
+
+ const balances=async()=>{
+  const web3 = window.web3;
+  let tokenStaking = new web3.eth.Contract(tokenLpStakingAbi, tokenLpStaking);
+  let value=await tokenStaking.methods._balances(acc).call();
+  let newValue=parseInt(Number((web3.utils.fromWei(value))))
+  setIbbrValue( newValue)
+}
+
+useEffect(()=>{
+  balances()
+  mintingPrice()
+},[acc])
   useEffect(() => {
     let interval = setInterval(() => {
       setAnimationState((prevState) => !prevState);
@@ -221,7 +299,7 @@ function LuckyDraw() {
                           </div>
                           <div className="align-self-center">
                             <span>
-                              <b>0.000</b> iBBR Point
+                              <b>{ibbrValue}</b> iBBR Point
                             </span>
                           </div>
                         </div>
@@ -243,15 +321,15 @@ function LuckyDraw() {
                         <div className="row d-flex justify-content-around align-items-center">
                           <div className=" col-sm-6 d-flex align-items-center  Minusbox-1 gap-2">
                             <div className="text-center">
-                              <i class="fa-solid fa-minus"></i>
+                              <i class="fa-solid fa-minus" onClick={Miuns}></i>
                             </div>
                           </div>
                           <div className="col-4  d-flex align-items-center justify-content-center Textbox">
-                            <div className="text-center inputText">1</div>
+                            <div className="text-center inputText">{value}</div>
                           </div>
                           <div className="col-3  d-flex align-items-center Plusbox-1">
                             <div className="text-center">
-                              <i class="fa-solid fa-plus"></i>
+                              <i class="fa-solid fa-plus" onClick={Plus}></i>
                             </div>
                           </div>
                         </div>
@@ -267,7 +345,7 @@ function LuckyDraw() {
                             </div>
                             <div className="align-self-center total_text_1">
                               <span>
-                                <b>50000.00</b>
+                                <b>{totalCost}</b>
                               </span>{" "}
                               iBBR
                             </div>

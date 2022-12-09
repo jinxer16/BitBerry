@@ -6,16 +6,19 @@ import { IoClose } from "react-icons/io5";
 import { HashLink } from "react-router-hash-link";
 import {useDispatch, useSelector} from "react-redux";
 import {connectionAction} from "../../Redux/connection/actions"
+import {nftAddress,nftAbi} from "../../utils/nft";
 
 function MyNFT() {
   const dispatch = useDispatch();
 	let acc = useSelector((state) => state.connect?.connection);
   let [animationState, setAnimationState] = useState(true);
   let [animationState1, setAnimationState1] = useState(false);
-
+  
   const connectWallet = () =>{
 		dispatch(connectionAction())
 	}
+  
+ 
   useEffect(() => {
     let interval = setInterval(() => {
       setAnimationState((prevState) => !prevState);

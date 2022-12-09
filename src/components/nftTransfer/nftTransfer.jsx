@@ -5,11 +5,19 @@ import Picture1 from "../../Assets/Images/LuckyDraw/common.PNG";
 import star from "../../Assets/Images/LuckyDraw/star.png";
 import { IoClose } from "react-icons/io5";
 import { HashLink } from "react-router-hash-link";
+import {connectionAction} from "../../Redux/connection/actions";
+import {useDispatch, useSelector} from "react-redux";
 
 function NftTransfer() {
+  const dispatch = useDispatch();
+	let acc = useSelector((state) => state.connect?.connection);
   let [animationState, setAnimationState] = useState(true);
   let [animationState1, setAnimationState1] = useState(false);
   const [confirm, setConfirm] = useState(false);
+
+  const connectWallet = () =>{
+		dispatch(connectionAction())
+	}
   const handleConfirm = () => {
     setConfirm(true);
   };
@@ -67,7 +75,15 @@ function NftTransfer() {
                   </div>
                   <div className="col-lg-12 col-xl-2 col-sm-12  button_responsive">
                     <div className="p-2 float-end">
-                      <button className="button btn_bg">CONNECT WALLET</button>
+                      <button className="button btn_bg" onClick={connectWallet}>
+                      {acc === "No Wallet"
+                ? "Connect"
+                : acc === "Connect Wallet"
+                ? "Connect"
+                : acc === "Wrong Network"
+                ? acc
+                : acc.substring(0, 3) + "..." + acc.substring(acc.length - 3)}
+                      </button>
                     </div>
                     <div className="p-2 float-end">
                       <HashLink to="/myNft">

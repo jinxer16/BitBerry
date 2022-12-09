@@ -16,7 +16,7 @@ import { OverlayTrigger, Tooltip, Popover } from "react-bootstrap";
 import { HashLink } from "react-router-hash-link";
 import { useDispatch, useSelector } from "react-redux";
 import { connectionAction } from "../../Redux/connection/actions";
-import { bbrTokenAddress, bbrtokenAbi } from "../../utils/bbr";
+import { bbrLpTokenAddress, bbrLptokenAbi } from "../../utils/bbr";
 import {
   tokenLpStaking,
   tokenLpStakingAbi,
@@ -40,25 +40,23 @@ function Lp_Pool2() {
     console.log("enter value");
     const web3 = window.web3;
     let tokenStaking = new web3.eth.Contract(tokenLpStakingAbi, tokenLpStaking);
-    let staked = await tokenStaking.methods.User(acc).call();
-    console.log("staked", staked);
-    console.log("staked1", web3.utils.fromWei(staked.mystakedTokens));
-    setStaked(web3.utils.fromWei(staked.mystakedTokens));
+    let staked = await tokenStaking.methods.UserLP(acc).call();
+
+    setStaked(web3.utils.fromWei(staked.Total_Amount));
   };
 
   const ibr = async () => {
     const web3 = window.web3;
     let tokenStaking = new web3.eth.Contract(tokenLpStakingAbi, tokenLpStaking);
-    let value = await tokenStaking.methods.BBPcalculator(acc).call();
+    let value = await tokenStaking.methods.BBPcalculatorforLP(acc).call();
     let newValue = Number(web3.utils.fromWei(value)).toFixed(2);
     setIbr(newValue);
   };
 
   const balance = async () => {
     const web3 = window.web3;
-    let tokenContract = new web3.eth.Contract(bbrtokenAbi, bbrTokenAddress);
+    let tokenContract = new web3.eth.Contract(bbrLptokenAbi, bbrLpTokenAddress);
     let balance = await tokenContract.methods.balanceOf(acc).call();
-    console.log(balance);
     setBalance(Number(web3.utils.fromWei(balance)));
   };
 
@@ -72,7 +70,7 @@ function Lp_Pool2() {
         toast.info("Please connect wallet");
       } else {
         const web3 = window.web3;
-        let tokenContract = new web3.eth.Contract(bbrtokenAbi, bbrTokenAddress);
+        let tokenContract = new web3.eth.Contract(bbrLptokenAbi, bbrLpTokenAddress);
         let balance = await tokenContract.methods.balanceOf(acc).call();
         let newVal = web3.utils.fromWei(balance.toString());
         setApproveValue(newVal);
@@ -81,6 +79,33 @@ function Lp_Pool2() {
       console.log("e", e);
     }
   };
+
+  const unStake=async()=>{
+    try {
+      if (acc == "No Wallet") {
+        toast.info("Wallet not connected");
+      } else if (acc == "Wrong Network") {
+        toast.info("Wrong Network");
+      } else if (acc == "Connect Wallet") {
+        toast.info("Please connect wallet");
+      } else {
+        const web3 = window.web3;
+        let tokenStaking = new web3.eth.Contract(tokenLpStakingAbi, tokenLpStaking);
+        let value = await tokenStaking.methods.isLPTimeCompleted(acc).call();
+        if(value==false){
+          toast.error("Unstake time not reached")
+        }
+        else{
+          await tokenStaking.methods.withdrawLPtoken().send({
+            from:acc
+          });
+        }
+      }
+  }
+  catch(e){
+    console.log("e",e)
+  }
+}
 
   const Approve = async () => {
     try {
@@ -91,11 +116,11 @@ function Lp_Pool2() {
       } else if (acc == "Connect Wallet") {
         toast.info("Please connect wallet");
       } else {
-        if (approveValue >= 500) {
+     
           const web3 = window.web3;
           let tokenContract = new web3.eth.Contract(
-            bbrtokenAbi,
-            bbrTokenAddress
+            bbrLptokenAbi,
+            bbrLpTokenAddress
           );
           let tokenStaking = new web3.eth.Contract(
             tokenLpStakingAbi,
@@ -107,21 +132,45 @@ function Lp_Pool2() {
               from: acc,
             });
           await tokenStaking.methods
-            .Stake(web3.utils.toWei(approveValue.toString()))
+            .StakeforLP(web3.utils.toWei(approveValue.toString()))
             .send({
               from: acc,
             });
 
           toast.success("value send");
-        } else {
-          toast.error("value less than 500");
-        }
+        
       }
     } catch (e) {
       console.log("e", e);
       toast.error("Transaction failed");
     }
   };
+
+  const redem=async()=>{
+    try{
+      if (acc == "No Wallet") {
+        toast.info("Wallet not connected");
+      } else if (acc == "Wrong Network") {
+        toast.info("Wrong Network");
+      } else if (acc == "Connect Wallet") {
+        toast.info("Please connect wallet");
+      } else {
+    const web3 = window.web3;
+    let tokenStaking = new web3.eth.Contract(tokenLpStakingAbi, tokenLpStaking);
+    let value = await tokenStaking.methods.redeemforLp().send({
+      from:acc
+    });
+    console.log("redeem",value)
+    let newValue = Number(web3.utils.fromWei(value)).toFixed(2);
+    console.log(newValue)
+    // setIbr(newValue);
+    }
+  }
+  catch(e){
+    console.log("e", e);
+    toast.error("Transaction failed");
+  }
+}
 
   useEffect(() => {
     staked();
@@ -164,7 +213,7 @@ function Lp_Pool2() {
                 //   id="tooltip-disabled"
                 className="toolTip_inner"
               >
-                {data.tooltip}
+                {data[0].tooltip}
               </Tooltip>
             }
           >
@@ -177,11 +226,11 @@ function Lp_Pool2() {
       <div className=" d-flex flex-row justify-content-around">
         <div className="card_deposit">Deposit:</div>
         <div className="card_value">
-          <b>{data.token1}</b>
+          <b>{data[0].token1}</b>
         </div>
         <div className="card_deposit">Earn:</div>
         <div className="card_value">
-          <b>{data.token2}</b>
+          <b>{data[0].token2}</b>
         </div>
       </div>
       <div className="row mt-3 d-flex justify-content-center">
@@ -189,10 +238,10 @@ function Lp_Pool2() {
           <div className="row">
             <div className="col-10  d-flex justify-content-between mt-3">
               <div className="">
-                <img src={data.button} className="img-fluid" width={"33px"} />
+                <img src={data[0].button} className="img-fluid" width={"33px"} />
               </div>
               <div>
-                <img src={data.picture} className="img-fluid" width={"147px"} />
+                <img src={data[0].picture} className="img-fluid" width={"147px"} />
               </div>
             </div>
           </div>
@@ -242,8 +291,8 @@ function Lp_Pool2() {
           </button>
         </div>
         <div className=" d-flex  flex-row justify-content-around ">
-          <button className="button_Unstake"> Unstake</button>
-          <button className=" button_redeem">Redeem</button>
+          <button className="button_Unstake" onClick={unStake}> Unstake</button>
+          <button className=" button_redeem" onClick={redem}>Redeem</button>
         </div>
       </div>
     </div>

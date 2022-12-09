@@ -24,7 +24,6 @@ function Lp_Pool6() {
 	let acc = useSelector((state) => state.connect?.connection);
   let [animationState, setAnimationState] = useState(true);
   let [animationState1, setAnimationState1] = useState(false);
-  let [approveValue, setApproveValue] = useState("");
   let [stake,setStaked]=useState("0")
   let [ibrValue,setIbr]=useState("0")
   let [balanc,setBalance]=useState("0")
@@ -33,95 +32,7 @@ function Lp_Pool6() {
 		dispatch(connectionAction())
 	}
 
-  const staked=async()=>{
-    console.log("enter value")
-    const web3 = window.web3;
-    let tokenStaking = new web3.eth.Contract(tokenLpStakingAbi, tokenLpStaking);
-    let staked=await tokenStaking.methods.User(acc).call();
-    console.log("staked",staked)
-    console.log("staked1",web3.utils.fromWei(staked.mystakedTokens))
-    setStaked((web3.utils.fromWei(staked.mystakedTokens)))
-  }
-
-  const ibr=async()=>{
-    const web3 = window.web3;
-    let tokenStaking = new web3.eth.Contract(tokenLpStakingAbi, tokenLpStaking);
-    let value=await tokenStaking.methods.BBPcalculator(acc).call();
-    let newValue=Number((web3.utils.fromWei(value))).toFixed(2)
-    setIbr(newValue)
-  }
-
-  const balance=async()=>{
-    const web3 = window.web3;
-    let tokenContract = new web3.eth.Contract(bbrtokenAbi, bbrTokenAddress);
-    let balance=await tokenContract.methods.balanceOf(acc).call();
-    console.log(balance)
-    setBalance(Number(web3.utils.fromWei(balance)))
-  }
-
-  const maxFun=async()=>{
-    try{
-      if (acc == "No Wallet") {
-        toast.info("Wallet not connected");
-      } else if (acc == "Wrong Network") {
-        toast.info("Wrong Network");
-      } else if (acc == "Connect Wallet") {
-        toast.info("Please connect wallet");
-      }else{
-        const web3 = window.web3;
-        let tokenContract = new web3.eth.Contract(bbrtokenAbi, bbrTokenAddress);
-        let balance=await tokenContract.methods.balanceOf(acc).call();
-        let newVal=  web3.utils.fromWei(balance.toString());
-        setApproveValue(newVal)
-      }
-    }
-    catch(e){
-      console.log("e", e);
-    }
-  }
-
-  const Approve=async()=>{
-    try{
-      if (acc == "No Wallet") {
-        toast.info("Wallet not connected");
-      } else if (acc == "Wrong Network") {
-        toast.info("Wrong Network");
-      } else if (acc == "Connect Wallet") {
-        toast.info("Please connect wallet");
-      }else{
-      if(approveValue>=500){
-        const web3 = window.web3;
-        let tokenContract = new web3.eth.Contract(bbrtokenAbi,bbrTokenAddress);
-        let tokenStaking = new web3.eth.Contract(tokenLpStakingAbi, tokenLpStaking);
-        await tokenContract.methods.approve(tokenLpStaking,web3.utils.toWei(approveValue.toString())).send({
-          from:acc 
-        })
-        await tokenStaking.methods
-        .Stake(web3.utils.toWei(approveValue.toString()))
-        .send({
-          from:acc
-        });
-
-        toast.success("value send")
-      }
-      else{
-        toast.error("value less than 500")
-      }
-    }
-  }
-    catch(e){
-      console.log("e", e);
-      toast.error("Transaction failed")
-    }
-
-  }
-  useEffect(()=>{
-    staked()
-    ibr()
-    balance()
-  },[acc])
   useEffect(() => {
-    
     let interval = setInterval(() => {
       setAnimationState((prevState) => !prevState);
       setAnimationState1((prevState) => !prevState);
@@ -155,7 +66,7 @@ function Lp_Pool6() {
                 //   id="tooltip-disabled"
                 className="toolTip_inner"
               >
-                {data.tooltip}
+                {data[0].tooltip}
               </Tooltip>
             }
           >
@@ -168,11 +79,11 @@ function Lp_Pool6() {
       <div className=" d-flex flex-row justify-content-around">
         <div className="card_deposit">Deposit:</div>
         <div className="card_value">
-          <b>{data.token1}</b>
+          <b>{data[0].token1}</b>
         </div>
         <div className="card_deposit">Earn:</div>
         <div className="card_value">
-          <b>{data.token2}</b>
+          <b>{data[0].token2}</b>
         </div>
       </div>
       <div className="row mt-3 d-flex justify-content-center">
@@ -180,10 +91,10 @@ function Lp_Pool6() {
           <div className="row">
             <div className="col-10  d-flex justify-content-between mt-3">
               <div className="">
-                <img src={data.button} className="img-fluid" width={"33px"} />
+                <img src={data[0].button} className="img-fluid" width={"33px"} />
               </div>
               <div>
-                <img src={data.picture} className="img-fluid" width={"147px"} />
+                <img src={data[0].picture} className="img-fluid" width={"147px"} />
               </div>
             </div>
           </div>
@@ -207,17 +118,15 @@ function Lp_Pool6() {
           </div>
           <div className="row d-flex justify-content-center">
             <div className="col-11 d-flex justify-content-between">
-              <div className="wallet_text">Enter {data.EnterBBR}</div>
+              <div className="wallet_text">Enter {data[0].EnterBBR}</div>
               <div className="button_inside d-flex justify-content-center">
                 <input
                   className="input_inside_button"
                   type="text"
                   placeholder="0"
-                  value={approveValue}
-                  onChange={(e) => setApproveValue(e.target.value)}
                 />
 
-                <button className="insideButton" onClick={maxFun}>
+                <button className="insideButton">
                   Max
                 </button>
               </div>
@@ -227,7 +136,7 @@ function Lp_Pool6() {
       </div>
       <div className="row d-flex justify-content-center buttoun_background">
         <div className=" mt-3">
-          <button className="button_bg" onClick={Approve}>
+          <button className="button_bg">
             {" "}
             Approve & Stake
           </button>
