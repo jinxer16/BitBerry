@@ -39,13 +39,9 @@ function Lp_Pool1() {
   };
 
   const staked = async () => {
-    console.log("enter value");
     const web3 = window.web3;
     let tokenStaking = new web3.eth.Contract(tokenLpStakingAbi, tokenLpStaking);
     let staked = await tokenStaking.methods.User(acc).call();
-    console.log("staked", staked);
-    console.log("staked1", parseInt(web3.utils.fromWei(staked.mystakedTokens)));
-    console.log("redeem", web3.utils.fromWei(staked.redeemedRP));
     setStaked(parseInt(web3.utils.fromWei(staked.mystakedTokens)));
   };
 
@@ -53,7 +49,7 @@ function Lp_Pool1() {
     const web3 = window.web3;
     let tokenStaking = new web3.eth.Contract(tokenLpStakingAbi, tokenLpStaking);
     let value = await tokenStaking.methods.BBPcalculator(acc).call();
-    let newValue = Number(web3.utils.fromWei(value)).toFixed(2);
+    let newValue = Number(web3.utils.fromWei(value));
     setIbr(newValue);
   };
 
@@ -61,7 +57,6 @@ function Lp_Pool1() {
     const web3 = window.web3;
     let tokenContract = new web3.eth.Contract(bbrtokenAbi, bbrTokenAddress);
     let balance = await tokenContract.methods.balanceOf(acc).call();
-    console.log(balance);
     setBalance(Number(web3.utils.fromWei(balance)));
   };
 
@@ -77,7 +72,7 @@ function Lp_Pool1() {
         const web3 = window.web3;
         let tokenContract = new web3.eth.Contract(bbrtokenAbi, bbrTokenAddress);
         let balance = await tokenContract.methods.balanceOf(acc).call();
-        let newVal = web3.utils.fromWei(balance.toString());
+        let newVal = Number(web3.utils.fromWei(balance));
         setApproveValue(newVal);
       }
     } catch (e) {
@@ -180,11 +175,19 @@ function Lp_Pool1() {
   }
 }
 
+ 
   useEffect(() => {
+    let interval = setInterval(() => {
     staked();
     ibr();
     balance();
+    },30000);
+    staked();
+    ibr();
+    balance();
+    return () => clearInterval(interval)
   }, [acc]);
+
   useEffect(() => {
     let interval = setInterval(() => {
       setAnimationState((prevState) => !prevState);

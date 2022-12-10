@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import ReactPaginate from "react-paginate";
-import common from "../../Assets/Images/LuckyDraw/common.PNG";
-import rare from "../../Assets/Images/LuckyDraw/rare.PNG";
-import epic from "../../Assets/Images/LuckyDraw/epic.PNG";
-import uncommon from "../../Assets/Images/LuckyDraw/uncommon.PNG";
-import legendery from "../../Assets/Images/LuckyDraw/legendary.PNG";
-import mythic from "../../Assets/Images/LuckyDraw/mythic.PNG";
+import common from "../../Assets/nfts/common.PNG";
+import rare from "../../Assets/nfts/rare.PNG";
+import epic from "../../Assets/nfts/epic.PNG";
+import uncommon from "../../Assets/nfts/uncommon.PNG";
+import legendery from "../../Assets/nfts/legendary.PNG";
+import mythic from "../../Assets/nfts/mythic.PNG";
 import { IoCaretBackSharp, IoCaretForwardSharp } from "react-icons/io5";
 import "./myNFT.css";
 import { Modal, ModalFooter } from "react-bootstrap";
@@ -189,6 +189,10 @@ function PaginatedItems({ itemsPerPage }) {
     }
   };
 
+  const nftList=()=>{
+    
+  }
+
   useEffect(()=>{
     getData()
   },[acc])
@@ -203,7 +207,7 @@ function PaginatedItems({ itemsPerPage }) {
 
     setCurrentItems(sliced);
     setPageCount(Math.ceil(nftArray.length / itemsPerPage));
-  }, [itemOffset, itemsPerPage]);
+  }, [itemOffset, itemsPerPage,nftArray]);
 
   // Invoke when user click to request another page.
   const handlePageClick = (event) => {

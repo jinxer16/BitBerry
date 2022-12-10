@@ -37,7 +37,6 @@ function Lp_Pool2() {
   };
 
   const staked = async () => {
-    console.log("enter value");
     const web3 = window.web3;
     let tokenStaking = new web3.eth.Contract(tokenLpStakingAbi, tokenLpStaking);
     let staked = await tokenStaking.methods.UserLP(acc).call();
@@ -72,7 +71,7 @@ function Lp_Pool2() {
         const web3 = window.web3;
         let tokenContract = new web3.eth.Contract(bbrLptokenAbi, bbrLpTokenAddress);
         let balance = await tokenContract.methods.balanceOf(acc).call();
-        let newVal = web3.utils.fromWei(balance.toString());
+        let newVal = Number(web3.utils.fromWei(balance));
         setApproveValue(newVal);
       }
     } catch (e) {
@@ -160,7 +159,6 @@ function Lp_Pool2() {
     let value = await tokenStaking.methods.redeemforLp().send({
       from:acc
     });
-    console.log("redeem",value)
     let newValue = Number(web3.utils.fromWei(value)).toFixed(2);
     console.log(newValue)
     // setIbr(newValue);
@@ -173,10 +171,17 @@ function Lp_Pool2() {
 }
 
   useEffect(() => {
+    let interval = setInterval(() => {
     staked();
     ibr();
     balance();
+    },30000);
+    staked();
+    ibr();
+    balance();
+    return () => clearInterval(interval)
   }, [acc]);
+  
   useEffect(() => {
     let interval = setInterval(() => {
       setAnimationState((prevState) => !prevState);
