@@ -4,7 +4,7 @@ import Logo from "../../Assets/Images/logo.png";
 import social from "../../Assets/Images/telegramIcon.png";
 import social1 from "../../Assets/Images/twitterIcon.png";
 import social2 from "../../Assets/Images/discordIcon.png";
-import { HashLink } from 'react-router-hash-link';
+import { HashLink } from "react-router-hash-link";
 function Header() {
   const [isButton, setIsButton] = useState(false);
 
@@ -12,22 +12,22 @@ function Header() {
     <div className="col-md-12 d-flex justify-content-center align-items-between">
       <nav className=" col-md-11 navbar navbar-expand-lg navbarscreen">
         <div className={isButton ? "container Header-bg" : "container"}>
-          {!isButton ? <div >
-            <a className="navbar-brand ml-3 " href="#home">
-              <img
-                src={Logo}
-                width={"80px"}
-                height={"80px"}
-                className="img-fluid img-responsive"
-              />
-            </a>
-          </div>
-            :
-            <div >
+          {!isButton ? (
+            <div>
               <a className="navbar-brand ml-3 " href="#home">
+                <img
+                  src={Logo}
+                  width={"80px"}
+                  height={"80px"}
+                  className="img-fluid img-responsive"
+                />
               </a>
             </div>
-          }
+          ) : (
+            <div>
+              <a className="navbar-brand ml-3 " href="#home"></a>
+            </div>
+          )}
           <div className={isButton ? "button-none" : ""}>
             <button className="text-center btn-largescreen">
               LAUCNHPAD SOON
@@ -77,20 +77,19 @@ function Header() {
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <HashLink className="dropdown-item" to="/lpPool">
                       LP Pool
-                    </a>
+                    </HashLink>
                   </li>
                   <li>
-
-                    <a className="dropdown-item" href="#">
+                    <HashLink className="dropdown-item" to="/luckydraw">
                       Lucky Draw
-                    </a>
+                    </HashLink>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <HashLink className="dropdown-item" to="/nftCard">
                       Tier NFTs
-                    </a>
+                    </HashLink>
                   </li>
                 </ul>
               </li>
@@ -100,8 +99,7 @@ function Header() {
                 </HashLink>
               </li>
               <li className="nav-item">
-                <HashLink className="nav-link" to="/#documents"
-                >
+                <HashLink className="nav-link" to="/#documents">
                   Documents
                 </HashLink>
               </li>

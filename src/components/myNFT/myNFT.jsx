@@ -1,104 +1,108 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./myNFT.css";
 import circle from "../../Assets/Images/VectorCircle-01.png";
-import common from "../../Assets/Images/LuckyDraw/common.PNG";
-import rare from "../../Assets/Images/LuckyDraw/rare.PNG";
-import epic from "../../Assets/Images/LuckyDraw/epic.PNG";
 import PaginatedItems from "./nft";
+import { IoClose } from "react-icons/io5";
+import { HashLink } from "react-router-hash-link";
+import {useDispatch, useSelector} from "react-redux";
+import {connectionAction} from "../../Redux/connection/actions"
+import {nftAddress,nftAbi} from "../../utils/nft";
+
 function MyNFT() {
+  const dispatch = useDispatch();
+	let acc = useSelector((state) => state.connect?.connection);
+  let [animationState, setAnimationState] = useState(true);
+  let [animationState1, setAnimationState1] = useState(false);
+  
+  const connectWallet = () =>{
+		dispatch(connectionAction())
+	}
+  
+ 
+  useEffect(() => {
+    let interval = setInterval(() => {
+      setAnimationState((prevState) => !prevState);
+      setAnimationState1((prevState) => !prevState);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, []);
   return (
     <div className="luckdraw">
       <div className="container luckyDrawMain mt-5">
-        <div className="row d-flex justify-content-center mb-5 ">
+        <div className="row d-flex justify-content-center mb-4 ">
           <div className="col-11 lucky_draw_border mb-5 ">
             <div className="row ">
-              <div className="col-12 d-flex justify-content-end mt-1 ">X</div>
+              <div className="col-12 d-flex justify-content-end p-3">
+                <IoClose />
+              </div>
             </div>
             <div className="row ">
               <div className="col-12">
                 <div className="row lucky_draw_top d-flex justify-content-evenly ">
                   <div className="col-md-3 col-lg-0 col-xl-1 col-sm-12 "></div>
                   <div className="col-lg-12 col-xl-9 col-sm-12 text-center d-flex justify-content-center align-items-center flex-column">
-                    <div className="btn_bg lucky_draw_heading pe-5 ps-5 rounded-pill ">
-                      MY NFT
+                    <div className="btn_bg lucky_draw_heading pe-5 ps-5 mynft_responsive rounded-pill ">
+                      <div className="d-flex pos-rel ">
+
+                      <span
+                        className={
+                          animationState
+                          ? "header header--pushDownOne"
+                          : "header"
+                        }
+                        >
+                        MY
+                      </span>
+                      &nbsp;
+                      <span
+                        className={
+                          animationState1
+                          ? "header header--pushDownTwo"
+                          : "header"
+                        }
+                        >
+                        NFT
+                      </span>
                       <span className="">
                         <img
                           src={circle}
-                          className="img-fluid circle_luckydraw"
+                          className="img-fluid circle_luckydraw_myNFT"
                           width={"50px"}
-                          alt=""
-                        />
+                          />
                       </span>
+                          </div>
                     </div>
                   </div>
                   <div className="col-lg-12 col-xl-2 col-sm-12  button_responsive">
                     <div className="p-2 float-end">
-                      <button className="button btn_bg">CONNECT WALLET</button>
+                      <button className="button btn_bg" onClick={connectWallet}>
+                      {acc === "No Wallet"
+                ? "Connect"
+                : acc === "Connect Wallet"
+                ? "Connect"
+                : acc === "Wrong Network"
+                ? acc
+                : acc.substring(0, 3) + "..." + acc.substring(acc.length - 3)}
+                      </button>
                     </div>
                     <div className="p-2 float-end">
-                      <button className="button">My NFT</button>
+                      <HashLink to="/myNft">
+                        <button className="button">My NFT</button>
+                      </HashLink>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div className="row mt-5 mb-5">
-              <div className="col-12 col-lg-12 col-sm-12 ">
+              <div className="col-12 col-lg-12 col-sm-12 d-none d-xl-block">
                 <PaginatedItems itemsPerPage={3} />
-                {/* <div className="row d-flex justify-content-around ">
-                  <div className="col-xl-4 col-lg-6 col-sm-12 col-md-12 d-flex justify-content-center">
-                    <div className="row d-flex justify-content-center">
-                      <div className="col-10 col-md-10 col-lg-10 pic-bg-nft justify-content-center">
-                        <img
-                          src={epic}
-                          className="img-fluid mt-2 rounded mobileNftTransfer"
-                          alt=""
-                        />
-                      </div>
-                      <div className="col-10 col-md-10 col-lg-10 d-flex justify-content-center mt-3">
-                        <b className="text-uppercase">Epic</b>
-                      </div>
-                      <div className="col-10 col-md-10 col-lg-10 d-flex justify-content-center ">
-                        #1002
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="col-xl-4 col-lg-6 col-sm-12 col-md-12 d-flex justify-content-center">
-                    <div className="row d-flex justify-content-center">
-                      <div className="col-10 col-md-10 col-lg-10 pic-bg-nft justify-content-center">
-                        <img
-                          src={rare}
-                          className="img-fluid mt-2 rounded mobileNftTransfer"
-                          alt=""
-                        />
-                      </div>
-                      <div className="col-10 col-md-10 col-lg-10 d-flex justify-content-center mt-3">
-                        <b className="text-uppercase">Rare</b>
-                      </div>
-                      <div className="col-10 col-md-10 col-lg-10 d-flex justify-content-center ">
-                        #1002
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-xl-4 col-lg-6 col-sm-12 col-md-12 d-flex justify-content-center">
-                    <div className="row d-flex justify-content-center">
-                      <div className="col-10 col-md-10 col-lg-10 pic-bg-nft justify-content-center">
-                        <img
-                          src={common}
-                          className="img-fluid mt-2 rounded mobileNftTransfer"
-                          alt=""
-                        />
-                      </div>
-                      <div className="col-10 col-md-10 col-lg-10 d-flex justify-content-center mt-3">
-                        <b className="text-uppercase">Common</b>
-                      </div>
-                      <div className="col-10 col-md-10 col-lg-10 d-flex justify-content-center ">
-                        #1004
-                      </div>
-                    </div>
-                  </div>
-                </div> */}
+              </div>
+              <div className="col-12 col-lg-12 col-sm-12 d-none d-xl-none d-lg-block">
+                <PaginatedItems itemsPerPage={2} />
+              </div>
+              <div className="col-12 col-lg-12 col-sm-12 d-block d-lg-none d-xl-none">
+                <PaginatedItems itemsPerPage={1} />
               </div>
             </div>
           </div>

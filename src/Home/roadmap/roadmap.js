@@ -5,7 +5,7 @@ import imgCenter from "../../Assets/Images/roadmap2.png";
 import imgLeft from "../../Assets/Images/roadmap3.png";
 import Circle from "../../Assets/Images/VectorCircle-01.png";
 import swipe from "../../Assets/Images/Group89.png";
-import MobileImageRoadmap from "../../Assets/MobileImage/roadMapMobile.png"
+import MobileImageRoadmap from "../../Assets/Images/road_map_resize.png"
 import "./roadmap.css";
 function Roadmap() {
   let [animationState, setAnimationState] = useState(true);
@@ -66,7 +66,7 @@ function Roadmap() {
           data-bs-ride="carousel"
         >
           <div className="col-sm-12 text-center">
-          <img src={MobileImageRoadmap} className="img-fluid"/>
+          <img src={MobileImageRoadmap} className="img-fluid" width={"1122px"}/>
           </div>
         </div>
       </div>

@@ -12,6 +12,9 @@ import Lp_Pool from "./components/LpPool/Lp_Pool";
 import NftTransfer from "./components/nftTransfer/nftTransfer";
 import NftTicket from "./components/nftTicket/nftTicket";
 import MyNFT from "./components/myNFT/myNFT";
+import NFTCard from "./components/nftCard/nftCard";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   useEffect(() => {
@@ -19,6 +22,7 @@ function App() {
   }, []);
   return (
     <div className="">
+      <ToastContainer />
       <BrowserRouter>
         <Header />
         <Routes>
@@ -28,6 +32,7 @@ function App() {
           <Route exact path="/nftTransfer" element={<NftTransfer />} />
           <Route exact path="/nftTicket" element={<NftTicket />} />
           <Route exact path="/myNft" element={<MyNFT />} />
+          <Route exact path="/nftCard" element={<NFTCard/>} />
         </Routes>
         <Footer />
       </BrowserRouter>

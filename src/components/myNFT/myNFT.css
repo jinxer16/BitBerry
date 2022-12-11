@@ -42,10 +42,14 @@
   letter-spacing: 0.005em;
 }
 
-.circle_luckydraw {
-  position: relative;
-  right: 235px;
+.circle_luckydraw_myNFT {
+  position: absolute;
+  right: -45px;
   bottom: 23px;
+  animation: circle-animation 1.5s ease infinite;
+}
+.pos-rel {
+  position: relative;
 }
 /* 
 .lucky_draw_bg{
@@ -65,11 +69,12 @@ background: #FFF854;
   .lucky_draw_heading {
     font-size: 20px;
   }
-  .circle_luckydraw {
+  .circle_luckydraw_myNFT {
     position: relative;
     right: -50px;
     bottom: 15px;
     width: 30px;
+    animation: circle-animation 1.5s ease infinite;
   }
   .button_responsive {
     display: flex;
@@ -95,10 +100,7 @@ background: #FFF854;
   border: 1px solid #000000;
   border-radius: 10px;
 }
-.color1 {
-  background: #fafafa;
-  border-radius: 10px 0px 0px 10px;
-}
+
 .green_text {
   font-family: "Inter";
   font-style: normal;
@@ -110,23 +112,6 @@ background: #FFF854;
   text-align: center;
 
   color: #000000;
-}
-.color2 {
-  background: #e3e3e3;
-}
-.color3 {
-  background: #cbcbcb;
-}
-.color4 {
-  background: #b9b9b9;
-}
-.color5 {
-  background: #a3a3a3;
-  height: auto;
-}
-.color6 {
-  background: #b5b5b5;
-  border-radius: 0px 10px 10px 0px;
 }
 
 .Point_bg {
@@ -336,6 +321,18 @@ background: #FFF854;
   box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25) !important;
   border-radius: 6px !important;
 }
+@media (max-width: 1366px) {
+  .pic-bg-nft {
+    width: 320px;
+    height: 320px;
+  }
+}
+@media (max-width: 1280px) {
+  .pic-bg-nft {
+    width: 300px;
+    height: 300px;
+  }
+}
 @media (max-width: 425px) {
   .inputForTransfer {
     width: 270px;
@@ -374,7 +371,11 @@ background: #FFF854;
   box-shadow: none !important;
 }
 .page-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 35px;
+  height: 35px;
   border-radius: 50px;
   margin: 5px;
   color: #000;
@@ -391,4 +392,54 @@ background: #FFF854;
 .page-item:first-child:focus-visible .page-link {
   color: #fff;
   background-color: #a2a2a2;
+}
+.page-item .active {
+  color: #000;
+  background-color: #a2a2a2;
+}
+.active > .page-link {
+  color: #000;
+  background-color: transparent;
+}
+.disabled .page-link {
+  color: #fff !important  ;
+  background-color: #a2a2a2 !important;
+}
+.page-item .arrow {
+  color: #fff !important;
+  background-color: #000;
+}
+.nftImgTitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 136.52%;
+  text-align: center;
+  color: #000000;
+}
+.nftImgTransferButton {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #000000;
+}
+
+@media (max-width: 425px) {
+  .mynft_responsive {
+    font-size: 25px !important;
+  }
+  .circle_luckydraw_myNFT {
+    display: none;
+  }
+}
+.page-item {
+  display: none !important;
+}
+.page-item2,
+.active {
+  display: block !important;
 }

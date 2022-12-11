@@ -42,10 +42,11 @@
   letter-spacing: 0.005em;
 }
 
-.circle_luckydraw {
-  position: relative;
-  right: 235px;
-  bottom: 23px;
+.circle_luckydraw_nftTransfer {
+  position: absolute;
+  right: 392px;
+  bottom: 10px;
+  animation: circle-animation 1.5s ease infinite;
 }
 /* 
 .lucky_draw_bg{
@@ -95,10 +96,7 @@ background: #FFF854;
   border: 1px solid #000000;
   border-radius: 10px;
 }
-.color1 {
-  background: #fafafa;
-  border-radius: 10px 0px 0px 10px;
-}
+
 .green_text {
   font-family: "Inter";
   font-style: normal;
@@ -110,23 +108,6 @@ background: #FFF854;
   text-align: center;
 
   color: #000000;
-}
-.color2 {
-  background: #e3e3e3;
-}
-.color3 {
-  background: #cbcbcb;
-}
-.color4 {
-  background: #b9b9b9;
-}
-.color5 {
-  background: #a3a3a3;
-  height: auto;
-}
-.color6 {
-  background: #b5b5b5;
-  border-radius: 0px 10px 10px 0px;
 }
 
 .Point_bg {
@@ -353,4 +334,64 @@ background: #FFF854;
     #fff854 0%,
     rgba(255, 255, 255, 0) 134.6%
   );
+}
+.bgForSuccess {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 136.52%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  padding: 10px;
+}
+@media (max-width: 1080px) {
+  .circle_luckydraw_nftTransfer{
+    display: none;
+  }
+}
+@media (max-width: 769px) {
+  .tablet_responsive {
+    font-size: 35px;
+  }
+  .circle_nftCard {
+    position: absolute;
+    right: 181px;
+    bottom: 19px;
+    width: 41px;
+  }
+  .circle_nftCard {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .tablet_responsive {
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+  }
+  .lucky_draw_heading_Transfer {
+    font-size: 18px;
+    padding: 10px;
+    position: relative;
+  }
+
+  
+}
+@media (max-width: 321px) {
+  .inputForTransfer {
+    width: 210px !important;
+    height: 60px;
+  }
+}
+.lucky_draw_heading_Transfer {
+  font-size: 38px;
+  font-family: "RedFive";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 109%;
+  letter-spacing: 0.005em;
+  position: relative;
 }

@@ -21,6 +21,9 @@
   padding: 10px 5px;
   background-color: #fff;
 }
+.pos-rel {
+  position: relative;
+}
 .btn_bg {
   background: #fff854;
 }
@@ -37,15 +40,16 @@
   font-family: "RedFive";
   font-style: normal;
   font-weight: 400;
-  font-size: 50px;
+  font-size: 40px;
   line-height: 109%;
   letter-spacing: 0.005em;
 }
 
-.circle_luckydraw {
-  position: relative;
-  right: 235px;
+.circle_luckydraw_nftTicket {
+  position: absolute;
+  right: 3px;
   bottom: 23px;
+  animation: circle-animation 1.5s ease infinite;
 }
 /* 
 .lucky_draw_bg{
@@ -70,6 +74,7 @@ background: #FFF854;
     right: -50px;
     bottom: 15px;
     width: 30px;
+    animation: circle-animation 1.5s ease infinite;
   }
   .button_responsive {
     display: flex;
@@ -80,9 +85,9 @@ background: #FFF854;
   }
 }
 
-.pic-bg-nft {
-  width: 348px;
-  height: 341.01px;
+.pic-bg-nftTicket {
+  width: 305px;
+  height: 300px;
   background: #ffffff;
   border: 1px solid #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -95,10 +100,7 @@ background: #FFF854;
   border: 1px solid #000000;
   border-radius: 10px;
 }
-.color1 {
-  background: #fafafa;
-  border-radius: 10px 0px 0px 10px;
-}
+
 .green_text {
   font-family: "Inter";
   font-style: normal;
@@ -111,23 +113,7 @@ background: #FFF854;
 
   color: #000000;
 }
-.color2 {
-  background: #e3e3e3;
-}
-.color3 {
-  background: #cbcbcb;
-}
-.color4 {
-  background: #b9b9b9;
-}
-.color5 {
-  background: #a3a3a3;
-  height: auto;
-}
-.color6 {
-  background: #b5b5b5;
-  border-radius: 0px 10px 10px 0px;
-}
+
 
 .Point_bg {
   background-image: url("../../Assets/Images/LuckyDraw/Rectangle32.png");
@@ -308,6 +294,14 @@ background: #FFF854;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px 10px 0px 0px;
   }
+  .pic-bg-nftTicket {
+    width: 260px;
+    height: 255px;
+    background: #ffffff;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
   .detail_bg {
     width: 343px;
     height: 82px;
@@ -353,4 +347,19 @@ background: #FFF854;
     #fff854 0%,
     rgba(255, 255, 255, 0) 134.6%
   );
+}
+@media (min-width: 1200px) {
+  .modal-xl {
+    --bs-modal-width: 1250px !important;
+  }
+}
+@media (max-width: 768px) {
+  .nft_responsive {
+    font-size: 20px !important;
+    padding: 10px !important;
+  }
+  .circle_luckydraw_nftTicket,
+  .circle_luckydraw_nftTransfer {
+    display: none;
+  }
 }
